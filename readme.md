@@ -1,14 +1,4 @@
 # Java_Master_Class_2023-1
-
-## what is java ✅
-
-![Alt text](image.png)
-
-## what can u build with java ✅
-
-![Alt text](image-1.png)
-
-## Backend and Who use JAVA ✅
 - [Java\_Master\_Class\_2023-1](#java_master_class_2023-1)
   - [what is java ✅](#what-is-java-)
   - [what can u build with java ✅](#what-can-u-build-with-java-)
@@ -18,7 +8,7 @@
     - [interpreter ✅](#interpreter-)
     - [comparison ✅](#comparison-)
   - [Static vs Dynamic type checking ✅](#static-vs-dynamic-type-checking-)
-  - [java history](#java-history)
+  - [java history ✅](#java-history-)
   - [Create Project - Part 1 🔲](#create-project---part-1-)
   - [Create Project - Part 2 🔲](#create-project---part-2-)
   - [Your First Java Program 🔲](#your-first-java-program-)
@@ -363,6 +353,16 @@
   - [Exercise 🔲](#exercise--4)
   - [Exercise Solution 🔲](#exercise-solution--3)
 
+## what is java ✅
+
+![Alt text](image.png)
+
+## what can u build with java ✅
+
+![Alt text](image-1.png)
+
+## Backend and Who use JAVA ✅
+
 ![Alt text](image-2.png)
 
 ![Alt text](image-3.png)
@@ -398,7 +398,7 @@
 
 ![Alt text](image-13.png)
 
-## java history
+## java history ✅
 
 ![Alt text](image-14.png)
 
