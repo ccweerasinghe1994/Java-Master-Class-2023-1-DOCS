@@ -415,359 +415,346 @@
 
 ![Alt text](image-14.png)
 
-## 
-## 
-## 
-## 
-## 9
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
+## Create Project - Part 1 🔲
+## Create Project - Part 2 🔲
+## Your First Java Program 🔲
+## Compiling and Running via Terminal 🔲
+## Fixing Compilation Errors 🔲
+## View ByteCode 🔲
+## Public Static Void Main 🔲
+## Understanding Java Code 🔲
+## SOUT Keyboard Shortcut  🔲
+## Reserved Keywords 🔲
+## Comments 🔲
+## Variables 🔲
+## Primitives Data Types Difference 🔲
+## Numeric Literals with Underscore 🔲
+## Arithmetic Operators 🔲
+## Increment and Decrement Operators 🔲
+## Comparison Operators 🔲
+## Short hand re-assignment 🔲
+## Naming Variables 🔲
+## Strings 🔲
+## String API Documentation 🔲
+## Reference Types and Objects 🔲
+## Reference Types and Objects Diferences 🔲
+## Pass py value with Primitives 🔲
+## Pass py value with Reference Types 🔲
+## Arrays 🔲
+## 0 and Null Values for Arrays 🔲
+## Quick word on Arrays  🔲
+## TextBook and Exercises 🔲
+## How To Attempt Exercises 🔲
+## Quick word on the CLI Project  🔲
+## For Loop 🔲
+## Loops and Arrays 🔲
+## Enhanced For Loop 🔲
+## For i vs Enhanced For Loop 🔲
+## While Loop 🔲
+## Do While  🔲
+## If Statements 🔲
+## If Statements with Conditions 🔲
+## Else If 🔲
+## AND Logical Operators 🔲
+## OR Logical Operators 🔲
+## Logical Operators Recap 🔲
+## ! on ifs 🔲
+## Dont do this with if statements 🔲
+## Switch Statement 🔲
+## Data Types for Enums 🔲
+## New Switch Expression 🔲
+## Packages 🔲
+## Creating Packages 🔲
+## Exploring Packages 🔲
+## Import keyword 🔲
+## Optmizing imports 🔲
+## Import with fully qualified name 🔲
+## No Import for java lang  🔲
+## Access Modifiers Intro 🔲
+## Public Access Modifier 🔲
+## Private 🔲
+## Default 🔲
+## Recap 🔲
+## When To Use Each Access Modifier 🔲
+## Static Keyword 🔲
+## Methods 🔲
+## Method that add 2 numbers 🔲
+## Parameters and Arguments 🔲
+## Void methods 🔲
+## Naming Convention 🔲
+## Exercise 🔲
+## Exercise Solution 🔲
+## Understanding public static void main 🔲
+## Program Arguments 🔲
+## Type Inference with Var 🔲
+## Break Keyword and Loops 🔲
+## Continue 🔲
+## Return Keyword and Void Methods 🔲
+## Final Keyword 🔲
+## Enums 🔲
+## Enums Methods 🔲
+## Implicit and Explicit Type Casting 🔲
+## Global and Local Variables 🔲
+## Wrapper Classes 🔲
+## Working With Strings 🔲
+## How Strings are stored in memory 🔲
+## Strings are Immutable 🔲
+## String Literal vs String Object 🔲
+## Comparing Strings with == 🔲
+## Comparing Strings with .equals 🔲
+## Useful String static Methods 🔲
+## LocalDateTime 🔲
+## LocalDate and LocalTime 🔲
+## Creating Specif Dates 🔲
+## ZoneIds 🔲
+## Other Date Classes 🔲
+## The Problem With double 🔲
+## BigDecimal 🔲
+## Exploring BigDecimal Methods  🔲
+## Scanner 🔲
+## NextInt and other data types 🔲
+## Outro 🔲
+## Intro 🔲
+## What is an exception 🔲
+## Try Catch 🔲
+## Multiple Catch Blocks 🔲
+## Using Or Within Catch 🔲
+## The Exception Class 🔲
+## Finally Keyword 🔲
+## Exception Hierarchy 🔲
+## Uncheck Exceptions 🔲
+## Checked Exceptions 🔲
+## Throw and Throws 🔲
+## Throwing Exceptions 🔲
+## When To Use Checked VS Unchecked Exeptions 🔲
+## Creating Custom Exceptions 🔲
+## Creating Files 🔲
+## Writing To Files 🔲
+## Reading from Files 🔲
+## Try with Resources 🔲
+## Intro 🔲
+## Your first class 🔲
+## Setters 🔲
+## Getters 🔲
+## Constructors 🔲
+## Default Constructors 🔲
+## Multiple Contructors 🔲
+## ToString 🔲
+## The Inside Constructors 🔲
+## The This Keyword 🔲
+## Everything in Java is an Object 🔲
+## @Override 🔲
+## Comparing Objects with == 🔲
+## Comparing Obects with .equals 🔲
+## Generating Equals method 🔲
+## Equals Explained 🔲
+## Generating Code 🔲
+## Person and Cats Example 🔲
+## POJOS 🔲
+## Java Bean 🔲
+## Exercise 🔲
+## Exercise Solution 🔲
+## Static Keyword 🔲
+## When to use Static 🔲
+## Static Initlaization Block 🔲
+## Instance Block Initializer 🔲
+## Static Import  🔲
+## Intro 🔲
+## Packages 🔲
+## Models 🔲
+## Service Classes 🔲
+## Data Access Object 🔲
+## Connecting DAO and Service 🔲
+## N Tier Architecture 🔲
+## Utitlity Classes 🔲
+## Intro 🔲
+## The first CLI project task 🔲
+## Demo  🔲
+## Upcoming Section Intro 🔲
+## Encapsulation 🔲
+## Encapsulation in Action 🔲
+## The Problem With Non Private Fields 🔲
+## Data Hiding 🔲
+## String Class Encapsulation Example  🔲
+## What is Inheritance 🔲
+## Implementing Inheritance 🔲
+## Create an instance of Programmer 🔲
+## Super Keyword 🔲
+## Protected Access Modifier 🔲
+## Override 🔲
+## Single and Multi Level Inheritance 🔲
+## Abstract Keyword on Classes 🔲
+## Abstract Methods 🔲
+## A Quick Word Before we move on 🔲
+## Abstract Classes Example  🔲
+## What is Polymorphism 🔲
+## Car Bicycle Electric Scooter Example 🔲
+## Create Your First Interface 🔲
+## Implementing Interfaces 🔲
+## Putting it all together 🔲
+## Constants 🔲
+## Default Methods 🔲
+## CLI Project Exercise  🔲
+## Don't Do This 🔲
+## Dependecy Injection 🔲
+## Dependency Injection In Action 🔲
+## Singletons and @Inject_@Autowire 🔲
+## CLI Project Exercise  🔲
+## SOLID Principles 🔲
+## Single Responsibitiy 🔲
+## Open Close 🔲
+## Liskov 🔲
+## Interface Segragation 🔲
+## Dependecy Inversion  🔲
+## Null Pointer Exception 🔲
+## The Wrong Way Of Dealing with Null 🔲
+## Optionals  🔲
+## Intro 🔲
+## Overview 🔲
+## Arrays 🔲
+## Working With Arrays 🔲
+## 2D Arrays 🔲
+## Working with 2D Arrays 🔲
+## Lists 🔲
+## Working With Lists and ArrayList 🔲
+## Stack 🔲
+## Working With Stacks 🔲
+## Queue 🔲
+## Working With Queues 🔲
+## Linked List 🔲
+## Working with LinkedList 🔲
+## Sets 🔲
+## Working with Sets 🔲
+## Map Interface Hierarchy 🔲
+## Maps 🔲
+## Working With Maps 🔲
+## HashCode 🔲
+## Working HashCode and HashFunction 🔲
+## Outro 🔲
+## HackerRank Big Notation 🔲
+## CLI Project Exercise  🔲
+## Intro 🔲
+## Class Cast Exception 🔲
+## ClassCastException Example 2 🔲
+## Type Parameter and Type Argument 🔲
+## Generic Type Naming Convention 🔲
+## Generic and Classes 🔲
+## Generic and Classes Part 2 🔲
+## Generics and Methods 🔲
+## Bounded Type Parameters 🔲
+## Multiple Bounds 🔲
+## Unbounded Wildcard 🔲
+## Upper Bounded Wildcards 🔲
+## Lower Bounded Wildcards 🔲
+## Difference Between Bounded Type Parameters and Wildcards 🔲
+## Type Erasure 🔲
+## Outro  🔲
+## Intro 🔲
+## Java Streams 🔲
+## How Streams Work 🔲
+## Getting Started With Streams 🔲
+## Exercise 🔲
+## Declarative Solution 🔲
+## Imperative Solution 🔲
+## Visualise Streams 🔲
+## Outro 🔲
+## CLI Exercise 🔲
+## Maven 🔲
+## Installing Maven 🔲
+## Verifying Maven Installation 🔲
+## Creating a Maven Project 🔲
+## Maven Folder Structure 🔲
+## Project Object Model (pom.xml) 🔲
+## Target Folder 🔲
+## Installing Maven Dependencies 🔲
+## Using Java Faker 🔲
+## .m2 Folder 🔲
+## Maven Lifecycles 🔲
+## Running Maven Commands 🔲
+## Packaging and Jar Files 🔲
+## CLI Project Exercise  🔲
+## Intro 🔲
+## JUnit 🔲
+## Installing JUNIT 🔲
+## Launching Your First Test 🔲
+## Calculator and CalculatorTest Classes 🔲
+## Writing Your First Unit Test 🔲
+## Assertions 🔲
+## Test Scenarios 🔲
+## Other JUnit Features 🔲
+## CLI Exercise  🔲
+## Section Intro 🔲
+## Intro Spring Boot 🔲
+## Spring Initializr 🔲
+## Open the project with IntelliJ 🔲
+## The pom.xml 🔲
+## Cleanup Few Things  🔲
+## JDK 🔲
+## Your first Spring Boot Application 🔲
+## Embedded Web Serve 🔲
+## Configuring Embedded Web Server 🔲
+## Your first API 🔲
+## @SpringBootApplication 🔲
+## Spring Web MVC 🔲
+## JSON For Java 🔲
+## Java Objects to JSON Objects  🔲
+## Introduction to HTTP 🔲
+## The Evolution of HTTP 🔲
+## HTTP Request and Response Messages 🔲
+## HTTP Methods 🔲
+## HTTP Status Codes 🔲
+## URL 🔲
+## API and REST API 🔲
+## Public APIs and Other Types 🔲
+## Why build APIs 🔲
+## Chrome Developer Tools 🔲
+## Exploring XHR for our API 🔲
+## Inspecting Instagram Network Activity 🔲
+## REST Client & Postman 🔲
+## IntelliJ REST Clients 🔲
+## CRUD and Section Overview 🔲
+## Customer Model 🔲
+## Fake Database 🔲
+## API Endpoint 🔲
+## @PathVariable 🔲
+## N Tier Architecture 🔲
+## Refactor - Controller Service and DAO 🔲
+## @RestController @Service @Repository @Component 🔲
+## Application Context 🔲
+## Inspecting beans 🔲
+## Bean Scopes 🔲
+## Creating Beans 🔲
+## We are not handling error the right way 🔲
+## Custom Exception 🔲
+## @ResponseStatus 🔲
+## Include error Message to Responses 🔲
+## Section Intro 🔲
+## Postgres and Docker 🔲
+## Verifying Docker Installation 🔲
+## Postgres DB with Docker compose 🔲
+## Connecting to Database 🔲
+## Connecting to DB using IntelliJ IDEA 🔲
+## Data Source & JPA 🔲
+## Installing PostgreSQL Driver and Spring Data JPA Dependencies 🔲
+## Configuring Datasource Properties 🔲
+## Create Customer Table 🔲
+## Entity 🔲
+## Inspecting The Database 🔲
+## Column Contraints 🔲
+## CustomerRepository 🔲
+## CustomerJPADataAccessService class 🔲
+## @Qualifier 🔲
+## Saving Entities 🔲
+## Exploring JPA Methods 🔲
+## The Problem 🔲
+## Exercise Solution  🔲
+## Intro 🔲
+## Chasing Interface 🔲
+## Override insert customer 🔲
+## Business Logic for Adding new Customer 🔲
+## Controller @RequestMapping and @RequestBody 🔲
+## Testing POST Request 🔲
+## Exercise 🔲
+## Exercise Solution 🔲
+## Exercise 🔲
+## Exercise Solution 🔲
