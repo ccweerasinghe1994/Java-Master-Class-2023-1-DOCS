@@ -10,12 +10,9 @@
   - [Static vs Dynamic type checking ✅](#static-vs-dynamic-type-checking-)
   - [java history ✅](#java-history-)
   - [Create Project - Part 1 🔲](#create-project---part-1-)
-  - [Create Project - Part 2 🔲](#create-project---part-2-)
-  - [Your First Java Program 🔲](#your-first-java-program-)
-  - [Compiling and Running via Terminal 🔲](#compiling-and-running-via-terminal-)
-  - [Fixing Compilation Errors 🔲](#fixing-compilation-errors-)
-  - [View ByteCode 🔲](#view-bytecode-)
-  - [Public Static Void Main 🔲](#public-static-void-main-)
+  - [Compiling and Running via Terminal ✅](#compiling-and-running-via-terminal-)
+  - [View ByteCode ✅](#view-bytecode-)
+  - [Public Static Void Main ✅](#public-static-void-main-)
   - [Understanding Java Code 🔲](#understanding-java-code-)
   - [SOUT Keyboard Shortcut  🔲](#sout-keyboard-shortcut--)
   - [Reserved Keywords 🔲](#reserved-keywords-)
@@ -412,11 +409,12 @@ public class Main {
     }
 }
 ```
-## Create Project - Part 2 🔲
-## Your First Java Program 🔲
-## Compiling and Running via Terminal 🔲
-## Fixing Compilation Errors 🔲
-## View ByteCode 🔲
+## Compiling and Running via Terminal ✅
+```shell
+java Main.java
+```
+
+## View ByteCode ✅
 
 ```java
 package com.chamara;
@@ -466,7 +464,7 @@ public class com/chamara/Main {
 }
 
 ```
-## Public Static Void Main 🔲
+## Public Static Void Main ✅
 ```java
 package com.chamara;
 
