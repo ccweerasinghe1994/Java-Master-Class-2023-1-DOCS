@@ -403,345 +403,1759 @@
 ![Alt text](image-14.png)
 
 ## Create Project - Part 1 🔲
+```java
+package com.chamara;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
+}
+```
 ## Create Project - Part 2 🔲
 ## Your First Java Program 🔲
 ## Compiling and Running via Terminal 🔲
 ## Fixing Compilation Errors 🔲
 ## View ByteCode 🔲
+
+```java
+package com.chamara;
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("Hello world!");
+
+    }
+}
+```
+java virtual machine can understand this code
+```bytecode
+// class version 65.0 (65)
+// access flags 0x21
+public class com/chamara/Main {
+
+  // compiled from: Main.java
+
+  // access flags 0x1
+  public <init>()V
+   L0
+    LINENUMBER 3 L0
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+    RETURN
+   L1
+    LOCALVARIABLE this Lcom/chamara/Main; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x9
+  public static main([Ljava/lang/String;)V
+   L0
+    LINENUMBER 6 L0
+    GETSTATIC java/lang/System.out : Ljava/io/PrintStream;
+    LDC "Hello world!"
+    INVOKEVIRTUAL java/io/PrintStream.println (Ljava/lang/String;)V
+   L1
+    LINENUMBER 8 L1
+    RETURN
+   L2
+    LOCALVARIABLE args [Ljava/lang/String; L0 L2 0
+    MAXSTACK = 2
+    MAXLOCALS = 1
+}
+
+```
 ## Public Static Void Main 🔲
+```java
+package com.chamara;
+
+public class Main {
+//    this is the entry point of the program
+    public static void main(String[] args) {
+
+        System.out.println("Hello world!");
+
+    }
+}
+```
 ## Understanding Java Code 🔲
+
+```java
+
+```
 ## SOUT Keyboard Shortcut  🔲
+
+```java
+
+```
 ## Reserved Keywords 🔲
+
+```java
+
+```
 ## Comments 🔲
+
+```java
+
+```
 ## Variables 🔲
+
+```java
+
+```
 ## Primitives Data Types Difference 🔲
+
+```java
+
+```
 ## Numeric Literals with Underscore 🔲
+
+```java
+
+```
 ## Arithmetic Operators 🔲
+
+```java
+
+```
 ## Increment and Decrement Operators 🔲
+
+```java
+
+```
 ## Comparison Operators 🔲
+
+```java
+
+```
 ## Short hand re-assignment 🔲
+
+```java
+
+```
 ## Naming Variables 🔲
+
+```java
+
+```
 ## Strings 🔲
+
+```java
+
+```
 ## String API Documentation 🔲
+
+```java
+
+```
 ## Reference Types and Objects 🔲
+
+```java
+
+```
 ## Reference Types and Objects Diferences 🔲
+
+```java
+
+```
 ## Pass py value with Primitives 🔲
+
+```java
+
+```
 ## Pass py value with Reference Types 🔲
+
+```java
+
+```
 ## Arrays 🔲
+
+```java
+
+```
 ## 0 and Null Values for Arrays 🔲
+
+```java
+
+```
 ## Quick word on Arrays  🔲
+
+```java
+
+```
 ## TextBook and Exercises 🔲
+
+```java
+
+```
 ## How To Attempt Exercises 🔲
+
+```java
+
+```
 ## Quick word on the CLI Project  🔲
+
+```java
+
+```
 ## For Loop 🔲
+
+```java
+
+```
 ## Loops and Arrays 🔲
+
+```java
+
+```
 ## Enhanced For Loop 🔲
+
+```java
+
+```
 ## For i vs Enhanced For Loop 🔲
+
+```java
+
+```
 ## While Loop 🔲
+
+```java
+
+```
 ## Do While  🔲
+
+```java
+
+```
 ## If Statements 🔲
+
+```java
+
+```
 ## If Statements with Conditions 🔲
+
+```java
+
+```
 ## Else If 🔲
+
+```java
+
+```
 ## AND Logical Operators 🔲
+
+```java
+
+```
 ## OR Logical Operators 🔲
+
+```java
+
+```
 ## Logical Operators Recap 🔲
+
+```java
+
+```
 ## ! on ifs 🔲
+
+```java
+
+```
 ## Dont do this with if statements 🔲
+
+```java
+
+```
 ## Switch Statement 🔲
+
+```java
+
+```
 ## Data Types for Enums 🔲
+
+```java
+
+```
 ## New Switch Expression 🔲
+
+```java
+
+```
 ## Packages 🔲
+
+```java
+
+```
 ## Creating Packages 🔲
+
+```java
+
+```
 ## Exploring Packages 🔲
+
+```java
+
+```
 ## Import keyword 🔲
+
+```java
+
+```
 ## Optmizing imports 🔲
+
+```java
+
+```
 ## Import with fully qualified name 🔲
+
+```java
+
+```
 ## No Import for java lang  🔲
+
+```java
+
+```
 ## Access Modifiers Intro 🔲
+
+```java
+
+```
 ## Public Access Modifier 🔲
+
+```java
+
+```
 ## Private 🔲
+
+```java
+
+```
 ## Default 🔲
+
+```java
+
+```
 ## Recap 🔲
+
+```java
+
+```
 ## When To Use Each Access Modifier 🔲
+
+```java
+
+```
 ## Static Keyword 🔲
+
+```java
+
+```
 ## Methods 🔲
+
+```java
+
+```
 ## Method that add 2 numbers 🔲
+
+```java
+
+```
 ## Parameters and Arguments 🔲
+
+```java
+
+```
 ## Void methods 🔲
+
+```java
+
+```
 ## Naming Convention 🔲
+
+```java
+
+```
 ## Exercise 🔲
+
+```java
+
+```
 ## Exercise Solution 🔲
+
+```java
+
+```
 ## Understanding public static void main 🔲
+
+```java
+
+```
 ## Program Arguments 🔲
+
+```java
+
+```
 ## Type Inference with Var 🔲
+
+```java
+
+```
 ## Break Keyword and Loops 🔲
+
+```java
+
+```
 ## Continue 🔲
+
+```java
+
+```
 ## Return Keyword and Void Methods 🔲
+
+```java
+
+```
 ## Final Keyword 🔲
+
+```java
+
+```
 ## Enums 🔲
+
+```java
+
+```
 ## Enums Methods 🔲
+
+```java
+
+```
 ## Implicit and Explicit Type Casting 🔲
+
+```java
+
+```
 ## Global and Local Variables 🔲
+
+```java
+
+```
 ## Wrapper Classes 🔲
+
+```java
+
+```
 ## Working With Strings 🔲
+
+```java
+
+```
 ## How Strings are stored in memory 🔲
+
+```java
+
+```
 ## Strings are Immutable 🔲
+
+```java
+
+```
 ## String Literal vs String Object 🔲
+
+```java
+
+```
 ## Comparing Strings with == 🔲
+
+```java
+
+```
 ## Comparing Strings with .equals 🔲
+
+```java
+
+```
 ## Useful String static Methods 🔲
+
+```java
+
+```
 ## LocalDateTime 🔲
+
+```java
+
+```
 ## LocalDate and LocalTime 🔲
+
+```java
+
+```
 ## Creating Specif Dates 🔲
+
+```java
+
+```
 ## ZoneIds 🔲
+
+```java
+
+```
 ## Other Date Classes 🔲
+
+```java
+
+```
 ## The Problem With double 🔲
+
+```java
+
+```
 ## BigDecimal 🔲
+
+```java
+
+```
 ## Exploring BigDecimal Methods  🔲
+
+```java
+
+```
 ## Scanner 🔲
+
+```java
+
+```
 ## NextInt and other data types 🔲
+
+```java
+
+```
 ## Outro 🔲
+
+```java
+
+```
 ## Intro 🔲
+
+```java
+
+```
 ## What is an exception 🔲
+
+```java
+
+```
 ## Try Catch 🔲
+
+```java
+
+```
 ## Multiple Catch Blocks 🔲
+
+```java
+
+```
 ## Using Or Within Catch 🔲
+
+```java
+
+```
 ## The Exception Class 🔲
+
+```java
+
+```
 ## Finally Keyword 🔲
+
+```java
+
+```
 ## Exception Hierarchy 🔲
+
+```java
+
+```
 ## Uncheck Exceptions 🔲
+
+```java
+
+```
 ## Checked Exceptions 🔲
+
+```java
+
+```
 ## Throw and Throws 🔲
+
+```java
+
+```
 ## Throwing Exceptions 🔲
+
+```java
+
+```
 ## When To Use Checked VS Unchecked Exeptions 🔲
+
+```java
+
+```
 ## Creating Custom Exceptions 🔲
+
+```java
+
+```
 ## Creating Files 🔲
+
+```java
+
+```
 ## Writing To Files 🔲
+
+```java
+
+```
 ## Reading from Files 🔲
+
+```java
+
+```
 ## Try with Resources 🔲
+
+```java
+
+```
 ## Intro 🔲
+
+```java
+
+```
 ## Your first class 🔲
+
+```java
+
+```
 ## Setters 🔲
+
+```java
+
+```
 ## Getters 🔲
+
+```java
+
+```
 ## Constructors 🔲
+
+```java
+
+```
 ## Default Constructors 🔲
+
+```java
+
+```
 ## Multiple Contructors 🔲
+
+```java
+
+```
 ## ToString 🔲
+
+```java
+
+```
 ## The Inside Constructors 🔲
+
+```java
+
+```
 ## The This Keyword 🔲
+
+```java
+
+```
 ## Everything in Java is an Object 🔲
+
+```java
+
+```
 ## @Override 🔲
+
+```java
+
+```
 ## Comparing Objects with == 🔲
+
+```java
+
+```
 ## Comparing Obects with .equals 🔲
+
+```java
+
+```
 ## Generating Equals method 🔲
+
+```java
+
+```
 ## Equals Explained 🔲
+
+```java
+
+```
 ## Generating Code 🔲
+
+```java
+
+```
 ## Person and Cats Example 🔲
+
+```java
+
+```
 ## POJOS 🔲
+
+```java
+
+```
 ## Java Bean 🔲
+
+```java
+
+```
 ## Exercise 🔲
+
+```java
+
+```
 ## Exercise Solution 🔲
+
+```java
+
+```
 ## Static Keyword 🔲
+
+```java
+
+```
 ## When to use Static 🔲
+
+```java
+
+```
 ## Static Initlaization Block 🔲
+
+```java
+
+```
 ## Instance Block Initializer 🔲
+
+```java
+
+```
 ## Static Import  🔲
+
+```java
+
+```
 ## Intro 🔲
+
+```java
+
+```
 ## Packages 🔲
+
+```java
+
+```
 ## Models 🔲
+
+```java
+
+```
 ## Service Classes 🔲
+
+```java
+
+```
 ## Data Access Object 🔲
+
+```java
+
+```
 ## Connecting DAO and Service 🔲
+
+```java
+
+```
 ## N Tier Architecture 🔲
+
+```java
+
+```
 ## Utitlity Classes 🔲
+
+```java
+
+```
 ## Intro 🔲
+
+```java
+
+```
 ## The first CLI project task 🔲
+
+```java
+
+```
 ## Demo  🔲
+
+```java
+
+```
 ## Upcoming Section Intro 🔲
+
+```java
+
+```
 ## Encapsulation 🔲
+
+```java
+
+```
 ## Encapsulation in Action 🔲
+
+```java
+
+```
 ## The Problem With Non Private Fields 🔲
+
+```java
+
+```
 ## Data Hiding 🔲
+
+```java
+
+```
 ## String Class Encapsulation Example  🔲
+
+```java
+
+```
 ## What is Inheritance 🔲
+
+```java
+
+```
 ## Implementing Inheritance 🔲
+
+```java
+
+```
 ## Create an instance of Programmer 🔲
+
+```java
+
+```
 ## Super Keyword 🔲
+
+```java
+
+```
 ## Protected Access Modifier 🔲
+
+```java
+
+```
 ## Override 🔲
+
+```java
+
+```
 ## Single and Multi Level Inheritance 🔲
+
+```java
+
+```
 ## Abstract Keyword on Classes 🔲
+
+```java
+
+```
 ## Abstract Methods 🔲
+
+```java
+
+```
 ## A Quick Word Before we move on 🔲
+
+```java
+
+```
 ## Abstract Classes Example  🔲
+
+```java
+
+```
 ## What is Polymorphism 🔲
+
+```java
+
+```
 ## Car Bicycle Electric Scooter Example 🔲
+
+```java
+
+```
 ## Create Your First Interface 🔲
+
+```java
+
+```
 ## Implementing Interfaces 🔲
+
+```java
+
+```
 ## Putting it all together 🔲
+
+```java
+
+```
 ## Constants 🔲
+
+```java
+
+```
 ## Default Methods 🔲
+
+```java
+
+```
 ## CLI Project Exercise  🔲
+
+```java
+
+```
 ## Don't Do This 🔲
+
+```java
+
+```
 ## Dependecy Injection 🔲
+
+```java
+
+```
 ## Dependency Injection In Action 🔲
+
+```java
+
+```
 ## Singletons and @Inject_@Autowire 🔲
+
+```java
+
+```
 ## CLI Project Exercise  🔲
+
+```java
+
+```
 ## SOLID Principles 🔲
+
+```java
+
+```
 ## Single Responsibitiy 🔲
+
+```java
+
+```
 ## Open Close 🔲
+
+```java
+
+```
 ## Liskov 🔲
+
+```java
+
+```
 ## Interface Segragation 🔲
+
+```java
+
+```
 ## Dependecy Inversion  🔲
+
+```java
+
+```
 ## Null Pointer Exception 🔲
+
+```java
+
+```
 ## The Wrong Way Of Dealing with Null 🔲
+
+```java
+
+```
 ## Optionals  🔲
+
+```java
+
+```
 ## Intro 🔲
+
+```java
+
+```
 ## Overview 🔲
+
+```java
+
+```
 ## Arrays 🔲
+
+```java
+
+```
 ## Working With Arrays 🔲
+
+```java
+
+```
 ## 2D Arrays 🔲
+
+```java
+
+```
 ## Working with 2D Arrays 🔲
+
+```java
+
+```
 ## Lists 🔲
+
+```java
+
+```
 ## Working With Lists and ArrayList 🔲
+
+```java
+
+```
 ## Stack 🔲
+
+```java
+
+```
 ## Working With Stacks 🔲
+
+```java
+
+```
 ## Queue 🔲
+
+```java
+
+```
 ## Working With Queues 🔲
+
+```java
+
+```
 ## Linked List 🔲
+
+```java
+
+```
 ## Working with LinkedList 🔲
+
+```java
+
+```
 ## Sets 🔲
+
+```java
+
+```
 ## Working with Sets 🔲
+
+```java
+
+```
 ## Map Interface Hierarchy 🔲
+
+```java
+
+```
 ## Maps 🔲
+
+```java
+
+```
 ## Working With Maps 🔲
+
+```java
+
+```
 ## HashCode 🔲
+
+```java
+
+```
 ## Working HashCode and HashFunction 🔲
+
+```java
+
+```
 ## Outro 🔲
+
+```java
+
+```
 ## HackerRank Big Notation 🔲
+
+```java
+
+```
 ## CLI Project Exercise  🔲
+
+```java
+
+```
 ## Intro 🔲
+
+```java
+
+```
 ## Class Cast Exception 🔲
+
+```java
+
+```
 ## ClassCastException Example 2 🔲
+
+```java
+
+```
 ## Type Parameter and Type Argument 🔲
+
+```java
+
+```
 ## Generic Type Naming Convention 🔲
+
+```java
+
+```
 ## Generic and Classes 🔲
+
+```java
+
+```
 ## Generic and Classes Part 2 🔲
+
+```java
+
+```
 ## Generics and Methods 🔲
+
+```java
+
+```
 ## Bounded Type Parameters 🔲
+
+```java
+
+```
 ## Multiple Bounds 🔲
+
+```java
+
+```
 ## Unbounded Wildcard 🔲
+
+```java
+
+```
 ## Upper Bounded Wildcards 🔲
+
+```java
+
+```
 ## Lower Bounded Wildcards 🔲
+
+```java
+
+```
 ## Difference Between Bounded Type Parameters and Wildcards 🔲
+
+```java
+
+```
 ## Type Erasure 🔲
+
+```java
+
+```
 ## Outro  🔲
+
+```java
+
+```
 ## Intro 🔲
+
+```java
+
+```
 ## Java Streams 🔲
+
+```java
+
+```
 ## How Streams Work 🔲
+
+```java
+
+```
 ## Getting Started With Streams 🔲
+
+```java
+
+```
 ## Exercise 🔲
+
+```java
+
+```
 ## Declarative Solution 🔲
+
+```java
+
+```
 ## Imperative Solution 🔲
+
+```java
+
+```
 ## Visualise Streams 🔲
+
+```java
+
+```
 ## Outro 🔲
+
+```java
+
+```
 ## CLI Exercise 🔲
+
+```java
+
+```
 ## Maven 🔲
+
+```java
+
+```
 ## Installing Maven 🔲
+
+```java
+
+```
 ## Verifying Maven Installation 🔲
+
+```java
+
+```
 ## Creating a Maven Project 🔲
+
+```java
+
+```
 ## Maven Folder Structure 🔲
+
+```java
+
+```
 ## Project Object Model (pom.xml) 🔲
+
+```java
+
+```
 ## Target Folder 🔲
+
+```java
+
+```
 ## Installing Maven Dependencies 🔲
+
+```java
+
+```
 ## Using Java Faker 🔲
+
+```java
+
+```
 ## .m2 Folder 🔲
+
+```java
+
+```
 ## Maven Lifecycles 🔲
+
+```java
+
+```
 ## Running Maven Commands 🔲
+
+```java
+
+```
 ## Packaging and Jar Files 🔲
+
+```java
+
+```
 ## CLI Project Exercise  🔲
+
+```java
+
+```
 ## Intro 🔲
+
+```java
+
+```
 ## JUnit 🔲
+
+```java
+
+```
 ## Installing JUNIT 🔲
+
+```java
+
+```
 ## Launching Your First Test 🔲
+
+```java
+
+```
 ## Calculator and CalculatorTest Classes 🔲
+
+```java
+
+```
 ## Writing Your First Unit Test 🔲
+
+```java
+
+```
 ## Assertions 🔲
+
+```java
+
+```
 ## Test Scenarios 🔲
+
+```java
+
+```
 ## Other JUnit Features 🔲
+
+```java
+
+```
 ## CLI Exercise  🔲
+
+```java
+
+```
 ## Section Intro 🔲
+
+```java
+
+```
 ## Intro Spring Boot 🔲
+
+```java
+
+```
 ## Spring Initializr 🔲
+
+```java
+
+```
 ## Open the project with IntelliJ 🔲
+
+```java
+
+```
 ## The pom.xml 🔲
+
+```java
+
+```
 ## Cleanup Few Things  🔲
+
+```java
+
+```
 ## JDK 🔲
+
+```java
+
+```
 ## Your first Spring Boot Application 🔲
+
+```java
+
+```
 ## Embedded Web Serve 🔲
+
+```java
+
+```
 ## Configuring Embedded Web Server 🔲
+
+```java
+
+```
 ## Your first API 🔲
+
+```java
+
+```
 ## @SpringBootApplication 🔲
+
+```java
+
+```
 ## Spring Web MVC 🔲
+
+```java
+
+```
 ## JSON For Java 🔲
+
+```java
+
+```
 ## Java Objects to JSON Objects  🔲
+
+```java
+
+```
 ## Introduction to HTTP 🔲
+
+```java
+
+```
 ## The Evolution of HTTP 🔲
+
+```java
+
+```
 ## HTTP Request and Response Messages 🔲
+
+```java
+
+```
 ## HTTP Methods 🔲
+
+```java
+
+```
 ## HTTP Status Codes 🔲
+
+```java
+
+```
 ## URL 🔲
+
+```java
+
+```
 ## API and REST API 🔲
+
+```java
+
+```
 ## Public APIs and Other Types 🔲
+
+```java
+
+```
 ## Why build APIs 🔲
+
+```java
+
+```
 ## Chrome Developer Tools 🔲
+
+```java
+
+```
 ## Exploring XHR for our API 🔲
+
+```java
+
+```
 ## Inspecting Instagram Network Activity 🔲
+
+```java
+
+```
 ## REST Client & Postman 🔲
+
+```java
+
+```
 ## IntelliJ REST Clients 🔲
+
+```java
+
+```
 ## CRUD and Section Overview 🔲
+
+```java
+
+```
 ## Customer Model 🔲
+
+```java
+
+```
 ## Fake Database 🔲
+
+```java
+
+```
 ## API Endpoint 🔲
+
+```java
+
+```
 ## @PathVariable 🔲
+
+```java
+
+```
 ## N Tier Architecture 🔲
+
+```java
+
+```
 ## Refactor - Controller Service and DAO 🔲
+
+```java
+
+```
 ## @RestController @Service @Repository @Component 🔲
+
+```java
+
+```
 ## Application Context 🔲
+
+```java
+
+```
 ## Inspecting beans 🔲
+
+```java
+
+```
 ## Bean Scopes 🔲
+
+```java
+
+```
 ## Creating Beans 🔲
+
+```java
+
+```
 ## We are not handling error the right way 🔲
+
+```java
+
+```
 ## Custom Exception 🔲
+
+```java
+
+```
 ## @ResponseStatus 🔲
+
+```java
+
+```
 ## Include error Message to Responses 🔲
+
+```java
+
+```
 ## Section Intro 🔲
+
+```java
+
+```
 ## Postgres and Docker 🔲
+
+```java
+
+```
 ## Verifying Docker Installation 🔲
+
+```java
+
+```
 ## Postgres DB with Docker compose 🔲
+
+```java
+
+```
 ## Connecting to Database 🔲
+
+```java
+
+```
 ## Connecting to DB using IntelliJ IDEA 🔲
+
+```java
+
+```
 ## Data Source & JPA 🔲
+
+```java
+
+```
 ## Installing PostgreSQL Driver and Spring Data JPA Dependencies 🔲
+
+```java
+
+```
 ## Configuring Datasource Properties 🔲
+
+```java
+
+```
 ## Create Customer Table 🔲
+
+```java
+
+```
 ## Entity 🔲
+
+```java
+
+```
 ## Inspecting The Database 🔲
+
+```java
+
+```
 ## Column Contraints 🔲
+
+```java
+
+```
 ## CustomerRepository 🔲
+
+```java
+
+```
 ## CustomerJPADataAccessService class 🔲
+
+```java
+
+```
 ## @Qualifier 🔲
+
+```java
+
+```
 ## Saving Entities 🔲
+
+```java
+
+```
 ## Exploring JPA Methods 🔲
+
+```java
+
+```
 ## The Problem 🔲
+
+```java
+
+```
 ## Exercise Solution  🔲
+
+```java
+
+```
 ## Intro 🔲
+
+```java
+
+```
 ## Chasing Interface 🔲
+
+```java
+
+```
 ## Override insert customer 🔲
+
+```java
+
+```
 ## Business Logic for Adding new Customer 🔲
+
+```java
+
+```
 ## Controller @RequestMapping and @RequestBody 🔲
+
+```java
+
+```
 ## Testing POST Request 🔲
+
+```java
+
+```
 ## Exercise 🔲
+
+```java
+
+```
 ## Exercise Solution 🔲
+
+```java
+
+```
 ## Exercise 🔲
+
+```java
+
+```
 ## Exercise Solution 🔲
+
+```java
+
+```
