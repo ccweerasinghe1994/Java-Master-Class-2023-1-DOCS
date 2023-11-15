@@ -9,31 +9,28 @@
     - [comparison ✅](#comparison-)
   - [Static vs Dynamic type checking ✅](#static-vs-dynamic-type-checking-)
   - [java history ✅](#java-history-)
-  - [Create Project - Part 1 🔲](#create-project---part-1-)
+  - [Create Project - Part 1 ✅](#create-project---part-1-)
   - [Compiling and Running via Terminal ✅](#compiling-and-running-via-terminal-)
   - [View ByteCode ✅](#view-bytecode-)
   - [Public Static Void Main ✅](#public-static-void-main-)
-  - [Understanding Java Code 🔲](#understanding-java-code-)
-  - [SOUT Keyboard Shortcut  🔲](#sout-keyboard-shortcut--)
-  - [Reserved Keywords 🔲](#reserved-keywords-)
-  - [Comments 🔲](#comments-)
-  - [Variables 🔲](#variables-)
-  - [Primitives Data Types Difference 🔲](#primitives-data-types-difference-)
-  - [Numeric Literals with Underscore 🔲](#numeric-literals-with-underscore-)
-  - [Arithmetic Operators 🔲](#arithmetic-operators-)
-  - [Increment and Decrement Operators 🔲](#increment-and-decrement-operators-)
-  - [Comparison Operators 🔲](#comparison-operators-)
-  - [Short hand re-assignment 🔲](#short-hand-re-assignment-)
-  - [Naming Variables 🔲](#naming-variables-)
-  - [Strings 🔲](#strings-)
-  - [String API Documentation 🔲](#string-api-documentation-)
-  - [Reference Types and Objects 🔲](#reference-types-and-objects-)
-  - [Reference Types and Objects Diferences 🔲](#reference-types-and-objects-diferences-)
-  - [Pass py value with Primitives 🔲](#pass-py-value-with-primitives-)
-  - [Pass py value with Reference Types 🔲](#pass-py-value-with-reference-types-)
-  - [Arrays 🔲](#arrays-)
-  - [0 and Null Values for Arrays 🔲](#0-and-null-values-for-arrays-)
-  - [Quick word on Arrays  🔲](#quick-word-on-arrays--)
+  - [Reserved Keywords ✅](#reserved-keywords-)
+  - [Comments ✅](#comments-)
+  - [Variables ✅](#variables-)
+  - [Primitives Data Types Difference ✅](#primitives-data-types-difference-)
+  - [Numeric Literals with Underscore ✅](#numeric-literals-with-underscore-)
+  - [Arithmetic Operators ✅](#arithmetic-operators-)
+  - [Increment and Decrement Operators ✅](#increment-and-decrement-operators-)
+  - [Comparison Operators ✅](#comparison-operators-)
+  - [Short hand re-assignment ✅](#short-hand-re-assignment-)
+  - [Naming Variables ✅](#naming-variables-)
+  - [Strings ✅](#strings-)
+  - [String API Documentation ✅](#string-api-documentation-)
+  - [Reference Types and Objects ✅](#reference-types-and-objects-)
+  - [Reference Types and Objects Diferences ✅](#reference-types-and-objects-diferences-)
+  - [Pass py value with Primitives ✅](#pass-py-value-with-primitives-)
+  - [Pass py value with Reference Types ✅](#pass-py-value-with-reference-types-)
+  - [Arrays ✅](#arrays-)
+  - [0 and Null Values for Arrays ✅](#0-and-null-values-for-arrays-)
   - [TextBook and Exercises 🔲](#textbook-and-exercises-)
   - [How To Attempt Exercises 🔲](#how-to-attempt-exercises-)
   - [Quick word on the CLI Project  🔲](#quick-word-on-the-cli-project--)
@@ -399,7 +396,7 @@
 
 ![Alt text](image-14.png)
 
-## Create Project - Part 1 🔲
+## Create Project - Part 1 ✅
 ```java
 package com.chamara;
 
@@ -477,111 +474,269 @@ public class Main {
     }
 }
 ```
-## Understanding Java Code 🔲
+
+## Reserved Keywords ✅
+reserved keywords are words that are already used by java
+ 
+```java
+abstract	continue	for	new	switch
+assert***	default	goto*	package	synchronized
+boolean	do	if	private	this
+break	double	implements	protected	throw
+byte	else	import	public	throws
+case	enum****	instanceof	return	transient
+catch	extends	int	short	try
+char	final	interface	static	void
+class	finally	long	strictfp**	volatile
+const*	float	native	super	while
+```
+## Comments ✅
 
 ```java
+//    this is a single line comment
+/*
+this is a multi line comment
+ */
 
 ```
-## SOUT Keyboard Shortcut  🔲
+## Variables ✅
 
 ```java
+// primitive data types
+// byte, short, int, long, float, double, char, boolean
 
+// byte
+byte age = 30;
+// short
+short viewsCount = 12345;
+// int
+int viewsCount = 123456789;
+// long
+long viewsCount = 123456789123456789L;
+// float
+float price = 10.99F;
+// double
+double price = 10.99;
+// char
+char letter = 'A';
+// boolean
+boolean isEligible = true;
 ```
-## Reserved Keywords 🔲
+## Primitives Data Types Difference ✅
+![Alt text](image-15.png)
+
+![Alt text](image-16.png)
+![Alt text](image-17.png)
+## Numeric Literals with Underscore ✅
+this number is easy to read
+```java
+int viewsCount = 123_456_789;
+```
+## Arithmetic Operators ✅
 
 ```java
+int number1 = 10;
+int number2 = 3;
 
+// addition
+int sum = number1 + number2;
+// subtraction
+int sub = number1 - number2;
+// multiplication
+int mul = number1 * number2;
+// division
+int div = number1 / number2;
+// modulus
+int mod = number1 % number2;
+
+// order of operations
+int x = 10 + 3 * 2;
+// order of operations with parenthesis
+int y = (10 + 3) * 2;
 ```
-## Comments 🔲
+// BODMAS
+- B-Brackets
+- O-Orders(powers and square roots, etc.)
+- D-Division
+- M-Multiplication
+- A-Addition
+- S-Subtraction
+
+
+
+## Increment and Decrement Operators ✅
 
 ```java
-
+// increment
+number1++;
+++number1;
+// decrement
+number1--;
+--number1;
 ```
-## Variables 🔲
+## Comparison Operators ✅
 
 ```java
+// comparison operators
+// equal to ==
+// not equal to !=
+// greater than >
+// greater than or equal to >=
+// less than <
+// less than or equal to <=
+// example
+
+
 
 ```
-## Primitives Data Types Difference 🔲
+## Short hand re-assignment ✅
 
 ```java
-
+int number = 10;
+// this is equal to result = result+ number + 5;
+int result += number + 5;
 ```
-## Numeric Literals with Underscore 🔲
+
+![Alt text](image-18.png)
+
+## Naming Variables ✅
 
 ```java
-
+int goodNumber = 10;
+// this is not a good variable name
+// camel case
+// start with lower case and then capitalize the first letter of each word
+int BandNumber = 10;
+// boolean variables should start with is
+boolean isGood = true;
 ```
-## Arithmetic Operators 🔲
+## Strings ✅
+ String is a reference type
+```java
+String message = "Hello World";
+// concatenation
+String message = "Hello" + "World";
+```
+## String API Documentation ✅
+
+api doc https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html
+## Reference Types and Objects ✅
 
 ```java
+package com.chamara;
+
+import java.awt.*;
+
+public class Main {
+//    this is the entry point of the program
+    public static void main(String[] args) {
+
+       int age = 30;
+        Point point1 = new Point(10, 10 );
+        System.out.println("point1 = " + point1);
+
+    }
+} 
+```
+## Reference Types and Objects Diferences ✅
+
+![Alt text](image-19.png)
+
+## Pass py value with Primitives ✅
+ 
+```java
+int a = 10;
+int b = a;
+a = 100;
+System.out.println("a = " + a); 
+// a = 100
+// b = 10
 
 ```
-## Increment and Decrement Operators 🔲
+![Alt text](image-20.png)
+
+## Pass py value with Reference Types ✅
+
+![Alt text](image-21.png)
+
+## Arrays ✅
 
 ```java
+package com.chamara;
 
+import java.util.Arrays;
+
+public class Main {
+    
+    public static void main(String[] args) {
+
+        int[] array = {1, 2, 3, 4, 5};
+        System.out.println(array[2]);
+        int[] array2 = new int[5];
+        array2[0] = 1;
+        array2[1] = 2;
+        array2[2] = 3;
+        array2[3] = 4;
+        array2[4] = 5;
+        System.out.println(array2[2]);
+        System.out.println(Arrays.toString(array2));
+
+    }
+}
 ```
-## Comparison Operators 🔲
+## 0 and Null Values for Arrays ✅
 
 ```java
+package com.chamara;
 
+import java.util.Arrays;
+
+public class Main {
+
+    public static void main(String[] args) {
+//    primitive data types
+        int[] array2 = new int[5];
+        Arrays.fill(array2, 8);
+        array2[0] = 1;
+        System.out.println(Arrays.toString(array2));
+
+        boolean[] array1 = new boolean[5];
+        System.out.println(Arrays.toString(array1));
+//        output [false, false, false, false, false]
+
+        char[] array = new char[5];
+        System.out.println(Arrays.toString(array));
+//        output [ ,  ,  ,  ,  ]
+
+        byte[] array3 = new byte[5];
+        System.out.println(Arrays.toString(array3));
+//            output [0, 0, 0, 0, 0]
+
+        short[] array4 = new short[5];
+        System.out.println(Arrays.toString(array4));
+//            output [0, 0, 0, 0, 0]
+
+        long[] array5 = new long[5];
+        System.out.println(Arrays.toString(array5));
+//            output [0, 0, 0, 0, 0]
+
+        float[] array6 = new float[5];
+        System.out.println(Arrays.toString(array6));
+//            output [0.0, 0.0, 0.0, 0.0, 0.0]
+
+        double[] array7 = new double[5];
+        System.out.println(Arrays.toString(array7));
+//            output [0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+//        Objects
+        String[] array8 = new String[3];
+//        Arrays.fill(array3, "Hello");
+        System.out.println(Arrays.toString(array8));
+    }
+}
 ```
-## Short hand re-assignment 🔲
 
-```java
-
-```
-## Naming Variables 🔲
-
-```java
-
-```
-## Strings 🔲
-
-```java
-
-```
-## String API Documentation 🔲
-
-```java
-
-```
-## Reference Types and Objects 🔲
-
-```java
-
-```
-## Reference Types and Objects Diferences 🔲
-
-```java
-
-```
-## Pass py value with Primitives 🔲
-
-```java
-
-```
-## Pass py value with Reference Types 🔲
-
-```java
-
-```
-## Arrays 🔲
-
-```java
-
-```
-## 0 and Null Values for Arrays 🔲
-
-```java
-
-```
-## Quick word on Arrays  🔲
-
-```java
-
-```
 ## TextBook and Exercises 🔲
 
 ```java
