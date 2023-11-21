@@ -991,9 +991,9 @@ public class EmailValidator {
 ```
 ## Exploring Packages 🔲
 
-```java
+![Alt text](image-26.png)
 
-```
+
 ## Import keyword 🔲
 
 ```java
