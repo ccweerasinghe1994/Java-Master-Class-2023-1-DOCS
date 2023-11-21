@@ -31,9 +31,6 @@
   - [Pass py value with Reference Types ✅](#pass-py-value-with-reference-types-)
   - [Arrays ✅](#arrays-)
   - [0 and Null Values for Arrays ✅](#0-and-null-values-for-arrays-)
-  - [TextBook and Exercises 🔲](#textbook-and-exercises-)
-  - [How To Attempt Exercises 🔲](#how-to-attempt-exercises-)
-  - [Quick word on the CLI Project  🔲](#quick-word-on-the-cli-project--)
   - [For Loop 🔲](#for-loop-)
   - [Loops and Arrays 🔲](#loops-and-arrays-)
   - [Enhanced For Loop 🔲](#enhanced-for-loop-)
@@ -41,7 +38,6 @@
   - [While Loop 🔲](#while-loop-)
   - [Do While  🔲](#do-while--)
   - [If Statements 🔲](#if-statements-)
-  - [If Statements with Conditions 🔲](#if-statements-with-conditions-)
   - [Else If 🔲](#else-if-)
   - [AND Logical Operators 🔲](#and-logical-operators-)
   - [OR Logical Operators 🔲](#or-logical-operators-)
@@ -737,96 +733,219 @@ public class Main {
 }
 ```
 
-## TextBook and Exercises 🔲
 
-```java
-
-```
-## How To Attempt Exercises 🔲
-
-```java
-
-```
-## Quick word on the CLI Project  🔲
-
-```java
-
-```
 ## For Loop 🔲
 
 ```java
+package com.chamara;
 
+public class Main {
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Hello World");
+        }
+    }
+}
+
+// 
 ```
 ## Loops and Arrays 🔲
 
 ```java
+package com.chamara;
 
+public class Main {
+
+    public static void main(String[] args) {
+        String[] names = {"Chamara", "Kasun", "Nimal", "Kamal", "Sunil"};
+
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i]);
+        }
+    }
+}
 ```
 ## Enhanced For Loop 🔲
 
 ```java
+package com.chamara;
 
+public class Main {
+
+    public static void main(String[] args) {
+        String[] names = {"Chamara", "Kasun", "Nimal", "Kamal", "Sunil"};
+
+        for (String name : names) {
+            System.out.println(name);
+        }
+    }
+}
 ```
 ## For i vs Enhanced For Loop 🔲
 
 ```java
-
+//  we use old for loop when we need access to the index
 ```
 ## While Loop 🔲
 
 ```java
+package com.chamara;
 
+public class Main {
+
+    public static void main(String[] args) {
+        int x = 12;
+        while (x < 100) {
+            System.out.println(x);
+            x += 10;
+        }
+    }
+}
 ```
 ## Do While  🔲
 
 ```java
+package com.chamara;
 
+public class Main {
+
+    public static void main(String[] args) {
+        int x = 120;
+        do {
+            System.out.println(x);
+            x += 10;
+        } while (x < 100);
+    }
+}
 ```
 ## If Statements 🔲
 
 ```java
+package com.chamara;
 
+public class Main {
+
+    public static void main(String[] args) {
+        if (args.length == 0) {
+            System.out.println("Please enter a number");
+        }
+    }
+}
 ```
-## If Statements with Conditions 🔲
 
-```java
-
-```
 ## Else If 🔲
 
 ```java
+package com.chamara;
 
+import java.util.Arrays;
+
+public class Main {
+
+    public static void main(String[] args) {
+        if (args.length == 0) {
+            System.out.println("Please enter a number");
+        } else if (args.length != 1) {
+            System.out.println("args = " + Arrays.toString(args));
+        }
+    }
+}
 ```
 ## AND Logical Operators 🔲
 
 ```java
-
+// &&
+if(a && b){
+    // ....
+}
 ```
 ## OR Logical Operators 🔲
 
 ```java
-
+if(a || b){
+    // ....
+}
 ```
 ## Logical Operators Recap 🔲
 
 ```java
+sout.println("a && b = " + (a && b));
+sout.println("a || b = " + (a || b));
+sout.println("!(a && b) = " + !(a && b));
 
 ```
 ## ! on ifs 🔲
 
 ```java
-
+if(!true){
+    // .... 
+}
 ```
 ## Dont do this with if statements 🔲
 
 ```java
-
+if(condition==true){
+    // ...
+}
 ```
 ## Switch Statement 🔲
 
 ```java
+package com.chamara;
 
+public class Main {
+
+    public static void main(String[] args) {
+//        switch example
+        char grade = 'A';
+// grade can only be byte, short, int, char, String
+//  or Byte, Short, Integer, Character, String, or an enum
+        switch (grade) {
+            case 'A':
+                System.out.println("Excellent!");
+                break;
+            case 'B':
+            case 'C':
+                System.out.println("Well done");
+                break;
+            case 'D':
+                System.out.println("You passed");
+                break;
+            case 'F':
+                System.out.println("Better try again");
+                break;
+            default:
+                System.out.println("Invalid grade");
+        }
+
+    }
+}
 ```
+
+modern switch statement
+```java
+package com.chamara;
+
+public class Main {
+
+    public static void main(String[] args) {
+//        switch example
+        char grade = 'A';
+// grade can only be byte, short, int, char, String
+//  or Byte, Short, Integer, Character, String, or an enum
+        switch (grade) {
+            case 'A' -> System.out.println("Excellent!");
+            case 'B', 'C' -> System.out.println("Well done");
+            case 'D' -> System.out.println("You passed");
+            case 'F' -> System.out.println("Better try again");
+            default -> System.out.println("Invalid grade");
+        }
+
+    }
+}
+```
+
 ## Data Types for Enums 🔲
 
 ```java
