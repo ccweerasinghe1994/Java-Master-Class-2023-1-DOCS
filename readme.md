@@ -31,22 +31,23 @@
   - [Pass py value with Reference Types ✅](#pass-py-value-with-reference-types-)
   - [Arrays ✅](#arrays-)
   - [0 and Null Values for Arrays ✅](#0-and-null-values-for-arrays-)
-  - [For Loop 🔲](#for-loop-)
-  - [Loops and Arrays 🔲](#loops-and-arrays-)
-  - [Enhanced For Loop 🔲](#enhanced-for-loop-)
-  - [For i vs Enhanced For Loop 🔲](#for-i-vs-enhanced-for-loop-)
-  - [While Loop 🔲](#while-loop-)
-  - [Do While  🔲](#do-while--)
-  - [If Statements 🔲](#if-statements-)
-  - [Else If 🔲](#else-if-)
-  - [AND Logical Operators 🔲](#and-logical-operators-)
-  - [OR Logical Operators 🔲](#or-logical-operators-)
-  - [Logical Operators Recap 🔲](#logical-operators-recap-)
-  - [! on ifs 🔲](#-on-ifs-)
-  - [Dont do this with if statements 🔲](#dont-do-this-with-if-statements-)
-  - [Switch Statement 🔲](#switch-statement-)
-  - [Data Types for Enums 🔲](#data-types-for-enums-)
-  - [New Switch Expression 🔲](#new-switch-expression-)
+  - [For Loop ✅](#for-loop-)
+  - [Loops and Arrays ✅](#loops-and-arrays-)
+  - [Enhanced For Loop ✅](#enhanced-for-loop-)
+  - [For i vs Enhanced For Loop ✅](#for-i-vs-enhanced-for-loop-)
+  - [While Loop ✅](#while-loop-)
+  - [Do While  ✅](#do-while--)
+  - [If Statements ✅](#if-statements-)
+  - [Else If ✅](#else-if-)
+  - [AND Logical Operators ✅](#and-logical-operators-)
+  - [OR Logical Operators ✅](#or-logical-operators-)
+  - [Logical Operators Recap ✅](#logical-operators-recap-)
+  - [! on ifs ✅](#-on-ifs-)
+  - [Dont do this with if statements ✅](#dont-do-this-with-if-statements-)
+  - [Switch Statement ✅](#switch-statement-)
+  - [Data Types for Enums ✅](#data-types-for-enums-)
+  - [New Switch Expression ✅](#new-switch-expression-)
+  - [Packages ✅](#packages-)
   - [Creating Packages 🔲](#creating-packages-)
   - [Exploring Packages 🔲](#exploring-packages-)
   - [Import keyword 🔲](#import-keyword-)
@@ -143,7 +144,7 @@
   - [Instance Block Initializer 🔲](#instance-block-initializer-)
   - [Static Import  🔲](#static-import--)
   - [Intro 🔲](#intro--2)
-  - [Packages 🔲](#packages-)
+  - [Packages 🔲](#packages--1)
   - [Models 🔲](#models-)
   - [Service Classes 🔲](#service-classes-)
   - [Data Access Object 🔲](#data-access-object-)
@@ -733,7 +734,7 @@ public class Main {
 ```
 
 
-## For Loop 🔲
+## For Loop ✅
 
 ```java
 package com.chamara;
@@ -749,7 +750,7 @@ public class Main {
 
 // 
 ```
-## Loops and Arrays 🔲
+## Loops and Arrays ✅
 
 ```java
 package com.chamara;
@@ -765,7 +766,7 @@ public class Main {
     }
 }
 ```
-## Enhanced For Loop 🔲
+## Enhanced For Loop ✅
 
 ```java
 package com.chamara;
@@ -781,12 +782,12 @@ public class Main {
     }
 }
 ```
-## For i vs Enhanced For Loop 🔲
+## For i vs Enhanced For Loop ✅
 
 ```java
 //  we use old for loop when we need access to the index
 ```
-## While Loop 🔲
+## While Loop ✅
 
 ```java
 package com.chamara;
@@ -802,7 +803,7 @@ public class Main {
     }
 }
 ```
-## Do While  🔲
+## Do While  ✅
 
 ```java
 package com.chamara;
@@ -818,7 +819,7 @@ public class Main {
     }
 }
 ```
-## If Statements 🔲
+## If Statements ✅
 
 ```java
 package com.chamara;
@@ -833,7 +834,7 @@ public class Main {
 }
 ```
 
-## Else If 🔲
+## Else If ✅
 
 ```java
 package com.chamara;
@@ -851,7 +852,7 @@ public class Main {
     }
 }
 ```
-## AND Logical Operators 🔲
+## AND Logical Operators ✅
 
 ```java
 // &&
@@ -859,14 +860,14 @@ if(a && b){
     // ....
 }
 ```
-## OR Logical Operators 🔲
+## OR Logical Operators ✅
 
 ```java
 if(a || b){
     // ....
 }
 ```
-## Logical Operators Recap 🔲
+## Logical Operators Recap ✅
 
 ```java
 sout.println("a && b = " + (a && b));
@@ -874,21 +875,21 @@ sout.println("a || b = " + (a || b));
 sout.println("!(a && b) = " + !(a && b));
 
 ```
-## ! on ifs 🔲
+## ! on ifs ✅
 
 ```java
 if(!true){
     // .... 
 }
 ```
-## Dont do this with if statements 🔲
+## Dont do this with if statements ✅
 
 ```java
 if(condition==true){
     // ...
 }
 ```
-## Switch Statement 🔲
+## Switch Statement ✅
 
 ```java
 package com.chamara;
@@ -922,12 +923,12 @@ public class Main {
 }
 ```
 
-## Data Types for Enums 🔲
+## Data Types for Enums ✅
 
 ```java
 //  or Byte, Short, Integer, Character, String, or an enum
 ```
-## New Switch Expression 🔲
+## New Switch Expression ✅
 
 ```java
 ```java
@@ -951,12 +952,24 @@ public class Main {
     }
 }
 ```
-```
-## Packages 🔲
+
+## Packages ✅
+packages in java is nothing but folders that allows you to store your files.
+
+![Alt text](image-22.png)
 
 ```java
+package com.chamara;
 
+public class Main {
+
+    public static void main(String[] args) {
+        
+    }
+
+}
 ```
+this help us to organize our code.
 ## Creating Packages 🔲
 
 ```java
