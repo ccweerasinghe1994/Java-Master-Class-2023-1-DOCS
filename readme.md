@@ -971,8 +971,22 @@ public class Main {
 ```
 this help us to organize our code.
 ## Creating Packages 🔲
+- package name should be in lower case
+- should be in the src folder.
+- always should have a root package like com.chamara
+- [organization].[domain]
+
+![Alt text](image-23.png)
+
+![Alt text](image-24.png)
+
+![Alt text](image-25.png)
 
 ```java
+package com.chamara.email;
+
+public class EmailValidator {
+}
 
 ```
 ## Exploring Packages 🔲
