@@ -47,7 +47,6 @@
   - [Switch Statement 🔲](#switch-statement-)
   - [Data Types for Enums 🔲](#data-types-for-enums-)
   - [New Switch Expression 🔲](#new-switch-expression-)
-  - [Packages 🔲](#packages-)
   - [Creating Packages 🔲](#creating-packages-)
   - [Exploring Packages 🔲](#exploring-packages-)
   - [Import keyword 🔲](#import-keyword-)
@@ -144,7 +143,7 @@
   - [Instance Block Initializer 🔲](#instance-block-initializer-)
   - [Static Import  🔲](#static-import--)
   - [Intro 🔲](#intro--2)
-  - [Packages 🔲](#packages--1)
+  - [Packages 🔲](#packages-)
   - [Models 🔲](#models-)
   - [Service Classes 🔲](#service-classes-)
   - [Data Access Object 🔲](#data-access-object-)
@@ -923,7 +922,14 @@ public class Main {
 }
 ```
 
-modern switch statement
+## Data Types for Enums 🔲
+
+```java
+//  or Byte, Short, Integer, Character, String, or an enum
+```
+## New Switch Expression 🔲
+
+```java
 ```java
 package com.chamara;
 
@@ -934,7 +940,7 @@ public class Main {
         char grade = 'A';
 // grade can only be byte, short, int, char, String
 //  or Byte, Short, Integer, Character, String, or an enum
-        switch (grade) {
+        String result = switch (grade) {
             case 'A' -> System.out.println("Excellent!");
             case 'B', 'C' -> System.out.println("Well done");
             case 'D' -> System.out.println("You passed");
@@ -945,16 +951,6 @@ public class Main {
     }
 }
 ```
-
-## Data Types for Enums 🔲
-
-```java
-
-```
-## New Switch Expression 🔲
-
-```java
-
 ```
 ## Packages 🔲
 
