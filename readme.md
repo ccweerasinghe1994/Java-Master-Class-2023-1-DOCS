@@ -64,10 +64,10 @@
   - [Methods ✅](#methods-)
   - [Method that add 2 numbers ✅](#method-that-add-2-numbers-)
   - [Parameters and Arguments ✅](#parameters-and-arguments-)
-  - [Void methods 🔲](#void-methods-)
-  - [Naming Convention 🔲](#naming-convention-)
-  - [Exercise 🔲](#exercise-)
-  - [Exercise Solution 🔲](#exercise-solution-)
+  - [Void methods ✅](#void-methods-)
+  - [Naming Convention ✅](#naming-convention-)
+  - [Exercise ✅](#exercise-)
+  - [Exercise Solution ✅](#exercise-solution-)
   - [Understanding public static void main 🔲](#understanding-public-static-void-main-)
   - [Program Arguments 🔲](#program-arguments-)
   - [Type Inference with Var 🔲](#type-inference-with-var-)
@@ -1302,7 +1302,7 @@ private static int add(int a, int b) {
 // arguments
 add(12, 34)
 ```
-## Void methods 🔲
+## Void methods ✅
 
 ```java
 package com.chamara;
@@ -1319,20 +1319,33 @@ public class Main {
     }
 }
 ```
-## Naming Convention 🔲
+## Naming Convention ✅
+![Alt text](image-40.png)
+
+## Exercise ✅
+![Alt text](image-41.png)
+![Alt text](image-42.png)
+![Alt text](image-43.png)
+
+## Exercise Solution ✅
 
 ```java
+package com.chamara;
 
-```
-## Exercise 🔲
+public class Main {
+    public static String name = "Chamara";
 
-```java
+    public static void main(String[] args) {
+        System.out.println(rentelYield(40000, 100_000_000));
 
-```
-## Exercise Solution 🔲
+    }
 
-```java
-
+    public static double rentelYield(double rentel, double cost) {
+        double annualIncome = rentel * 12;
+        double yield = annualIncome / cost;
+        return yield / 100;
+    }
+}
 ```
 ## Understanding public static void main 🔲
 
