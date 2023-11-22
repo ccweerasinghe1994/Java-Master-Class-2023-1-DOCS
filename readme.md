@@ -48,10 +48,10 @@
   - [Data Types for Enums ✅](#data-types-for-enums-)
   - [New Switch Expression ✅](#new-switch-expression-)
   - [Packages ✅](#packages-)
-  - [Creating Packages 🔲](#creating-packages-)
-  - [Exploring Packages 🔲](#exploring-packages-)
-  - [Import keyword 🔲](#import-keyword-)
-  - [Optmizing imports 🔲](#optmizing-imports-)
+  - [Creating Packages ✅](#creating-packages-)
+  - [Exploring Packages ✅](#exploring-packages-)
+  - [Import keyword ✅](#import-keyword-)
+  - [Optimizing imports ✅](#optimizing-imports-)
   - [Import with fully qualified name 🔲](#import-with-fully-qualified-name-)
   - [No Import for java lang  🔲](#no-import-for-java-lang--)
   - [Access Modifiers Intro 🔲](#access-modifiers-intro-)
@@ -970,7 +970,7 @@ public class Main {
 }
 ```
 this help us to organize our code.
-## Creating Packages 🔲
+## Creating Packages ✅
 - package name should be in lower case
 - should be in the src folder.
 - always should have a root package like com.chamara
@@ -989,12 +989,12 @@ public class EmailValidator {
 }
 
 ```
-## Exploring Packages 🔲
+## Exploring Packages ✅
 
 ![Alt text](image-26.png)
 
 
-## Import keyword 🔲
+## Import keyword ✅
 how to use other packages in our package
 ```java
 package com.chamara;
@@ -1015,7 +1015,7 @@ public class Main {
 
 * means everything under awt
 
-## Optmizing imports 🔲
+## Optimizing imports ✅
 
 ```java
 package com.chamara;
