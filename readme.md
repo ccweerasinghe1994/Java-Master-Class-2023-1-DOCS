@@ -58,7 +58,7 @@
   - [Public Access Modifier ✅](#public-access-modifier-)
   - [Private ✅](#private-)
   - [Default ✅](#default-)
-  - [Recap 🔲](#recap-)
+  - [Recap ✅](#recap-)
   - [When To Use Each Access Modifier 🔲](#when-to-use-each-access-modifier-)
   - [Static Keyword 🔲](#static-keyword-)
   - [Methods 🔲](#methods-)
@@ -1213,11 +1213,9 @@ public class EmailValidator {
 }
 ```
 
-## Recap 🔲
+## Recap ✅
 
-```java
-
-```
+![Alt text](image-37.png)
 ## When To Use Each Access Modifier 🔲
 
 ```java
