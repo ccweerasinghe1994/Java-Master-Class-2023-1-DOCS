@@ -995,14 +995,45 @@ public class EmailValidator {
 
 
 ## Import keyword 🔲
-
+how to use other packages in our package
 ```java
+package com.chamara;
+// * means import all classes in the package
 
+import java.awt.*;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        Point point1 = new Point(1, 1);
+
+    }
+
+}
 ```
+![Alt text](image-27.png)
+
+* means everything under awt
+
 ## Optmizing imports 🔲
 
 ```java
+package com.chamara;
+// * means import all classes in the package
 
+import java.awt.Color;
+import java.awt.Point;
+import java.util.Arrays;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Point point1 = new Point(1, 1);
+        Color color1 = new Color(255, 0, 0);
+        Arrays.toString(new int[]{1, 2, 3, 4});
+    }
+
+}
 ```
 ## Import with fully qualified name 🔲
 
