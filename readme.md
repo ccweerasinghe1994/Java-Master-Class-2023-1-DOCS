@@ -57,7 +57,7 @@
   - [Access Modifiers Intro ✅](#access-modifiers-intro-)
   - [Public Access Modifier ✅](#public-access-modifier-)
   - [Private ✅](#private-)
-  - [Default 🔲](#default-)
+  - [Default ✅](#default-)
   - [Recap 🔲](#recap-)
   - [When To Use Each Access Modifier 🔲](#when-to-use-each-access-modifier-)
   - [Static Keyword 🔲](#static-keyword-)
@@ -1168,11 +1168,51 @@ now we can't access this variable from another class
 
 ![Alt text](image-34.png)
 
-## Default 🔲
+## Default ✅
+![Alt text](image-35.png)
+in a different package we can't access this variable
+![Alt text](image-36.png)
 
 ```java
+package com.chamara;
+
+public class Main {
+    static String name = "Chamara";
+
+    public static void main(String[] args) {
+//        this is a local variable to the main method
+//        if I try to make this public it will give an error
+        System.out.println(name);
+    }
+
+}
+```
+this works because we are in the same package
+```java
+package com.chamara;
+
+public class Foo {
+    public static void main(String[] args) {
+        Main.name
+    }
+}
 
 ```
+
+this doesn't work because we are in a different package
+```java
+package com.chamara.email;
+
+import com.chamara.Main;
+
+public class EmailValidator {
+    public static void main(String[] args) {
+        Main.main(args);
+        Main.name
+    }
+}
+```
+
 ## Recap 🔲
 
 ```java
