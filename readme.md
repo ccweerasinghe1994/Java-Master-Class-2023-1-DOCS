@@ -1223,8 +1223,30 @@ public class EmailValidator {
 ```
 ## Static Keyword 🔲
 
-```java
+static means it belongs to the class not to the object/instance
+we can't use non static variables inside a static context
+![Alt text](image-38.png)
+you can fix it by 
 
+![Alt text](image-39.png)
+
+
+```java
+package com.chamara;
+
+public class Main {
+    public static String name = "Chamara";
+    String brand = "CBRAND";
+
+    public static void main(String[] args) {
+//        this is a local variable to the main method
+//        if I try to make this public it will give an error
+        System.out.println(name);
+        Main main = new Main();
+        System.out.println(main.brand);
+    }
+
+}
 ```
 ## Methods 🔲
 
