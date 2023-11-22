@@ -1075,7 +1075,23 @@ public class Main {
 ## Access Modifiers Intro 🔲
 
 ```java
+package com.chamara;
 
+public class Main {
+
+    public static void main(String[] args) {
+//    Access Modifiers - Access modifiers are keywords that
+//    set the accessibility of classes, methods, and other members.
+//    There are four access modifiers:
+//    public - The code is accessible for all classes
+//    private - The code is only accessible within the declared class
+//    protected - The code is accessible in the same package
+//    and subclasses
+//    default - The code is only accessible in the same package
+
+    }
+
+}
 ```
 ## Public Access Modifier 🔲
 
