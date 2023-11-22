@@ -54,7 +54,7 @@
   - [Optimizing imports ✅](#optimizing-imports-)
   - [Import with fully qualified name 🔲](#import-with-fully-qualified-name-)
   - [No Import for java lang  ✅](#no-import-for-java-lang--)
-  - [Access Modifiers Intro 🔲](#access-modifiers-intro-)
+  - [Access Modifiers Intro ✅](#access-modifiers-intro-)
   - [Public Access Modifier 🔲](#public-access-modifier-)
   - [Private 🔲](#private-)
   - [Default 🔲](#default-)
@@ -1072,7 +1072,7 @@ public class Main {
 
 }
 ```
-## Access Modifiers Intro 🔲
+## Access Modifiers Intro ✅
 
 ```java
 package com.chamara;
