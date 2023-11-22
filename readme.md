@@ -75,7 +75,7 @@
   - [Continue ✅](#continue-)
   - [Return Keyword and Void Methods ✅](#return-keyword-and-void-methods-)
   - [Final Keyword ✅](#final-keyword-)
-  - [Enums 🔲](#enums-)
+  - [Enums ✅](#enums-)
   - [Enums Methods 🔲](#enums-methods-)
   - [Implicit and Explicit Type Casting 🔲](#implicit-and-explicit-type-casting-)
   - [Global and Local Variables 🔲](#global-and-local-variables-)
@@ -1523,10 +1523,30 @@ public class Main {
     }
 }
 ```
-## Enums 🔲
+## Enums ✅
 
 ```java
+package com.chamara;
 
+public enum Gender {
+    MALE,
+    FEMALE
+
+}
+
+```
+```java
+package com.chamara;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        System.out.println(Gender.MALE);
+        System.out.println(GenderConstants.FEMALE);
+        System.out.println(GenderConstants.MALE);
+    }
+}
 ```
 ## Enums Methods 🔲
 
