@@ -53,7 +53,7 @@
   - [Import keyword ✅](#import-keyword-)
   - [Optimizing imports ✅](#optimizing-imports-)
   - [Import with fully qualified name 🔲](#import-with-fully-qualified-name-)
-  - [No Import for java lang  🔲](#no-import-for-java-lang--)
+  - [No Import for java lang  ✅](#no-import-for-java-lang--)
   - [Access Modifiers Intro 🔲](#access-modifiers-intro-)
   - [Public Access Modifier 🔲](#public-access-modifier-)
   - [Private 🔲](#private-)
@@ -1028,22 +1028,49 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        Point point1 = new Point(1, 1);
-        Color color1 = new Color(255, 0, 0);
-        Arrays.toString(new int[]{1, 2, 3, 4});
+        
     }
 
 }
 ```
+![Alt text](image-28.png)
+
+
 ## Import with fully qualified name 🔲
 
-```java
+![Alt text](image-29.png)
+when there is a conflict between two classes we can use fully qualified name
 
+```java
+package com.chamara;
+
+import java.util.Date;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Date date = new Date();
+        java.sql.Date sqlDate = new java.sql.Date(0);
+    }
+
+}
 ```
-## No Import for java lang  🔲
+## No Import for java lang  ✅
 
 ```java
+package com.chamara;
 
+public class Main {
+
+    public static void main(String[] args) {
+//        there is no import statement why ?
+//        any package within the lang package is no need to imported
+//        lang package is the default package in java
+        String name = "Chamara";
+        double pi = Math.PI;
+    }
+
+}
 ```
 ## Access Modifiers Intro 🔲
 
