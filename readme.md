@@ -69,7 +69,7 @@
   - [Exercise ✅](#exercise-)
   - [Exercise Solution ✅](#exercise-solution-)
   - [Understanding public static void main ✅](#understanding-public-static-void-main-)
-  - [Program Arguments 🔲](#program-arguments-)
+  - [Program Arguments ✅](#program-arguments-)
   - [Type Inference with Var 🔲](#type-inference-with-var-)
   - [Break Keyword and Loops 🔲](#break-keyword-and-loops-)
   - [Continue 🔲](#continue-)
@@ -1369,7 +1369,6 @@ public class Main {
 }
 ```
 
-![Alt text](image-44.png)
 
 - public means accessible to all classes
 - static means it belongs to the class not to the object/instance
@@ -1378,13 +1377,13 @@ public class Main {
 - String[] args is the parameter
 - {} is the method body
 
+
+## Program Arguments ✅
+
+![Alt text](image-44.png)
+
 ![Alt text](image-45.png)
 
-## Program Arguments 🔲
-
-```java
-
-```
 ## Type Inference with Var 🔲
 
 ```java
