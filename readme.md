@@ -73,7 +73,7 @@
   - [Type Inference with Var ✅](#type-inference-with-var-)
   - [Break Keyword and Loops ✅](#break-keyword-and-loops-)
   - [Continue ✅](#continue-)
-  - [Return Keyword and Void Methods 🔲](#return-keyword-and-void-methods-)
+  - [Return Keyword and Void Methods ✅](#return-keyword-and-void-methods-)
   - [Final Keyword 🔲](#final-keyword-)
   - [Enums 🔲](#enums-)
   - [Enums Methods 🔲](#enums-methods-)
@@ -1454,11 +1454,43 @@ public class Main {
     }
 }
 ```
-## Return Keyword and Void Methods 🔲
+output
+```shell
+Chamara
+Nimal
+Sunil
+```
+## Return Keyword and Void Methods ✅
 
 ```java
+package com.chamara;
 
+public class Main {
+    public static void main(String[] args) {
+        var names = new String[]{
+                "Chamara",
+                "Kasun",
+                "Kamal",
+                "Nimal",
+                "Sunil"
+        };
+        for (var name : names) {
+
+            if (name.startsWith("K")) {
+                return;
+            }
+            System.out.println(name);
+        }
+        System.out.println("End of the loop");
+    }
+}
 ```
+
+output
+```shell
+Chamara
+```
+
 ## Final Keyword 🔲
 
 ```java
