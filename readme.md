@@ -55,8 +55,8 @@
   - [Import with fully qualified name 🔲](#import-with-fully-qualified-name-)
   - [No Import for java lang  ✅](#no-import-for-java-lang--)
   - [Access Modifiers Intro ✅](#access-modifiers-intro-)
-  - [Public Access Modifier 🔲](#public-access-modifier-)
-  - [Private 🔲](#private-)
+  - [Public Access Modifier ✅](#public-access-modifier-)
+  - [Private ✅](#private-)
   - [Default 🔲](#default-)
   - [Recap 🔲](#recap-)
   - [When To Use Each Access Modifier 🔲](#when-to-use-each-access-modifier-)
@@ -1093,7 +1093,9 @@ public class Main {
 
 }
 ```
-## Public Access Modifier 🔲
+## Public Access Modifier ✅
+
+
 public means accessible to all classes
 
 access modifiers are only for 
@@ -1144,11 +1146,28 @@ output
 
 ![Alt text](image-32.png)
 
-## Private 🔲
+## Private ✅
 
 ```java
+package com.chamara;
 
+public class Main {
+    private static String name = "Chamara";
+
+    public static void main(String[] args) {
+//        this is a local variable to the main method
+//        if I try to make this public it will give an error
+        System.out.println(name);
+    }
+
+}
 ```
+now we can't access this variable from another class
+
+![Alt text](image-33.png)
+
+![Alt text](image-34.png)
+
 ## Default 🔲
 
 ```java
