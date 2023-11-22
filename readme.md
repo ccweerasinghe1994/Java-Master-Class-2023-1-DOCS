@@ -74,7 +74,7 @@
   - [Break Keyword and Loops ✅](#break-keyword-and-loops-)
   - [Continue ✅](#continue-)
   - [Return Keyword and Void Methods ✅](#return-keyword-and-void-methods-)
-  - [Final Keyword 🔲](#final-keyword-)
+  - [Final Keyword ✅](#final-keyword-)
   - [Enums 🔲](#enums-)
   - [Enums Methods 🔲](#enums-methods-)
   - [Implicit and Explicit Type Casting 🔲](#implicit-and-explicit-type-casting-)
@@ -1491,10 +1491,37 @@ output
 Chamara
 ```
 
-## Final Keyword 🔲
+## Final Keyword ✅
+![Alt text](image-47.png)
+![Alt text](image-48.png)
+
+we can do this
+![Alt text](image-49.png)
+
 
 ```java
+package com.chamara;
 
+import java.awt.*;
+
+public class Main {
+    //    create a constant
+    public static final String NAME = "Chamara";
+
+    public static void main(String[] args) {
+//        final keyword
+//        we use final keyword to make a variable constant
+//        prevent inheritance
+//        prevent method overriding
+        final var name = "Chamara";
+//        name = "Kevin";
+        System.out.println(name);
+        final Point p = new Point(1, 2);
+        p.x = 2;
+        p.y = 3;
+        System.out.println(p);
+    }
+}
 ```
 ## Enums 🔲
 
