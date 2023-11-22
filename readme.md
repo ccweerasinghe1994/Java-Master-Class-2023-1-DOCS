@@ -1377,6 +1377,9 @@ public class Main {
 - main is the method name,main is a special method name in java.jvm uses this method to start the program
 - String[] args is the parameter
 - {} is the method body
+
+![Alt text](image-45.png)
+
 ## Program Arguments 🔲
 
 ```java
