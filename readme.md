@@ -71,7 +71,7 @@
   - [Understanding public static void main ✅](#understanding-public-static-void-main-)
   - [Program Arguments ✅](#program-arguments-)
   - [Type Inference with Var ✅](#type-inference-with-var-)
-  - [Break Keyword and Loops 🔲](#break-keyword-and-loops-)
+  - [Break Keyword and Loops ✅](#break-keyword-and-loops-)
   - [Continue 🔲](#continue-)
   - [Return Keyword and Void Methods 🔲](#return-keyword-and-void-methods-)
   - [Final Keyword 🔲](#final-keyword-)
@@ -1412,10 +1412,23 @@ public class Main {
 }
 ```
 ![Alt text](image-46.png)
-## Break Keyword and Loops 🔲
-
+## Break Keyword and Loops ✅
+this works with for, while, do while, switch
 ```java
+package com.chamara;
 
+public class Main {
+    public static void main(String[] args) {
+        var numebrs = new int[]{1, 2, 3, 4, 5};
+
+        for (var number : numebrs) {
+            if (number == 3) {
+                break;
+            }
+            System.out.println(number);
+        }
+    }
+}
 ```
 ## Continue 🔲
 
