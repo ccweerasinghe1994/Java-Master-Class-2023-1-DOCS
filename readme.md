@@ -68,7 +68,7 @@
   - [Naming Convention ✅](#naming-convention-)
   - [Exercise ✅](#exercise-)
   - [Exercise Solution ✅](#exercise-solution-)
-  - [Understanding public static void main 🔲](#understanding-public-static-void-main-)
+  - [Understanding public static void main ✅](#understanding-public-static-void-main-)
   - [Program Arguments 🔲](#program-arguments-)
   - [Type Inference with Var 🔲](#type-inference-with-var-)
   - [Break Keyword and Loops 🔲](#break-keyword-and-loops-)
@@ -1347,11 +1347,36 @@ public class Main {
     }
 }
 ```
-## Understanding public static void main 🔲
+## Understanding public static void main ✅
 
 ```java
+package com.chamara;
 
+import java.util.Arrays;
+
+public class Main {
+    public static String name = "Chamara";
+
+    public static void main(String[] args) {
+
+        if (args.length > 0) {
+            System.out.println(Arrays.toString(args));
+        } else {
+            System.out.println("No arguments");
+        }
+
+    }
+}
 ```
+
+![Alt text](image-44.png)
+
+- public means accessible to all classes
+- static means it belongs to the class not to the object/instance
+- void means it doesn't return anything
+- main is the method name,main is a special method name in java.jvm uses this method to start the program
+- String[] args is the parameter
+- {} is the method body
 ## Program Arguments 🔲
 
 ```java
