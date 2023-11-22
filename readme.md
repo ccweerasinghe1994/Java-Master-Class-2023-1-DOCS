@@ -70,7 +70,7 @@
   - [Exercise Solution ✅](#exercise-solution-)
   - [Understanding public static void main ✅](#understanding-public-static-void-main-)
   - [Program Arguments ✅](#program-arguments-)
-  - [Type Inference with Var 🔲](#type-inference-with-var-)
+  - [Type Inference with Var ✅](#type-inference-with-var-)
   - [Break Keyword and Loops 🔲](#break-keyword-and-loops-)
   - [Continue 🔲](#continue-)
   - [Return Keyword and Void Methods 🔲](#return-keyword-and-void-methods-)
@@ -1384,11 +1384,34 @@ public class Main {
 
 ![Alt text](image-45.png)
 
-## Type Inference with Var 🔲
+## Type Inference with Var ✅
 
 ```java
+package com.chamara;
 
+public class Main {
+    public static String name = "Chamara";
+
+    public static void main(String[] args) {
+//        cannot use var in class level
+//        var name = "Chamara";
+//        this is not allowed
+//        Type inference with var
+        var name = "Chamara";
+        var names = new String[]{"Chamara", "Kasun", "Nimal", "Kamal"};
+        var age = 25;
+        var isAdult = false;
+        var balance = 1_000_000.33;
+
+    }
+
+    //    this is not allowed
+//    public static void printName(var name) {
+//        System.out.println(name);
+//    }
+}
 ```
+![Alt text](image-46.png)
 ## Break Keyword and Loops 🔲
 
 ```java
