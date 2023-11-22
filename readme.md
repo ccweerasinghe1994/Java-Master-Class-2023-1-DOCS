@@ -63,7 +63,7 @@
   - [Static Keyword 🔲](#static-keyword-)
   - [Methods ✅](#methods-)
   - [Method that add 2 numbers ✅](#method-that-add-2-numbers-)
-  - [Parameters and Arguments 🔲](#parameters-and-arguments-)
+  - [Parameters and Arguments ✅](#parameters-and-arguments-)
   - [Void methods 🔲](#void-methods-)
   - [Naming Convention 🔲](#naming-convention-)
   - [Exercise 🔲](#exercise-)
@@ -1291,10 +1291,16 @@ public class Main {
 
 }
 ```
-## Parameters and Arguments 🔲
+## Parameters and Arguments ✅
 
 ```java
+// parameter
+private static int add(int a, int b) {
+        return a + b;
+    }
 
+// arguments
+add(12, 34)
 ```
 ## Void methods 🔲
 
