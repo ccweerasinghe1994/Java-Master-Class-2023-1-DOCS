@@ -61,7 +61,7 @@
   - [Recap ✅](#recap-)
   - [When To Use Each Access Modifier 🔲](#when-to-use-each-access-modifier-)
   - [Static Keyword 🔲](#static-keyword-)
-  - [Methods 🔲](#methods-)
+  - [Methods ✅](#methods-)
   - [Method that add 2 numbers 🔲](#method-that-add-2-numbers-)
   - [Parameters and Arguments 🔲](#parameters-and-arguments-)
   - [Void methods 🔲](#void-methods-)
@@ -1248,10 +1248,29 @@ public class Main {
 
 }
 ```
-## Methods 🔲
+## Methods ✅
 
 ```java
+package com.chamara;
 
+public class Main {
+    public static String name = "Chamara";
+
+    //    this is a method
+    /*
+     * when we create a method
+     * first we have to define the access modifier -> public
+     * optional -> static
+     * then we have to define the return type -> void
+     * then we have to define the method name -> main
+     * then we have to define the parameters -> String[] args
+     * then we have to define the method body -> {}
+     * */
+    public static void main(String[] args) {
+//        body
+    }
+
+}
 ```
 ## Method that add 2 numbers 🔲
 
