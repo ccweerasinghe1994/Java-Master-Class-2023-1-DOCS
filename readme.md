@@ -1094,10 +1094,56 @@ public class Main {
 }
 ```
 ## Public Access Modifier 🔲
+public means accessible to all classes
+
+access modifiers are only for 
+- classes
+- methods
+- attributes
+- constructors
+
+
+this is giving an error because we can't have a access modifier for a local variable
+![Alt text](image-30.png)
+
+folder structure
+
+![Alt text](image-31.png)
 
 ```java
+package com.chamara;
+
+public class Main {
+    public static String name = "Chamara";
+
+    public static void main(String[] args) {
+//        this is a local variable to the main method
+//        if I try to make this public it will give an error
+        String name = "Chamara";
+    }
+
+}
+```
+```java
+package com.chamara.email;
+
+import com.chamara.Main;
+
+public class EmailValidator {
+    public static void main(String[] args) {
+        String name = Main.name;
+        System.out.println(name);
+        Main.main(args);
+
+    }
+}
 
 ```
+
+output
+
+![Alt text](image-32.png)
+
 ## Private 🔲
 
 ```java
