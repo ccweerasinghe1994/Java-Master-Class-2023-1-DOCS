@@ -62,7 +62,7 @@
   - [When To Use Each Access Modifier 🔲](#when-to-use-each-access-modifier-)
   - [Static Keyword 🔲](#static-keyword-)
   - [Methods ✅](#methods-)
-  - [Method that add 2 numbers 🔲](#method-that-add-2-numbers-)
+  - [Method that add 2 numbers ✅](#method-that-add-2-numbers-)
   - [Parameters and Arguments 🔲](#parameters-and-arguments-)
   - [Void methods 🔲](#void-methods-)
   - [Naming Convention 🔲](#naming-convention-)
@@ -1272,10 +1272,24 @@ public class Main {
 
 }
 ```
-## Method that add 2 numbers 🔲
+## Method that add 2 numbers ✅
 
 ```java
+package com.chamara;
 
+public class Main {
+    public static String name = "Chamara";
+
+    public static void main(String[] args) {
+        int response = add(12, 34);
+        System.out.println(response);
+    }
+
+    private static int add(int a, int b) {
+        return a + b;
+    }
+
+}
 ```
 ## Parameters and Arguments 🔲
 
