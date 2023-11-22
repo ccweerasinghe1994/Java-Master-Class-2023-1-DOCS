@@ -1305,7 +1305,19 @@ add(12, 34)
 ## Void methods 🔲
 
 ```java
+package com.chamara;
 
+public class Main {
+    public static String name = "Chamara";
+
+    public static void main(String[] args) {
+        printName();
+    }
+
+    private static void printName() {
+        System.out.println(name);
+    }
+}
 ```
 ## Naming Convention 🔲
 
