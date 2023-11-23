@@ -1788,9 +1788,10 @@ public class Main {
 // true
 ```
 ## Useful String static Methods 🔲
-
+![Alt text](image-56.png)
 ```java
-
+String name = String.join("-", "Chamara", "Kasun", "Nimal", "Kamal");
+// Chamara-Kasun-Nimal-Kamal
 ```
 ## LocalDateTime 🔲
 
