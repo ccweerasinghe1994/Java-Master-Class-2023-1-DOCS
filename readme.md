@@ -79,7 +79,7 @@
   - [Enums Methods ✅](#enums-methods-)
   - [Implicit and Explicit Type Casting ✅](#implicit-and-explicit-type-casting-)
   - [Global and Local Variables ✅](#global-and-local-variables-)
-  - [Wrapper Classes 🔲](#wrapper-classes-)
+  - [Wrapper Classes ✅](#wrapper-classes-)
   - [Working With Strings 🔲](#working-with-strings-)
   - [How Strings are stored in memory 🔲](#how-strings-are-stored-in-memory-)
   - [Strings are Immutable 🔲](#strings-are-immutable-)
@@ -1628,10 +1628,24 @@ Toyota
 Chamara
 ```
 
-## Wrapper Classes 🔲
-
+## Wrapper Classes ✅
+![Alt text](image-50.png)
 ```java
+package com.chamara;
 
+// local and global scope example
+public class Main {
+    public static void main(String[] args) {
+//        Primitive data types wrapper classes
+//        byte, short, int, long, float, double, boolean, char
+//        Byte, Short, Integer, Long, Float, Double, Boolean, Character
+
+        int a = 10;
+        Integer b = 10;
+        int x = b.intValue();
+        System.out.println(x);
+    }
+}
 ```
 ## Working With Strings 🔲
 
