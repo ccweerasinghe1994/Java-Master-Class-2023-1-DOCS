@@ -86,7 +86,7 @@
   - [String Literal vs String Object ✅](#string-literal-vs-string-object-)
   - [Comparing Strings with == ✅](#comparing-strings-with--)
   - [Comparing Strings with .equals ✅](#comparing-strings-with-equals-)
-  - [Useful String static Methods 🔲](#useful-string-static-methods-)
+  - [Useful String static Methods ✅](#useful-string-static-methods-)
   - [LocalDateTime 🔲](#localdatetime-)
   - [LocalDate and LocalTime 🔲](#localdate-and-localtime-)
   - [Creating Specif Dates 🔲](#creating-specif-dates-)
@@ -1787,7 +1787,7 @@ public class Main {
 // true
 // true
 ```
-## Useful String static Methods 🔲
+## Useful String static Methods ✅
 ![Alt text](image-56.png)
 ```java
 String name = String.join("-", "Chamara", "Kasun", "Nimal", "Kamal");
