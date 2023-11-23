@@ -87,7 +87,7 @@
   - [Comparing Strings with == ✅](#comparing-strings-with--)
   - [Comparing Strings with .equals ✅](#comparing-strings-with-equals-)
   - [Useful String static Methods ✅](#useful-string-static-methods-)
-  - [LocalDateTime 🔲](#localdatetime-)
+  - [LocalDateTime ✅](#localdatetime-)
   - [LocalDate and LocalTime 🔲](#localdate-and-localtime-)
   - [Creating Specif Dates 🔲](#creating-specif-dates-)
   - [ZoneIds 🔲](#zoneids-)
@@ -1793,10 +1793,36 @@ public class Main {
 String name = String.join("-", "Chamara", "Kasun", "Nimal", "Kamal");
 // Chamara-Kasun-Nimal-Kamal
 ```
-## LocalDateTime 🔲
+## LocalDateTime ✅
 
 ```java
+package com.chamara;
 
+import java.time.LocalDateTime;
+
+// local and global scope example
+public class Main {
+    public static void main(String[] args) {
+        LocalDateTime now = LocalDateTime.now();
+        System.out.println(now);
+        System.out.println(now.getDayOfWeek());
+        System.out.println(now.getMonth());
+        System.out.println(now.getYear());
+        System.out.println(now.getHour());
+        System.out.println(now.getMinute());
+        System.out.println(now.getSecond());
+
+    }
+}
+```
+```shell
+2023-11-23T11:01:00.698168200
+THURSDAY
+NOVEMBER
+2023
+11
+1
+0
 ```
 ## LocalDate and LocalTime 🔲
 
