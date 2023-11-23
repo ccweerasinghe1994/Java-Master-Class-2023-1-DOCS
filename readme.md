@@ -83,7 +83,7 @@
   - [Working With Strings ✅](#working-with-strings-)
   - [How Strings are stored in memory ✅](#how-strings-are-stored-in-memory-)
   - [Strings are Immutable ✅](#strings-are-immutable-)
-  - [String Literal vs String Object 🔲](#string-literal-vs-string-object-)
+  - [String Literal vs String Object ✅](#string-literal-vs-string-object-)
   - [Comparing Strings with == 🔲](#comparing-strings-with--)
   - [Comparing Strings with .equals 🔲](#comparing-strings-with-equals-)
   - [Useful String static Methods 🔲](#useful-string-static-methods-)
@@ -1720,10 +1720,22 @@ Finally, strings are more efficient when they are immutable, because the java vi
 
 ![Alt text](image-53.png)
 
-## String Literal vs String Object 🔲
-
+## String Literal vs String Object ✅
+![Alt text](image-54.png)
 ```java
+package com.chamara;
 
+// local and global scope example
+public class Main {
+    public static void main(String[] args) {
+//        string literal
+//        this is in the string pool
+        String name = "Chamara";
+//        this is in the heap
+// this is bad practice
+        String name2 = new String("Chamara");
+    }
+}
 ```
 ## Comparing Strings with == 🔲
 
