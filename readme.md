@@ -78,7 +78,7 @@
   - [Enums ✅](#enums-)
   - [Enums Methods ✅](#enums-methods-)
   - [Implicit and Explicit Type Casting ✅](#implicit-and-explicit-type-casting-)
-  - [Global and Local Variables 🔲](#global-and-local-variables-)
+  - [Global and Local Variables ✅](#global-and-local-variables-)
   - [Wrapper Classes 🔲](#wrapper-classes-)
   - [Working With Strings 🔲](#working-with-strings-)
   - [How Strings are stored in memory 🔲](#how-strings-are-stored-in-memory-)
@@ -1590,11 +1590,44 @@ public class Main {
     }
 }
 ```
-## Global and Local Variables 🔲
+## Global and Local Variables ✅
 
 ```java
+package com.chamara;
+
+// local and global scope example
+public class Main {
+    final static public String name = "Chamara";
+    final static private String BRAND = "Toyota";
+
+    public static void main(String[] args) {
+        var name = "Kasun";
+        System.out.println(name);
+        System.out.println(BRAND);
+        Foo.test();
+    }
+}
+```
+
+```java
+package com.chamara;
+
+public class Foo {
+    static void test() {
+        System.out.println(Main.name);
+    }
+}
 
 ```
+
+local variable has the highest priority.
+
+```shell
+Kasun
+Toyota
+Chamara
+```
+
 ## Wrapper Classes 🔲
 
 ```java
