@@ -77,7 +77,7 @@
   - [Final Keyword ✅](#final-keyword-)
   - [Enums ✅](#enums-)
   - [Enums Methods ✅](#enums-methods-)
-  - [Implicit and Explicit Type Casting 🔲](#implicit-and-explicit-type-casting-)
+  - [Implicit and Explicit Type Casting ✅](#implicit-and-explicit-type-casting-)
   - [Global and Local Variables 🔲](#global-and-local-variables-)
   - [Wrapper Classes 🔲](#wrapper-classes-)
   - [Working With Strings 🔲](#working-with-strings-)
@@ -1564,10 +1564,31 @@ public class Main {
     }
 }
 ```
-## Implicit and Explicit Type Casting 🔲
+## Implicit and Explicit Type Casting ✅
 
 ```java
+package com.chamara;
 
+public class Main {
+
+
+    public static void main(String[] args) {
+//        type casting - converting one type to another
+//        Implicit type casting - done by the compiler(widening)
+//        Explicit type casting - done by the programmer
+        int balance = 100;
+        System.out.println(balance);
+        double newBalance = balance;
+        System.out.println(newBalance);
+
+//        Explicit type casting - done by the programmer(Narrowing)
+        double newBalance2 = 100.5;
+        System.out.println(newBalance2);
+        int balance2 = (int) newBalance2;
+        System.out.println(balance2);
+
+    }
+}
 ```
 ## Global and Local Variables 🔲
 
