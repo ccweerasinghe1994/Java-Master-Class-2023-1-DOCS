@@ -81,8 +81,8 @@
   - [Global and Local Variables ✅](#global-and-local-variables-)
   - [Wrapper Classes ✅](#wrapper-classes-)
   - [Working With Strings ✅](#working-with-strings-)
-  - [How Strings are stored in memory 🔲](#how-strings-are-stored-in-memory-)
-  - [Strings are Immutable 🔲](#strings-are-immutable-)
+  - [How Strings are stored in memory ✅](#how-strings-are-stored-in-memory-)
+  - [Strings are Immutable ✅](#strings-are-immutable-)
   - [String Literal vs String Object 🔲](#string-literal-vs-string-object-)
   - [Comparing Strings with == 🔲](#comparing-strings-with--)
   - [Comparing Strings with .equals 🔲](#comparing-strings-with-equals-)
@@ -1703,7 +1703,7 @@ public class Main {
     }
 }
 ```
-## How Strings are stored in memory 🔲
+## How Strings are stored in memory ✅
 
 documentation https://www.textbook.amigoscode.com/docs/java/strings#how-strings-are-stored
 
@@ -1711,14 +1711,15 @@ When a Java program is run, the Java Virtual Machine (JVM) loads the program int
 
 ![Alt text](image-52.png)
 
-```java
+## Strings are Immutable ✅
+Strings in java are immutable because they are constant. The value of a string cannot be changed once it is created. strings are also thread-safe, meaning that they can be safely used in concurrent programming without the risk of data corruption.
 
-```
-## Strings are Immutable 🔲
+Immutability also makes strings more secure, because they cannot be modified by malicious code.
 
-```java
+Finally, strings are more efficient when they are immutable, because the java virtual machine can optimize them better.
 
-```
+![Alt text](image-53.png)
+
 ## String Literal vs String Object 🔲
 
 ```java
