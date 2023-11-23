@@ -80,7 +80,7 @@
   - [Implicit and Explicit Type Casting ✅](#implicit-and-explicit-type-casting-)
   - [Global and Local Variables ✅](#global-and-local-variables-)
   - [Wrapper Classes ✅](#wrapper-classes-)
-  - [Working With Strings 🔲](#working-with-strings-)
+  - [Working With Strings ✅](#working-with-strings-)
   - [How Strings are stored in memory 🔲](#how-strings-are-stored-in-memory-)
   - [Strings are Immutable 🔲](#strings-are-immutable-)
   - [String Literal vs String Object 🔲](#string-literal-vs-string-object-)
@@ -1647,10 +1647,61 @@ public class Main {
     }
 }
 ```
-## Working With Strings 🔲
-
+## Working With Strings ✅
+documentation https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html
 ```java
 
+```
+![Alt text](image-51.png)
+```java
+package com.chamara;
+
+// local and global scope example
+public class Main {
+    public static void main(String[] args) {
+//        Strings
+        String name = " Chamara ";
+        System.out.println(name.toLowerCase());
+//        -> chamara
+        System.out.println(name.toUpperCase());
+//        -> CHAMARA
+        System.out.println(name.trim());
+//        -> Chamara
+        System.out.println(name.replace("a", "A"));
+//        -> ChAmArA
+        System.out.println(name.replace("a", "A").trim());
+//        -> ChAmArA
+        System.out.println(name);
+//        ->  Chamara
+        System.out.println(" ".isBlank());
+//        -> true
+        System.out.println(" ".isEmpty());
+//        -> false
+        System.out.println(name.length());
+//        -> 9
+        System.out.println(name.charAt(0));
+//        -> " "
+        System.out.println(name.indexOf("a"));
+//        -> 2
+        System.out.println(name.lastIndexOf("a"));
+//        -> 7
+        System.out.println(name.substring(1));
+//        -> Chamara
+        System.out.println(name.substring(1, 4));
+//        -> Cha
+        System.out.println(name.contains("a"));
+//        -> true
+        System.out.println(name.startsWith(" "));
+//        -> true
+        System.out.println(name.endsWith(" "));
+//        -> true
+        System.out.println(name.equals(" Chamara "));
+//        -> true
+        System.out.println(name.equalsIgnoreCase(" chamara "));
+//        -> true
+        
+    }
+}
 ```
 ## How Strings are stored in memory 🔲
 
