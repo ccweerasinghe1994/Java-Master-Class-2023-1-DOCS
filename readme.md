@@ -76,7 +76,7 @@
   - [Return Keyword and Void Methods ✅](#return-keyword-and-void-methods-)
   - [Final Keyword ✅](#final-keyword-)
   - [Enums ✅](#enums-)
-  - [Enums Methods 🔲](#enums-methods-)
+  - [Enums Methods ✅](#enums-methods-)
   - [Implicit and Explicit Type Casting 🔲](#implicit-and-explicit-type-casting-)
   - [Global and Local Variables 🔲](#global-and-local-variables-)
   - [Wrapper Classes 🔲](#wrapper-classes-)
@@ -1548,10 +1548,21 @@ public class Main {
     }
 }
 ```
-## Enums Methods 🔲
+## Enums Methods ✅
 
 ```java
+package com.chamara;
 
+import java.util.Arrays;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        System.out.println(Gender.valueOf("FEMALE"));
+        System.out.println(Arrays.toString(Gender.values()));
+    }
+}
 ```
 ## Implicit and Explicit Type Casting 🔲
 
