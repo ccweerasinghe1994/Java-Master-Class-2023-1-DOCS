@@ -85,7 +85,7 @@
   - [Strings are Immutable ✅](#strings-are-immutable-)
   - [String Literal vs String Object ✅](#string-literal-vs-string-object-)
   - [Comparing Strings with == ✅](#comparing-strings-with--)
-  - [Comparing Strings with .equals 🔲](#comparing-strings-with-equals-)
+  - [Comparing Strings with .equals ✅](#comparing-strings-with-equals-)
   - [Useful String static Methods 🔲](#useful-string-static-methods-)
   - [LocalDateTime 🔲](#localdatetime-)
   - [LocalDate and LocalTime 🔲](#localdate-and-localtime-)
@@ -1763,10 +1763,29 @@ public class Main {
 // true
 // true
 ```
-## Comparing Strings with .equals 🔲
+## Comparing Strings with .equals ✅
 
 ```java
+package com.chamara;
 
+// local and global scope example
+public class Main {
+    public static void main(String[] args) {
+        String name1 = "Chamara";
+        String name2 = "Chamara";
+        String name3 = new String("Chamara");
+//    bad way to compare strings
+        System.out.println(name1 == name2);
+        System.out.println(name1 == name3);
+//        good way to compare strings
+        System.out.println(name1.equals(name2));
+        System.out.println(name1.equals(name3));
+    }
+}
+// true
+// false
+// true
+// true
 ```
 ## Useful String static Methods 🔲
 
