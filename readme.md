@@ -1705,6 +1705,12 @@ public class Main {
 ```
 ## How Strings are stored in memory 🔲
 
+documentation https://www.textbook.amigoscode.com/docs/java/strings#how-strings-are-stored
+
+When a Java program is run, the Java Virtual Machine (JVM) loads the program into memory and creates an instance of the java.lang.String class to represent each string literal used in the program. Strings are immutable, which means that once they are created, they cannot be changed. When a string is concatenated with another string, a new string object is created that represents the concatenated strings. The java.lang.StringBuilder class can be used to modify strings more efficiently. Strings are stored in a contiguous area of memory, which means that they can be accessed quickly. However, this also means that strings take up more memory than other data types.
+
+![Alt text](image-52.png)
+
 ```java
 
 ```
