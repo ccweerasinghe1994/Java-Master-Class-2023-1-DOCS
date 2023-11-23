@@ -88,7 +88,7 @@
   - [Comparing Strings with .equals ✅](#comparing-strings-with-equals-)
   - [Useful String static Methods ✅](#useful-string-static-methods-)
   - [LocalDateTime ✅](#localdatetime-)
-  - [LocalDate and LocalTime 🔲](#localdate-and-localtime-)
+  - [LocalDate and LocalTime ✅](#localdate-and-localtime-)
   - [Creating Specif Dates 🔲](#creating-specif-dates-)
   - [ZoneIds 🔲](#zoneids-)
   - [Other Date Classes 🔲](#other-date-classes-)
@@ -1824,9 +1824,71 @@ NOVEMBER
 1
 0
 ```
-## LocalDate and LocalTime 🔲
+## LocalDate and LocalTime ✅
+
 
 ```java
+package com.chamara;
+
+
+import java.time.LocalDate;
+
+// local and global scope example
+public class Main {
+    public static void main(String[] args) {
+        LocalDate dateOfBirth = LocalDate.of(1995, 8, 22);
+        System.out.println(dateOfBirth);
+        System.out.println(dateOfBirth.getDayOfWeek());
+        System.out.println(dateOfBirth.getDayOfYear());
+        System.out.println(dateOfBirth.getMonth());
+        System.out.println(dateOfBirth.getMonthValue());
+        System.out.println(dateOfBirth.getYear());
+        System.out.println(dateOfBirth.isLeapYear());
+        System.out.println(dateOfBirth.lengthOfMonth());
+        System.out.println(dateOfBirth.lengthOfYear());
+        System.out.println(dateOfBirth.plusDays(1));
+        System.out.println(dateOfBirth.plusMonths(1));
+        System.out.println(dateOfBirth.plusYears(1));
+        System.out.println(dateOfBirth.minusDays(1));
+        System.out.println(dateOfBirth.minusMonths(1));
+        System.out.println(dateOfBirth.minusYears(1));
+        System.out.println(dateOfBirth.withDayOfMonth(1));
+        System.out.println(dateOfBirth.withDayOfYear(1));
+        System.out.println(dateOfBirth.withMonth(1));
+        System.out.println(dateOfBirth.withYear(1));
+        System.out.println(dateOfBirth.withYear(1996));
+        System.out.println(dateOfBirth.withYear(1996).withMonth(1).withDayOfMonth(1));
+        System.out.println(dateOfBirth.withYear(1996).withMonth(1).withDayOfMonth(1).getDayOfWeek());
+        System.out.println(dateOfBirth.withYear(1996).withMonth(1).withDayOfMonth(1).getDayOfWeek().getValue());
+        System.out.println(dateOfBirth.withYear(1996).withMonth(1).withDayOfMonth(1).getDayOfWeek().getValue() % 2 == 0);
+            
+    }
+}
+```
+```shell
+
+1995-08-22
+TUESDAY
+234
+AUGUST
+8
+1995
+false
+31
+365
+1995-08-23
+1995-09-22
+1996-08-22
+1995-08-21
+1995-07-22
+1994-08-22
+1995-08-01
+1995-01-01
+1995-01-22
+0001-08-22
+1996-08-22
+
+Process finished with exit code 0
 
 ```
 ## Creating Specif Dates 🔲
