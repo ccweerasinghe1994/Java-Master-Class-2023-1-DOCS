@@ -84,7 +84,7 @@
   - [How Strings are stored in memory ✅](#how-strings-are-stored-in-memory-)
   - [Strings are Immutable ✅](#strings-are-immutable-)
   - [String Literal vs String Object ✅](#string-literal-vs-string-object-)
-  - [Comparing Strings with == 🔲](#comparing-strings-with--)
+  - [Comparing Strings with == ✅](#comparing-strings-with--)
   - [Comparing Strings with .equals 🔲](#comparing-strings-with-equals-)
   - [Useful String static Methods 🔲](#useful-string-static-methods-)
   - [LocalDateTime 🔲](#localdatetime-)
@@ -1737,10 +1737,31 @@ public class Main {
     }
 }
 ```
-## Comparing Strings with == 🔲
+## Comparing Strings with == ✅
+![Alt text](image-55.png)
+== compares the reference not the value
 
 ```java
+package com.chamara;
 
+// local and global scope example
+public class Main {
+    public static void main(String[] args) {
+        String name1 = "Chamara";
+        String name2 = "Chamara";
+        String name3 = new String("Chamara");
+//    bad way to compare strings
+        System.out.println(name1 == name2);
+        System.out.println(name1 == name3);
+//        good way to compare strings
+        System.out.println(name1.equals(name2));
+        System.out.println(name1.equals(name3));
+    }
+}
+// true
+// false
+// true
+// true
 ```
 ## Comparing Strings with .equals 🔲
 
