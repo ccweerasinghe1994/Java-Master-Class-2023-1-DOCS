@@ -89,7 +89,7 @@
   - [Useful String static Methods ✅](#useful-string-static-methods-)
   - [LocalDateTime ✅](#localdatetime-)
   - [LocalDate and LocalTime ✅](#localdate-and-localtime-)
-  - [Creating Specif Dates 🔲](#creating-specif-dates-)
+  - [Creating Specif Dates ✅](#creating-specif-dates-)
   - [ZoneIds 🔲](#zoneids-)
   - [Other Date Classes 🔲](#other-date-classes-)
   - [The Problem With double 🔲](#the-problem-with-double-)
@@ -1891,10 +1891,33 @@ false
 Process finished with exit code 0
 
 ```
-## Creating Specif Dates 🔲
+## Creating Specif Dates ✅
 
 ```java
+package com.chamara;
 
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+
+// local and global scope example
+public class Main {
+    public static void main(String[] args) {
+        LocalDateTime localDateTime = LocalDateTime.of(2021, 1, 1, 1, 1, 1);
+        System.out.println(localDateTime);
+        LocalDate localDate = LocalDate.of(2021, 1, 1);
+        System.out.println(localDate);
+        LocalTime localTime = LocalTime.of(1, 1, 1);
+        System.out.println(localTime);
+    }
+}
+```
+
+```shell
+2021-01-01T01:01:01
+2021-01-01
+01:01:01
 ```
 ## ZoneIds 🔲
 
