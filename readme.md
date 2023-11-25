@@ -1959,8 +1959,30 @@ Europe/Monaco
 ## Other Date Classes 🔲
 
 ```java
+package com.chamara;
 
+
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
+
+// local and global scope example
+public class Main {
+    public static void main(String[] args) {
+        ZonedDateTime zonedDateTime = ZonedDateTime.now();
+        System.out.println(zonedDateTime);
+        System.out.println(LocalDateTime.now());
+        System.out.println(Instant.now());
+    }
+}
 ```
+
+```shell
+2023-11-25T07:52:27.321075700+05:30[Asia/Colombo]
+2023-11-25T07:52:27.321075700
+2023-11-25T02:22:27.322073900Z
+```
+
 ## The Problem With double 🔲
 
 ```java
