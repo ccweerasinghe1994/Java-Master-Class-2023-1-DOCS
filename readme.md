@@ -91,8 +91,8 @@
   - [LocalDate and LocalTime ✅](#localdate-and-localtime-)
   - [Creating Specif Dates ✅](#creating-specif-dates-)
   - [ZoneIds ✅](#zoneids-)
-  - [Other Date Classes 🔲](#other-date-classes-)
-  - [The Problem With double 🔲](#the-problem-with-double-)
+  - [Other Date Classes ✅](#other-date-classes-)
+  - [The Problem With double ✅](#the-problem-with-double-)
   - [BigDecimal 🔲](#bigdecimal-)
   - [Exploring BigDecimal Methods  🔲](#exploring-bigdecimal-methods--)
   - [Scanner 🔲](#scanner-)
@@ -1956,7 +1956,7 @@ Europe/Monaco
 2023-11-25T07:48:45.621711
 2023-11-25T13:18:45.624287
 ```
-## Other Date Classes 🔲
+## Other Date Classes ✅
 
 ```java
 package com.chamara;
@@ -1983,10 +1983,23 @@ public class Main {
 2023-11-25T02:22:27.322073900Z
 ```
 
-## The Problem With double 🔲
+## The Problem With double ✅
 
 ```java
+package com.chamara;
 
+
+// local and global scope example
+public class Main {
+    public static void main(String[] args) {
+        double number1 = 10.04;
+        double number2 = 10.05;
+        double result = number2 - number1;
+        System.out.println(result);
+    }
+}
+
+// 0.010000000000001563
 ```
 ## BigDecimal 🔲
 
