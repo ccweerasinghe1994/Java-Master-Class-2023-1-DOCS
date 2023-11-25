@@ -90,7 +90,7 @@
   - [LocalDateTime ✅](#localdatetime-)
   - [LocalDate and LocalTime ✅](#localdate-and-localtime-)
   - [Creating Specif Dates ✅](#creating-specif-dates-)
-  - [ZoneIds 🔲](#zoneids-)
+  - [ZoneIds ✅](#zoneids-)
   - [Other Date Classes 🔲](#other-date-classes-)
   - [The Problem With double 🔲](#the-problem-with-double-)
   - [BigDecimal 🔲](#bigdecimal-)
@@ -1919,10 +1919,42 @@ public class Main {
 2021-01-01
 01:01:01
 ```
-## ZoneIds 🔲
+## ZoneIds ✅
 
 ```java
+package com.chamara;
 
+
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+
+// local and global scope example
+public class Main {
+    public static void main(String[] args) {
+        for (String zone : ZoneId.getAvailableZoneIds()) {
+            System.out.println(zone);
+        }
+
+        LocalDateTime localDateTime = LocalDateTime.now();
+        System.out.println(localDateTime);
+        LocalDateTime localSydnyDateTime = LocalDateTime.now(ZoneId.of("Australia/Sydney"));
+        System.out.println(localSydnyDateTime);
+    }
+}
+```
+```shell
+Australia/Lindeman
+America/Los_Angeles
+SystemV/EST5EDT
+Pacific/Majuro
+America/Argentina/Buenos_Aires
+Europe/Nicosia
+Pacific/Guadalcanal
+Europe/Athens
+US/Pacific
+Europe/Monaco
+2023-11-25T07:48:45.621711
+2023-11-25T13:18:45.624287
 ```
 ## Other Date Classes 🔲
 
