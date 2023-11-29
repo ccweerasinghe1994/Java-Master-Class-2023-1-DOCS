@@ -94,8 +94,8 @@
   - [Other Date Classes ✅](#other-date-classes-)
   - [The Problem With double ✅](#the-problem-with-double-)
   - [BigDecimal ✅](#bigdecimal-)
-  - [Exploring BigDecimal Methods  🔲](#exploring-bigdecimal-methods--)
-  - [Scanner 🔲](#scanner-)
+  - [Exploring BigDecimal Methods ✅](#exploring-bigdecimal-methods-)
+  - [Scanner ✅](#scanner-)
   - [NextInt and other data types 🔲](#nextint-and-other-data-types-)
   - [Outro 🔲](#outro-)
   - [Intro 🔲](#intro-)
@@ -2017,7 +2017,7 @@ public class Main {
 
 // 1.00
 ```
-## Exploring BigDecimal Methods  🔲
+## Exploring BigDecimal Methods ✅
 
 ```java
 import java.math.BigDecimal;
@@ -2044,11 +2044,40 @@ public class Main {
     }
 }
 ```
-## Scanner 🔲
+
+BigDecimal Documentation https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/math/BigDecimal.html
+
+## Scanner ✅
 
 ```java
+import java.math.BigDecimal;
+import java.util.Scanner;
 
+// when we are using money related calculations we should use BigDecimal
+public class Main {
+    public static void main(String[] args) {
+//       Scanner
+        System.out.println("Hello What is your name?");
+//        output: Hello What is your name?
+
+//  Process finished with exit code 0
+//        if this code is anything other than 0 then there is an error
+        Scanner scanner = new Scanner(System.in);
+//        System.in is the input stream from the console
+        String name = scanner.nextLine();
+        System.out.println("Hello " + name);
+
+    }
+}
 ```
+
+output
+```shell
+Hello What is your name?
+chamara
+Hello chamara
+```
+
 ## NextInt and other data types 🔲
 
 ```java
