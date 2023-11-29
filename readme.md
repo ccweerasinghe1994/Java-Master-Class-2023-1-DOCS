@@ -2301,7 +2301,7 @@ public class Main {
 💀 🔴 Exception: class java.lang.ArithmeticException
 Finally always runs
 ```
-
+we can use finally to close resources like database connections(clean up)
 ## Exception Hierarchy 🔲
 
 ```java
