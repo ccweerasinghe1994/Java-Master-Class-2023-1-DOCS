@@ -105,7 +105,7 @@
   - [The Exception Class ✅](#the-exception-class-)
   - [Finally Keyword ✅](#finally-keyword-)
   - [Exception Hierarchy ✅](#exception-hierarchy-)
-  - [Uncheck Exceptions 🔲](#uncheck-exceptions-)
+  - [Uncheck Exceptions ✅](#uncheck-exceptions-)
   - [Checked Exceptions 🔲](#checked-exceptions-)
   - [Throw and Throws 🔲](#throw-and-throws-)
   - [Throwing Exceptions 🔲](#throwing-exceptions-)
@@ -2309,12 +2309,28 @@ we can use finally to close resources like database connections(clean up)
 Throwable is the parent class of all exceptions and errors
 Throwable documentation https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Throwable.html
 
-## Uncheck Exceptions 🔲
+## Uncheck Exceptions ✅
 
 ```java
+public class Main {
+    public static void main(String[] args) {
 
+        Integer number = Integer.parseInt("123");
+        System.out.println(number);
+        for (int i = 10; i >= 0; i--)
+            System.out.println(10 / i);
+        System.out.println("End of try block");
+
+    }
+}
 ```
+![Alt text](image-63.png)
+
+RuntimeException is the superclass of those exceptions that can be thrown during the normal operation of the Java Virtual Machine.
+RuntimeException and its subclasses are unchecked exceptions. Unchecked exceptions do not need to be declared in a method or constructor's throws clause if they can be thrown by the execution of the method or constructor and propagate outside the method or constructor boundary.
+
 ## Checked Exceptions 🔲
+
 
 ```java
 
