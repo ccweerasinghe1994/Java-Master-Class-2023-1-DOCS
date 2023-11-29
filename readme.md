@@ -97,7 +97,7 @@
   - [Exploring BigDecimal Methods ✅](#exploring-bigdecimal-methods-)
   - [Scanner ✅](#scanner-)
   - [NextInt and other data types ✅](#nextint-and-other-data-types-)
-  - [Outro](#outro)
+  - [Outro ✅](#outro-)
   - [Intro 🔲](#intro-)
   - [What is an exception 🔲](#what-is-an-exception-)
   - [Try Catch 🔲](#try-catch-)
@@ -214,7 +214,7 @@
   - [Working With Maps 🔲](#working-with-maps-)
   - [HashCode 🔲](#hashcode-)
   - [Working HashCode and HashFunction 🔲](#working-hashcode-and-hashfunction-)
-  - [Outro 🔲](#outro-)
+  - [Outro 🔲](#outro--1)
   - [HackerRank Big Notation 🔲](#hackerrank-big-notation-)
   - [CLI Project Exercise  🔲](#cli-project-exercise---2)
   - [Intro 🔲](#intro--5)
@@ -241,7 +241,7 @@
   - [Declarative Solution 🔲](#declarative-solution-)
   - [Imperative Solution 🔲](#imperative-solution-)
   - [Visualise Streams 🔲](#visualise-streams-)
-  - [Outro 🔲](#outro--1)
+  - [Outro 🔲](#outro--2)
   - [CLI Exercise 🔲](#cli-exercise-)
   - [Maven 🔲](#maven-)
   - [Installing Maven 🔲](#installing-maven-)
@@ -2126,7 +2126,7 @@ How old are you?
 you are an adult
 ```
 
-## Outro 
+## Outro ✅
 
 ![Alt text](image-58.png)
 
