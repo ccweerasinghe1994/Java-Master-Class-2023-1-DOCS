@@ -2150,7 +2150,17 @@ public class Main {
 ## Try Catch ✅
 
 ```java
-
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Integer number = Integer.parseInt("a123");
+            System.out.println(number);
+        } catch (NumberFormatException e) {
+            System.out.println("Fail to parse a123");
+        }
+    }
+}
+// Fail to parse a123
 ```
 ## Multiple Catch Blocks 🔲
 
