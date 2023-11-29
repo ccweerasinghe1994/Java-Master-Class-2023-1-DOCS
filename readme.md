@@ -2004,7 +2004,18 @@ public class Main {
 ## BigDecimal 🔲
 
 ```java
+import java.math.BigDecimal;
 
+// when we are using money related calculations we should use BigDecimal
+public class Main {
+    public static void main(String[] args) {
+        BigDecimal number1= new BigDecimal("126.45");
+        BigDecimal number2= new BigDecimal("125.45");
+        System.out.println(number1.subtract(number2));
+    }
+}
+
+// 1.00
 ```
 ## Exploring BigDecimal Methods  🔲
 
