@@ -106,7 +106,7 @@
   - [Finally Keyword ✅](#finally-keyword-)
   - [Exception Hierarchy ✅](#exception-hierarchy-)
   - [Uncheck Exceptions ✅](#uncheck-exceptions-)
-  - [Checked Exceptions 🔲](#checked-exceptions-)
+  - [Checked Exceptions ✅](#checked-exceptions-)
   - [Throw and Throws 🔲](#throw-and-throws-)
   - [Throwing Exceptions 🔲](#throwing-exceptions-)
   - [When To Use Checked VS Unchecked Exeptions 🔲](#when-to-use-checked-vs-unchecked-exeptions-)
@@ -2308,7 +2308,7 @@ we can use finally to close resources like database connections(clean up)
 
 Throwable is the parent class of all exceptions and errors
 Throwable documentation https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Throwable.html
-
+ 
 ## Uncheck Exceptions ✅
 
 ```java
@@ -2329,12 +2329,35 @@ public class Main {
 RuntimeException is the superclass of those exceptions that can be thrown during the normal operation of the Java Virtual Machine.
 RuntimeException and its subclasses are unchecked exceptions. Unchecked exceptions do not need to be declared in a method or constructor's throws clause if they can be thrown by the execution of the method or constructor and propagate outside the method or constructor boundary.
 
-## Checked Exceptions 🔲
+RunTimeException documentation https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/RuntimeException.html
 
+## Checked Exceptions ✅
+
+![Alt text](image-65.png)
 
 ```java
+import java.io.File;
+import java.io.IOException;
 
+public class Main {
+    public static void main(String[] args) {
+        try {
+            File file = new File("C:\\Users\\ccwee\\Documents\\GitHub\\Java Master Class Repo 1\\src\\test.txt");
+            if (!file.exists()) {
+                file.createNewFile();
+                System.out.println("The file has been created.");
+            }
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }
+}
+// The file has been created.
 ```
+
+![Alt text](image-64.png)
+
 ## Throw and Throws 🔲
 
 ```java
