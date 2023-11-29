@@ -107,7 +107,7 @@
   - [Exception Hierarchy ✅](#exception-hierarchy-)
   - [Uncheck Exceptions ✅](#uncheck-exceptions-)
   - [Checked Exceptions ✅](#checked-exceptions-)
-  - [Throw and Throws 🔲](#throw-and-throws-)
+  - [Throw and Throws ✅](#throw-and-throws-)
   - [Throwing Exceptions 🔲](#throwing-exceptions-)
   - [When To Use Checked VS Unchecked Exeptions 🔲](#when-to-use-checked-vs-unchecked-exeptions-)
   - [Creating Custom Exceptions 🔲](#creating-custom-exceptions-)
@@ -2358,11 +2358,25 @@ public class Main {
 
 ![Alt text](image-64.png)
 
-## Throw and Throws 🔲
+## Throw and Throws ✅
 
 ```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(divide(10, 2));
+        System.out.println(divide(10, 0));
+    }
 
+    public static double divide(double x, double y) throws IllegalArgumentException {
+        if (y == 0) {
+            throw new IllegalArgumentException("Cannot divide by zero.");
+        }
+        return x / y;
+    }
+}
 ```
+![Alt text](image-66.png)
+
 ## Throwing Exceptions 🔲
 
 ```java
