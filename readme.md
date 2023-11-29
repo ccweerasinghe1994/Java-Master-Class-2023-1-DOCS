@@ -102,7 +102,7 @@
   - [Try Catch ✅](#try-catch-)
   - [Multiple Catch Blocks ✅](#multiple-catch-blocks-)
   - [Using Or Within Catch ✅](#using-or-within-catch-)
-  - [The Exception Class 🔲](#the-exception-class-)
+  - [The Exception Class ✅](#the-exception-class-)
   - [Finally Keyword 🔲](#finally-keyword-)
   - [Exception Hierarchy 🔲](#exception-hierarchy-)
   - [Uncheck Exceptions 🔲](#uncheck-exceptions-)
@@ -2228,11 +2228,42 @@ public class Main {
 💀 🔴 Exception: / by zero
 💀 🔴 Exception: class java.lang.ArithmeticException
 ```
-## The Exception Class 🔲
-![Alt text](image-61.png)
-```java
+## The Exception Class ✅
 
+![Alt text](image-61.png)
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Integer number = Integer.parseInt("123");
+            System.out.println(number);
+            for (int i = 10; i >= 0; i--)
+                System.out.println(10 / i);
+        } catch (Exception e) {
+//            catches all exceptions
+            System.out.println("💀 🔴 Exception: " + e.getMessage());
+            System.out.println("💀 🔴 Exception: " + e.getClass());
+        }
+    }
+}
 ```
+```shell
+123
+1
+1
+1
+1
+1
+2
+2
+3
+5
+10
+💀 🔴 Exception: / by zero
+💀 🔴 Exception: class java.lang.ArithmeticException
+```
+
 ## Finally Keyword 🔲
 
 ```java
