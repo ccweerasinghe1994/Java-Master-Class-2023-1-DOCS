@@ -98,7 +98,7 @@
   - [Scanner ✅](#scanner-)
   - [NextInt and other data types ✅](#nextint-and-other-data-types-)
   - [Outro ✅](#outro-)
-  - [What is an exception 🔲](#what-is-an-exception-)
+  - [What is an exception ✅](#what-is-an-exception-)
   - [Try Catch ✅](#try-catch-)
   - [Multiple Catch Blocks 🔲](#multiple-catch-blocks-)
   - [Using Or Within Catch 🔲](#using-or-within-catch-)
@@ -2129,7 +2129,7 @@ you are an adult
 
 ![Alt text](image-58.png)
 
-## What is an exception 🔲
+## What is an exception ✅
 
 ```java
 
@@ -2143,6 +2143,10 @@ public class Main {
 
 ![Alt text](image-59.png)
 
+```java
+ Integer number =  Integer.parseInt("a123");
+```
+![Alt text](image-60.png)
 ## Try Catch ✅
 
 ```java
