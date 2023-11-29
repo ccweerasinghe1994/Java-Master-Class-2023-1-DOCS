@@ -99,7 +99,7 @@
   - [NextInt and other data types ✅](#nextint-and-other-data-types-)
   - [Outro ✅](#outro-)
   - [What is an exception 🔲](#what-is-an-exception-)
-  - [Try Catch 🔲](#try-catch-)
+  - [Try Catch ✅](#try-catch-)
   - [Multiple Catch Blocks 🔲](#multiple-catch-blocks-)
   - [Using Or Within Catch 🔲](#using-or-within-catch-)
   - [The Exception Class 🔲](#the-exception-class-)
@@ -2143,7 +2143,7 @@ public class Main {
 
 ![Alt text](image-59.png)
 
-## Try Catch 🔲
+## Try Catch ✅
 
 ```java
 
