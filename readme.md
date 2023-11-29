@@ -100,7 +100,7 @@
   - [Outro ✅](#outro-)
   - [What is an exception ✅](#what-is-an-exception-)
   - [Try Catch ✅](#try-catch-)
-  - [Multiple Catch Blocks 🔲](#multiple-catch-blocks-)
+  - [Multiple Catch Blocks ✅](#multiple-catch-blocks-)
   - [Using Or Within Catch 🔲](#using-or-within-catch-)
   - [The Exception Class 🔲](#the-exception-class-)
   - [Finally Keyword 🔲](#finally-keyword-)
@@ -2162,11 +2162,40 @@ public class Main {
 }
 // Fail to parse a123
 ```
-## Multiple Catch Blocks 🔲
+## Multiple Catch Blocks ✅
 
 ```java
-
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Integer number = Integer.parseInt("123");
+            System.out.println(number);
+            for (int i = 10; i >= 0; i--)
+                System.out.println(10 / i);
+        } catch (NumberFormatException e) {
+            System.out.println("Fail to parse a123");
+        } catch (ArithmeticException e) {
+            System.out.println("Fail to divide by 0");
+        }
+    }
+}
 ```
+
+```shell
+123
+1
+1
+1
+1
+1
+2
+2
+3
+5
+10
+Fail to divide by 0
+```
+
 ## Using Or Within Catch 🔲
 
 ```java
