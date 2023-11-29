@@ -96,7 +96,7 @@
   - [BigDecimal ✅](#bigdecimal-)
   - [Exploring BigDecimal Methods ✅](#exploring-bigdecimal-methods-)
   - [Scanner ✅](#scanner-)
-  - [NextInt and other data types 🔲](#nextint-and-other-data-types-)
+  - [NextInt and other data types ✅](#nextint-and-other-data-types-)
   - [Outro 🔲](#outro-)
   - [Intro 🔲](#intro-)
   - [What is an exception 🔲](#what-is-an-exception-)
@@ -2078,11 +2078,54 @@ chamara
 Hello chamara
 ```
 
-## NextInt and other data types 🔲
+## NextInt and other data types ✅
 
 ```java
+import java.math.BigDecimal;
+import java.util.Scanner;
 
+// when we are using money related calculations we should use BigDecimal
+public class Main {
+    public static void main(String[] args) {
+//       Scanner
+        System.out.println("Hello What is your name?");
+//        output: Hello What is your name?
+
+//  Process finished with exit code 0
+//        if this code is anything other than 0 then there is an error
+        Scanner scanner = new Scanner(System.in);
+//        System.in is the input stream from the console
+        String name = scanner.nextLine();
+        System.out.println("Hello " + name);
+
+        System.out.println("How old are you?");
+        int age = scanner.nextInt();
+        if (age<15){
+            System.out.println("you are a child");
+        }else if (age<25) {
+            System.out.println("you are a teenager");
+        }else if (age<65){
+            System.out.println("you are an adult");
+        }else{
+            System.out.println("you are a senior");
+        }
+
+    }
+}
 ```
+if you pass a string to nextInt it will give an error
+
+![Alt text](image-57.png)
+
+```shell
+Hello What is your name?
+chamara
+Hello chamara
+How old are you?
+29
+you are an adult
+```
+
 ## Outro 🔲
 
 ```java
