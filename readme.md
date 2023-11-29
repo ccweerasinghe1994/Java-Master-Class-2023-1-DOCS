@@ -2020,7 +2020,29 @@ public class Main {
 ## Exploring BigDecimal Methods  🔲
 
 ```java
+import java.math.BigDecimal;
 
+// when we are using money related calculations we should use BigDecimal
+public class Main {
+    public static void main(String[] args) {
+        BigDecimal ten = BigDecimal.TEN;
+        System.out.println(ten);
+//        output: 10
+
+//        let's add one
+        BigDecimal eleven = ten.add(BigDecimal.ONE);
+        System.out.println(eleven);
+//        output: 11
+
+//        which is bigger 10 or 11?
+        System.out.println(ten.compareTo(eleven));
+//        output: -1
+        System.out.println(eleven.compareTo(ten));
+//        output: 1
+        System.out.println(ten.max(eleven));
+//        output: 11
+    }
+}
 ```
 ## Scanner 🔲
 
