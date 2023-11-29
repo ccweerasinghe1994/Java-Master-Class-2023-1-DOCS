@@ -101,7 +101,7 @@
   - [What is an exception ✅](#what-is-an-exception-)
   - [Try Catch ✅](#try-catch-)
   - [Multiple Catch Blocks ✅](#multiple-catch-blocks-)
-  - [Using Or Within Catch 🔲](#using-or-within-catch-)
+  - [Using Or Within Catch ✅](#using-or-within-catch-)
   - [The Exception Class 🔲](#the-exception-class-)
   - [Finally Keyword 🔲](#finally-keyword-)
   - [Exception Hierarchy 🔲](#exception-hierarchy-)
@@ -2196,13 +2196,40 @@ public class Main {
 Fail to divide by 0
 ```
 
-## Using Or Within Catch 🔲
+## Using Or Within Catch ✅
 
 ```java
-
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Integer number = Integer.parseInt("123");
+            System.out.println(number);
+            for (int i = 10; i >= 0; i--)
+                System.out.println(10 / i);
+        } catch (NumberFormatException | ArithmeticException e) {
+            System.out.println("💀 🔴 Exception: " + e.getMessage());
+            System.out.println("💀 🔴 Exception: " + e.getClass());
+        }
+    }
+}
+```
+```shell
+123
+1
+1
+1
+1
+1
+2
+2
+3
+5
+10
+💀 🔴 Exception: / by zero
+💀 🔴 Exception: class java.lang.ArithmeticException
 ```
 ## The Exception Class 🔲
-
+![Alt text](image-61.png)
 ```java
 
 ```
