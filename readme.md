@@ -104,7 +104,7 @@
   - [Using Or Within Catch ✅](#using-or-within-catch-)
   - [The Exception Class ✅](#the-exception-class-)
   - [Finally Keyword ✅](#finally-keyword-)
-  - [Exception Hierarchy 🔲](#exception-hierarchy-)
+  - [Exception Hierarchy ✅](#exception-hierarchy-)
   - [Uncheck Exceptions 🔲](#uncheck-exceptions-)
   - [Checked Exceptions 🔲](#checked-exceptions-)
   - [Throw and Throws 🔲](#throw-and-throws-)
@@ -2302,11 +2302,13 @@ public class Main {
 Finally always runs
 ```
 we can use finally to close resources like database connections(clean up)
-## Exception Hierarchy 🔲
+## Exception Hierarchy ✅
 
-```java
+![Alt text](image-62.png)
 
-```
+Throwable is the parent class of all exceptions and errors
+Throwable documentation https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Throwable.html
+
 ## Uncheck Exceptions 🔲
 
 ```java
