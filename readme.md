@@ -108,7 +108,7 @@
   - [Uncheck Exceptions ✅](#uncheck-exceptions-)
   - [Checked Exceptions ✅](#checked-exceptions-)
   - [Throw and Throws ✅](#throw-and-throws-)
-  - [Throwing Exceptions 🔲](#throwing-exceptions-)
+  - [Throwing Exceptions ✅](#throwing-exceptions-)
   - [When To Use Checked VS Unchecked Exeptions 🔲](#when-to-use-checked-vs-unchecked-exeptions-)
   - [Creating Custom Exceptions 🔲](#creating-custom-exceptions-)
   - [Creating Files 🔲](#creating-files-)
@@ -2377,11 +2377,41 @@ public class Main {
 ```
 ![Alt text](image-66.png)
 
-## Throwing Exceptions 🔲
+## Throwing Exceptions ✅
 
 ```java
+public class Main {
+    public static void main(String[] args) {
+        try {
+            c();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
+    public static double divide(double x, double y) throws Exception {
+        if (y == 0) {
+            throw new Exception("Cannot divide by zero.");
+        }
+        return x / y;
+    }
+
+    static void a() throws Exception {
+        System.out.println(divide(10, 0));
+    }
+
+    static void b() throws Exception {
+        a();
+    }
+
+    static void c() throws Exception {
+        b();
+    }
+}
 ```
+
+![Alt text](image-67.png)
+
 ## When To Use Checked VS Unchecked Exeptions 🔲
 
 ```java
