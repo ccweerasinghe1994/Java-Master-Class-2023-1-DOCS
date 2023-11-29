@@ -93,7 +93,7 @@
   - [ZoneIds ✅](#zoneids-)
   - [Other Date Classes ✅](#other-date-classes-)
   - [The Problem With double ✅](#the-problem-with-double-)
-  - [BigDecimal 🔲](#bigdecimal-)
+  - [BigDecimal ✅](#bigdecimal-)
   - [Exploring BigDecimal Methods  🔲](#exploring-bigdecimal-methods--)
   - [Scanner 🔲](#scanner-)
   - [NextInt and other data types 🔲](#nextint-and-other-data-types-)
@@ -2001,7 +2001,7 @@ public class Main {
 
 // 0.010000000000001563
 ```
-## BigDecimal 🔲
+## BigDecimal ✅
 
 ```java
 import java.math.BigDecimal;
