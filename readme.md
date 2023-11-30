@@ -111,7 +111,7 @@
   - [Throwing Exceptions ✅](#throwing-exceptions-)
   - [When To Use Checked VS Unchecked Exceptions ✅](#when-to-use-checked-vs-unchecked-exceptions-)
   - [Creating Custom Exceptions ✅](#creating-custom-exceptions-)
-  - [Creating Files 🔲](#creating-files-)
+  - [Creating Files ✅](#creating-files-)
   - [Writing To Files 🔲](#writing-to-files-)
   - [Reading from Files 🔲](#reading-from-files-)
   - [Try with Resources 🔲](#try-with-resources-)
@@ -2472,10 +2472,34 @@ public class Main {
 
 }
 ```
-## Creating Files 🔲
+## Creating Files ✅
 
 ```java
+import java.io.File;
 
+public class Main {
+    public static void main(String[] args) {
+//    working with files
+        try {
+
+            File file = new File("src/foo.txt");
+            if (file.exists()) {
+                System.out.println("File exists");
+                if (file.delete()) System.out.println("Deleted Successfully");
+            } else {
+                System.out.println("File does not exist");
+                System.out.println(file.createNewFile());
+            }
+        } catch (Exception e) {
+            System.out.println("Exception: " + e.getMessage());
+        }
+
+    }
+
+
+}
+// File exists
+// Deleted Successfully
 ```
 ## Writing To Files 🔲
 
