@@ -112,7 +112,7 @@
   - [When To Use Checked VS Unchecked Exceptions ✅](#when-to-use-checked-vs-unchecked-exceptions-)
   - [Creating Custom Exceptions ✅](#creating-custom-exceptions-)
   - [Creating Files ✅](#creating-files-)
-  - [Writing To Files 🔲](#writing-to-files-)
+  - [Writing To Files ✅](#writing-to-files-)
   - [Reading from Files 🔲](#reading-from-files-)
   - [Try with Resources 🔲](#try-with-resources-)
   - [Intro 🔲](#intro-)
@@ -2501,11 +2501,58 @@ public class Main {
 // File exists
 // Deleted Successfully
 ```
-## Writing To Files 🔲
+## Writing To Files ✅
 
 ```java
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class Main {
+    public static void main(String[] args) {
+//    working with files
+        try {
+            File file = createFile("src/MyFile.txt");
+            extracted(file);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private static void extracted(File file) throws IOException {
+        FileWriter fileWriter = new FileWriter(file, true);
+        PrintWriter printWriter = new PrintWriter(fileWriter);
+        printWriter.println("Hello class");
+        printWriter.println("Hello class 2");
+        printWriter.println("Hello class 3");
+        printWriter.println("Hello class 4");
+        printWriter.flush();
+        printWriter.close();
+    }
+
+    private static File createFile(String filePath) throws IOException {
+        File file = new File(filePath);
+        if (!file.exists()) {
+            file.createNewFile();
+        }
+        return file;
+    }
+
+
+}
 
 ```
+
+outputs
+
+![Alt text](image-71.png)
+
+![Alt text](image-69.png)
+
+![Alt text](image-70.png)
+
 ## Reading from Files 🔲
 
 ```java
