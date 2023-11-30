@@ -2773,8 +2773,51 @@ public class Main {
 ## Default Constructors ✅
 
 ```java
+public class Main {
+    public static void main(String[] args) {
+        Cat cat = new Cat();
+        cat.meow();
+        System.out.println(cat.getName() + " is " + cat.getAge() + " years old.");
+    }
+}
 
 ```
+```java
+class Cat {
+
+    private String name;
+    private int age;
+
+//    public Cat(String name, int age) {
+//        this.name = name;
+//        this.age = age;
+//    }
+
+    void meow() {
+        System.out.println(this.name + " :Meow!");
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+
+```
+
+![Alt text](image-78.png)
+
 ## Multiple Constructors ✅
 
 ```java
