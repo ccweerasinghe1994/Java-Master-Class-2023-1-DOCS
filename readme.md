@@ -2821,8 +2821,67 @@ class Cat {
 ## Multiple Constructors ✅
 
 ```java
+class Cat {
+
+    private String name;
+    private int age;
+
+    public Cat(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public Cat(String name) {
+        this.name = name;
+        this.age = 0;
+    }
+
+    public Cat() {
+     
+    }
+
+    void meow() {
+        System.out.println(this.name + " :Meow!");
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
 
 ```
+```java
+public class Main {
+    public static void main(String[] args) {
+        Cat cat = new Cat();
+        cat.meow();
+        System.out.println(cat.getName() + " is " + cat.getAge() + " years old.");
+        System.out.println("-------------------------------");
+        Cat cat2 = new Cat("Tom");
+        cat2.meow();
+        System.out.println(cat2.getName() + " is " + cat2.getAge() + " years old.");
+        System.out.println("-------------------------------");
+        Cat cat3 = new Cat("Tom", 5);
+        cat3.meow();
+        System.out.println(cat3.getName() + " is " + cat3.getAge() + " years old.");
+        
+    }
+}
+
+```
+![Alt text](image-79.png)
 ## ToString ✅
 
 ```java
