@@ -117,10 +117,10 @@
   - [Try with Resources ✅](#try-with-resources-)
   - [Your first class ✅](#your-first-class-)
   - [Setters ✅](#setters-)
-  - [Getters 🔲](#getters-)
+  - [Getters ✅](#getters-)
   - [Constructors 🔲](#constructors-)
   - [Default Constructors 🔲](#default-constructors-)
-  - [Multiple Contructors 🔲](#multiple-contructors-)
+  - [Multiple Constructors 🔲](#multiple-constructors-)
   - [ToString 🔲](#tostring-)
   - [The Inside Constructors 🔲](#the-inside-constructors-)
   - [The This Keyword 🔲](#the-this-keyword-)
@@ -2682,11 +2682,47 @@ public class Main {
 
 ![Alt text](image-75.png)
 
-## Getters 🔲
+## Getters ✅
 
 ```java
+class Cat {
+
+    private String name;
+
+    void meow() {
+        System.out.println(this.name + " :Meow!");
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+```
+
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        Cat cat = new Cat();
+        cat.setName("Mimi");
+        cat.meow();
+        System.out.println(cat.getName());
+
+        Cat cat2 = new Cat();
+        cat2.setName("Kitty");
+        cat2.meow();
+        System.out.println(cat2.getName());
+    }
+}
 
 ```
+
+![Alt text](image-76.png)
+
 ## Constructors 🔲
 
 ```java
@@ -2697,7 +2733,7 @@ public class Main {
 ```java
 
 ```
-## Multiple Contructors 🔲
+## Multiple Constructors 🔲
 
 ```java
 
