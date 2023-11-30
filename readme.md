@@ -115,7 +115,6 @@
   - [Writing To Files ✅](#writing-to-files-)
   - [Reading from Files ✅](#reading-from-files-)
   - [Try with Resources ✅](#try-with-resources-)
-  - [Intro 🔲](#intro-)
   - [Your first class 🔲](#your-first-class-)
   - [Setters 🔲](#setters-)
   - [Getters 🔲](#getters-)
@@ -142,7 +141,7 @@
   - [Static Initlaization Block 🔲](#static-initlaization-block-)
   - [Instance Block Initializer 🔲](#instance-block-initializer-)
   - [Static Import  🔲](#static-import--)
-  - [Intro 🔲](#intro--1)
+  - [Intro 🔲](#intro-)
   - [Packages 🔲](#packages--1)
   - [Models 🔲](#models-)
   - [Service Classes 🔲](#service-classes-)
@@ -150,7 +149,7 @@
   - [Connecting DAO and Service 🔲](#connecting-dao-and-service-)
   - [N Tier Architecture 🔲](#n-tier-architecture-)
   - [Utitlity Classes 🔲](#utitlity-classes-)
-  - [Intro 🔲](#intro--2)
+  - [Intro 🔲](#intro--1)
   - [The first CLI project task 🔲](#the-first-cli-project-task-)
   - [Demo  🔲](#demo--)
   - [Upcoming Section Intro 🔲](#upcoming-section-intro-)
@@ -192,7 +191,7 @@
   - [Null Pointer Exception 🔲](#null-pointer-exception-)
   - [The Wrong Way Of Dealing with Null 🔲](#the-wrong-way-of-dealing-with-null-)
   - [Optionals  🔲](#optionals--)
-  - [Intro 🔲](#intro--3)
+  - [Intro 🔲](#intro--2)
   - [Overview 🔲](#overview-)
   - [Arrays 🔲](#arrays--1)
   - [Working With Arrays 🔲](#working-with-arrays-)
@@ -216,7 +215,7 @@
   - [Outro 🔲](#outro--1)
   - [HackerRank Big Notation 🔲](#hackerrank-big-notation-)
   - [CLI Project Exercise  🔲](#cli-project-exercise---2)
-  - [Intro 🔲](#intro--4)
+  - [Intro 🔲](#intro--3)
   - [Class Cast Exception 🔲](#class-cast-exception-)
   - [ClassCastException Example 2 🔲](#classcastexception-example-2-)
   - [Type Parameter and Type Argument 🔲](#type-parameter-and-type-argument-)
@@ -232,7 +231,7 @@
   - [Difference Between Bounded Type Parameters and Wildcards 🔲](#difference-between-bounded-type-parameters-and-wildcards-)
   - [Type Erasure 🔲](#type-erasure-)
   - [Outro  🔲](#outro--)
-  - [Intro 🔲](#intro--5)
+  - [Intro 🔲](#intro--4)
   - [Java Streams 🔲](#java-streams-)
   - [How Streams Work 🔲](#how-streams-work-)
   - [Getting Started With Streams 🔲](#getting-started-with-streams-)
@@ -256,7 +255,7 @@
   - [Running Maven Commands 🔲](#running-maven-commands-)
   - [Packaging and Jar Files 🔲](#packaging-and-jar-files-)
   - [CLI Project Exercise  🔲](#cli-project-exercise---3)
-  - [Intro 🔲](#intro--6)
+  - [Intro 🔲](#intro--5)
   - [JUnit 🔲](#junit-)
   - [Installing JUNIT 🔲](#installing-junit-)
   - [Launching Your First Test 🔲](#launching-your-first-test-)
@@ -331,7 +330,7 @@
   - [Exploring JPA Methods 🔲](#exploring-jpa-methods-)
   - [The Problem 🔲](#the-problem-)
   - [Exercise Solution  🔲](#exercise-solution--)
-  - [Intro 🔲](#intro--7)
+  - [Intro 🔲](#intro--6)
   - [Chasing Interface 🔲](#chasing-interface-)
   - [Override insert customer 🔲](#override-insert-customer-)
   - [Business Logic for Adding new Customer 🔲](#business-logic-for-adding-new-customer-)
@@ -2623,11 +2622,7 @@ public class Main {
 
 ```
 ![Alt text](image-73.png)
-## Intro 🔲
 
-```java
-
-```
 ## Your first class 🔲
 
 ```java
