@@ -118,16 +118,16 @@
   - [Your first class ✅](#your-first-class-)
   - [Setters ✅](#setters-)
   - [Getters ✅](#getters-)
-  - [Constructors 🔲](#constructors-)
-  - [Default Constructors 🔲](#default-constructors-)
-  - [Multiple Constructors 🔲](#multiple-constructors-)
-  - [ToString 🔲](#tostring-)
-  - [The Inside Constructors 🔲](#the-inside-constructors-)
-  - [The This Keyword 🔲](#the-this-keyword-)
-  - [Everything in Java is an Object 🔲](#everything-in-java-is-an-object-)
-  - [@Override 🔲](#override-)
-  - [Comparing Objects with == 🔲](#comparing-objects-with--)
-  - [Comparing Obects with .equals 🔲](#comparing-obects-with-equals-)
+  - [Constructors ✅](#constructors-)
+  - [Default Constructors ✅](#default-constructors-)
+  - [Multiple Constructors ✅](#multiple-constructors-)
+  - [ToString ✅](#tostring-)
+  - [The Inside Constructors ✅](#the-inside-constructors-)
+  - [The This Keyword ✅](#the-this-keyword-)
+  - [Everything in Java is an Object ✅](#everything-in-java-is-an-object-)
+  - [@Override ✅](#override-)
+  - [Comparing Objects with == ✅](#comparing-objects-with--)
+  - [Comparing Obects with .equals ✅](#comparing-obects-with-equals-)
   - [Generating Equals method 🔲](#generating-equals-method-)
   - [Equals Explained 🔲](#equals-explained-)
   - [Generating Code 🔲](#generating-code-)
@@ -2723,52 +2723,94 @@ public class Main {
 
 ![Alt text](image-76.png)
 
-## Constructors 🔲
+## Constructors ✅
+
+```java
+class Cat {
+
+    private String name;
+    private int age;
+
+    public Cat(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void meow() {
+        System.out.println(this.name + " :Meow!");
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+
+```
+```java
+public class Main {
+    public static void main(String[] args) {
+        Cat cat = new Cat("Mew", 2);
+        cat.meow();
+        System.out.println(cat.getName() + " is " + cat.getAge() + " years old.");
+    }
+}
+```
+
+![Alt text](image-77.png)
+
+## Default Constructors ✅
 
 ```java
 
 ```
-## Default Constructors 🔲
+## Multiple Constructors ✅
 
 ```java
 
 ```
-## Multiple Constructors 🔲
+## ToString ✅
 
 ```java
 
 ```
-## ToString 🔲
+## The Inside Constructors ✅
 
 ```java
 
 ```
-## The Inside Constructors 🔲
+## The This Keyword ✅
 
 ```java
 
 ```
-## The This Keyword 🔲
+## Everything in Java is an Object ✅
 
 ```java
 
 ```
-## Everything in Java is an Object 🔲
+## @Override ✅
 
 ```java
 
 ```
-## @Override 🔲
+## Comparing Objects with == ✅
 
 ```java
 
 ```
-## Comparing Objects with == 🔲
-
-```java
-
-```
-## Comparing Obects with .equals 🔲
+## Comparing Obects with .equals ✅
 
 ```java
 
