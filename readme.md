@@ -110,7 +110,7 @@
   - [Throw and Throws ✅](#throw-and-throws-)
   - [Throwing Exceptions ✅](#throwing-exceptions-)
   - [When To Use Checked VS Unchecked Exceptions ✅](#when-to-use-checked-vs-unchecked-exceptions-)
-  - [Creating Custom Exceptions 🔲](#creating-custom-exceptions-)
+  - [Creating Custom Exceptions ✅](#creating-custom-exceptions-)
   - [Creating Files 🔲](#creating-files-)
   - [Writing To Files 🔲](#writing-to-files-)
   - [Reading from Files 🔲](#reading-from-files-)
@@ -2419,12 +2419,58 @@ documentation https://docs.oracle.com/javase/tutorial/essential/exceptions/runti
 ![Alt text](image-68.png)
 
 
-## Creating Custom Exceptions 🔲
+## Creating Custom Exceptions ✅
 ```java
+public class MyUncheckedException extends Exception{
+    public MyUncheckedException(String message) {
+        super(message);
+    }
+}
 
 ```
 ```java
+public class MyUncheckedException extends Exception{
+    public MyUncheckedException(String message) {
+        super(message);
+    }
+}
 
+```
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(divide(10, 0));
+    }
+
+    public static double divide(double x, double y) {
+        if (y == 0) {
+            throw new MyCheckedException("Cannot divide by zero.");
+        }
+        return x / y;
+    }
+
+
+}
+```
+```java
+public class Main {
+    public static void main(String[] args) {
+        try {
+            System.out.println(divide(10, 0));
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static double divide(double x, double y) throws Exception {
+        if (y == 0) {
+            throw new MyUncheckedException("Cannot divide by zero.");
+        }
+        return x / y;
+    }
+
+
+}
 ```
 ## Creating Files 🔲
 
