@@ -2950,8 +2950,90 @@ public class Main {
 ## The Inside Constructors ✅
 
 ```java
+class Cat {
+
+    private String name;
+    private int age;
+
+    private String color;
+
+    public Cat(String name, int age, String color) {
+        this(name, age);
+        this.color = color;
+    }
+
+    public Cat(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public Cat(String name) {
+        this.name = name;
+        this.age = 0;
+    }
+
+    public Cat() {
+
+    }
+
+    void meow() {
+        System.out.println(this.name + " :Meow!");
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", color='" + color + '\'' +
+                '}';
+    }
+}
 
 ```
+```java
+public class Main {
+    public static void main(String[] args) {
+        Cat cat2 = new Cat();
+        System.out.println(cat2);
+
+        System.out.println("--------------------");
+
+        Cat cat = new Cat("Barsik");
+        System.out.println(cat);
+
+        System.out.println("--------------------");
+
+        Cat cat1 = new Cat("Murzik", 5);
+        System.out.println(cat1);
+
+        System.out.println("--------------------");
+        Cat cat3 = new Cat("Vaska", 3, "black");
+        System.out.println(cat3);
+
+
+    }
+}
+
+```
+![Alt text](image-81.png)
+
 ## The This Keyword ✅
 
 ```java
