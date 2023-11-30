@@ -116,7 +116,7 @@
   - [Reading from Files ✅](#reading-from-files-)
   - [Try with Resources ✅](#try-with-resources-)
   - [Your first class ✅](#your-first-class-)
-  - [Setters 🔲](#setters-)
+  - [Setters ✅](#setters-)
   - [Getters 🔲](#getters-)
   - [Constructors 🔲](#constructors-)
   - [Default Constructors 🔲](#default-constructors-)
@@ -2647,11 +2647,41 @@ public class Main {
 
 ![Alt text](image-74.png)
 
-## Setters 🔲
+## Setters ✅
 
 ```java
+class Cat {
+
+    private String name;
+
+    void meow() {
+        System.out.println(this.name + " :Meow!");
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+}
 
 ```
+```java
+public class Main {
+    public static void main(String[] args) {
+        Cat cat = new Cat();
+        cat.setName("Mimi");
+        cat.meow();
+
+        Cat cat2 = new Cat();
+        cat2.setName("Kitty");
+        cat2.meow();
+    }
+}
+
+```
+
+![Alt text](image-75.png)
+
 ## Getters 🔲
 
 ```java
