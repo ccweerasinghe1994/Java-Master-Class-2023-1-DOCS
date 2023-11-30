@@ -115,7 +115,7 @@
   - [Writing To Files ✅](#writing-to-files-)
   - [Reading from Files ✅](#reading-from-files-)
   - [Try with Resources ✅](#try-with-resources-)
-  - [Your first class 🔲](#your-first-class-)
+  - [Your first class ✅](#your-first-class-)
   - [Setters 🔲](#setters-)
   - [Getters 🔲](#getters-)
   - [Constructors 🔲](#constructors-)
@@ -2623,11 +2623,30 @@ public class Main {
 ```
 ![Alt text](image-73.png)
 
-## Your first class 🔲
+## Your first class ✅
 
 ```java
+public class Main {
+    public static void main(String[] args) {
+        Cat cat = new Cat();
+        cat.meow();
+    }
+
+    static class Cat {
+        String name;
+
+        void meow() {
+            System.out.println(this.name + " :Meow!");
+        }
+    }
+
+
+}
 
 ```
+
+![Alt text](image-74.png)
+
 ## Setters 🔲
 
 ```java
