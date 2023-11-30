@@ -109,7 +109,7 @@
   - [Checked Exceptions ✅](#checked-exceptions-)
   - [Throw and Throws ✅](#throw-and-throws-)
   - [Throwing Exceptions ✅](#throwing-exceptions-)
-  - [When To Use Checked VS Unchecked Exeptions 🔲](#when-to-use-checked-vs-unchecked-exeptions-)
+  - [When To Use Checked VS Unchecked Exceptions ✅](#when-to-use-checked-vs-unchecked-exceptions-)
   - [Creating Custom Exceptions 🔲](#creating-custom-exceptions-)
   - [Creating Files 🔲](#creating-files-)
   - [Writing To Files 🔲](#writing-to-files-)
@@ -2412,13 +2412,17 @@ public class Main {
 
 ![Alt text](image-67.png)
 
-## When To Use Checked VS Unchecked Exeptions 🔲
+## When To Use Checked VS Unchecked Exceptions ✅
 
+documentation https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html
+
+![Alt text](image-68.png)
+
+
+## Creating Custom Exceptions 🔲
 ```java
 
 ```
-## Creating Custom Exceptions 🔲
-
 ```java
 
 ```
