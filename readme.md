@@ -114,7 +114,7 @@
   - [Creating Files ✅](#creating-files-)
   - [Writing To Files ✅](#writing-to-files-)
   - [Reading from Files ✅](#reading-from-files-)
-  - [Try with Resources 🔲](#try-with-resources-)
+  - [Try with Resources ✅](#try-with-resources-)
   - [Intro 🔲](#intro-)
   - [Your first class 🔲](#your-first-class-)
   - [Setters 🔲](#setters-)
@@ -2575,11 +2575,54 @@ outputs
 
 ![Alt text](image-72.png)
 
-## Try with Resources 🔲
+## Try with Resources ✅
 
 ```java
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+//    working with files
+        try {
+            File file = createFile("src/MyFile.txt");
+            writeToFile(file);
+            System.out.println("data added successfully");
+            Scanner scanner = new Scanner(file);
+            while (scanner.hasNextLine()) {
+                System.out.println(scanner.nextLine());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private static void writeToFile(File file) throws IOException {
+        try (
+                FileWriter fileWriter = new FileWriter(file, true);
+                PrintWriter printWriter = new PrintWriter(fileWriter);
+        ) {
+            printWriter.println("Hello class");
+        }
+    }
+
+    private static File createFile(String filePath) throws IOException {
+        File file = new File(filePath);
+        if (!file.exists()) {
+            file.createNewFile();
+        }
+        return file;
+    }
+
+
+}
 
 ```
+![Alt text](image-73.png)
 ## Intro 🔲
 
 ```java
