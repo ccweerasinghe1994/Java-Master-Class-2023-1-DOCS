@@ -3036,9 +3036,11 @@ public class Main {
 
 ## The This Keyword ✅
 
-```java
+this. is used to access the current object
+this() is used to call a constructor from another constructor
+this() must be the first line in the constructor
+this() is called constructor chaining
 
-```
 ## Everything in Java is an Object ✅
 
 ```java
