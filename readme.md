@@ -113,7 +113,7 @@
   - [Creating Custom Exceptions ✅](#creating-custom-exceptions-)
   - [Creating Files ✅](#creating-files-)
   - [Writing To Files ✅](#writing-to-files-)
-  - [Reading from Files 🔲](#reading-from-files-)
+  - [Reading from Files ✅](#reading-from-files-)
   - [Try with Resources 🔲](#try-with-resources-)
   - [Intro 🔲](#intro-)
   - [Your first class 🔲](#your-first-class-)
@@ -2553,11 +2553,28 @@ outputs
 
 ![Alt text](image-70.png)
 
-## Reading from Files 🔲
+## Reading from Files ✅
 
 ```java
+    public static void main(String[] args) {
+//    working with files
+        try {
+            File file = createFile("src/MyFile.txt");
+//            writeToFile(file);
+//            System.out.println("data added successfully");
+            Scanner scanner = new Scanner(file);
+            while (scanner.hasNextLine()) {
+                System.out.println(scanner.nextLine());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
+    }
 ```
+
+![Alt text](image-72.png)
+
 ## Try with Resources 🔲
 
 ```java
