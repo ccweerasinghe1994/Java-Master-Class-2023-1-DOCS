@@ -2885,8 +2885,68 @@ public class Main {
 ## ToString ✅
 
 ```java
+class Cat {
+
+    private String name;
+    private int age;
+
+    public Cat(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public Cat(String name) {
+        this.name = name;
+        this.age = 0;
+    }
+
+    public Cat() {
+
+    }
+
+    void meow() {
+        System.out.println(this.name + " :Meow!");
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+}
 
 ```
+```java
+public class Main {
+    public static void main(String[] args) {
+        Cat cat = new Cat("Barsik", 5);
+        System.out.println(cat);
+
+    }
+}
+
+```
+
+![Alt text](image-80.png)
+
 ## The Inside Constructors ✅
 
 ```java
