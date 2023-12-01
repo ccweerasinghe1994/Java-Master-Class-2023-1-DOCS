@@ -3043,9 +3043,14 @@ this() is called constructor chaining
 
 ## Everything in Java is an Object ✅
 
-```java
+![Alt text](image-82.png)
 
-```
+![Alt text](image-83.png)
+
+here we are overriding the toString method of the Object class
+
+![Alt text](image-84.png)
+
 ## @Override ✅
 
 ```java
