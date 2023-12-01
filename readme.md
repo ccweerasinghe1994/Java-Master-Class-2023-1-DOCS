@@ -3232,9 +3232,8 @@ Finally, the method checks if the age, name, and color properties of the two Cat
 This equals method is a fundamental part of Java's object contract. It's often overridden to provide meaningful equality checks between instances of custom classes.
 ## Generating Code ✅
 
-```java
+we can use intellij to generate code
 
-```
 ## Person and Cats Example ✅
 
 ```java
