@@ -59,8 +59,8 @@
   - [Private ✅](#private-)
   - [Default ✅](#default-)
   - [Recap ✅](#recap-)
-  - [When To Use Each Access Modifier 🔲](#when-to-use-each-access-modifier-)
-  - [Static Keyword 🔲](#static-keyword-)
+  - [When To Use Each Access Modifier ✅](#when-to-use-each-access-modifier-)
+  - [Static Keyword ✅](#static-keyword-)
   - [Methods ✅](#methods-)
   - [Method that add 2 numbers ✅](#method-that-add-2-numbers-)
   - [Parameters and Arguments ✅](#parameters-and-arguments-)
@@ -128,18 +128,18 @@
   - [@Override ✅](#override-)
   - [Comparing Objects with == ✅](#comparing-objects-with--)
   - [Comparing Obects with .equals ✅](#comparing-obects-with-equals-)
-  - [Generating Equals method 🔲](#generating-equals-method-)
-  - [Equals Explained 🔲](#equals-explained-)
-  - [Generating Code 🔲](#generating-code-)
-  - [Person and Cats Example 🔲](#person-and-cats-example-)
-  - [POJOS 🔲](#pojos-)
-  - [Java Bean 🔲](#java-bean-)
-  - [Exercise 🔲](#exercise--1)
-  - [Exercise Solution 🔲](#exercise-solution--1)
-  - [Static Keyword 🔲](#static-keyword--1)
-  - [When to use Static 🔲](#when-to-use-static-)
-  - [Static Initlaization Block 🔲](#static-initlaization-block-)
-  - [Instance Block Initializer 🔲](#instance-block-initializer-)
+  - [Generating Equals method ✅](#generating-equals-method-)
+  - [Equals Explained ✅](#equals-explained-)
+  - [Generating Code ✅](#generating-code-)
+  - [Person and Cats Example ✅](#person-and-cats-example-)
+  - [POJOS ✅](#pojos-)
+  - [Java Bean ✅](#java-bean-)
+  - [Exercise ✅](#exercise--1)
+  - [Exercise Solution ✅](#exercise-solution--1)
+  - [Static Keyword ✅](#static-keyword--1)
+  - [When to use Static ✅](#when-to-use-static-)
+  - [Static Initlaization Block ✅](#static-initlaization-block-)
+  - [Instance Block Initializer ✅](#instance-block-initializer-)
   - [Static Import  🔲](#static-import--)
   - [Intro 🔲](#intro-)
   - [Packages 🔲](#packages--1)
@@ -343,52 +343,52 @@
 
 ## what is java ✅
 
-![Alt text](image.png)
+![Alt text](./assets/image.png)
 
 ## what can u build with java ✅
 
-![Alt text](image-1.png)
+![Alt text](./assets/image-1.png)
 
 ## Backend and Who use JAVA ✅
 
-![Alt text](image-2.png)
+![Alt text](./assets/image-2.png)
 
-![Alt text](image-3.png)
+![Alt text](./assets/image-3.png)
 
 ## java is not javascript ✅
 
-![Alt text](image-4.png)
+![Alt text](./assets/image-4.png)
 
 ### compiler ✅
 
-![Alt text](image-5.png)
+![Alt text](./assets/image-5.png)
 
 ### interpreter ✅
 
-![Alt text](image-6.png)
+![Alt text](./assets/image-6.png)
 
 ### comparison ✅
 
-![Alt text](image-7.png)
+![Alt text](./assets/image-7.png)
 
-![Alt text](image-8.png)
+![Alt text](./assets/image-8.png)
 
-![Alt text](image-9.png)
+![Alt text](./assets/image-9.png)
 
-![Alt text](image-10.png)
+![Alt text](./assets/image-10.png)
 
 
 ## Static vs Dynamic type checking ✅
 
-![Alt text](image-11.png)
+![Alt text](./assets/image-11.png)
 
-![Alt text](image-12.png)
+![Alt text](./assets/image-12.png)
 
-![Alt text](image-13.png)
+![Alt text](./assets/image-13.png)
 
 ## java history ✅
 
-![Alt text](image-14.png)
+![Alt text](./assets/image-14.png)
 
 ## Create Project - Part 1 ✅
 ```java
@@ -517,10 +517,10 @@ char letter = 'A';
 boolean isEligible = true;
 ```
 ## Primitives Data Types Difference ✅
-![Alt text](image-15.png)
+![Alt text](./assets/image-15.png)
 
-![Alt text](image-16.png)
-![Alt text](image-17.png)
+![Alt text](./assets/image-16.png)
+![Alt text](./assets/image-17.png)
 ## Numeric Literals with Underscore ✅
 this number is easy to read
 ```java
@@ -591,7 +591,7 @@ int number = 10;
 int result += number + 5;
 ```
 
-![Alt text](image-18.png)
+![Alt text](./assets/image-18.png)
 
 ## Naming Variables ✅
 
@@ -634,7 +634,7 @@ public class Main {
 ```
 ## Reference Types and Objects Diferences ✅
 
-![Alt text](image-19.png)
+![Alt text](./assets/image-19.png)
 
 ## Pass py value with Primitives ✅
  
@@ -647,11 +647,11 @@ System.out.println("a = " + a);
 // b = 10
 
 ```
-![Alt text](image-20.png)
+![Alt text](./assets/image-20.png)
 
 ## Pass py value with Reference Types ✅
 
-![Alt text](image-21.png)
+![Alt text](./assets/image-21.png)
 
 ## Arrays ✅
 
@@ -954,7 +954,7 @@ public class Main {
 ## Packages ✅
 packages in java is nothing but folders that allows you to store your files.
 
-![Alt text](image-22.png)
+![Alt text](./assets/image-22.png)
 
 ```java
 package com.chamara;
@@ -974,11 +974,11 @@ this help us to organize our code.
 - always should have a root package like com.chamara
 - [organization].[domain]
 
-![Alt text](image-23.png)
+![Alt text](./assets/image-23.png)
 
-![Alt text](image-24.png)
+![Alt text](./assets/image-24.png)
 
-![Alt text](image-25.png)
+![Alt text](./assets/image-25.png)
 
 ```java
 package com.chamara.email;
@@ -989,7 +989,7 @@ public class EmailValidator {
 ```
 ## Exploring Packages ✅
 
-![Alt text](image-26.png)
+![Alt text](./assets/image-26.png)
 
 
 ## Import keyword ✅
@@ -1009,7 +1009,7 @@ public class Main {
 
 }
 ```
-![Alt text](image-27.png)
+![Alt text](./assets/image-27.png)
 
 * means everything under awt
 
@@ -1031,12 +1031,12 @@ public class Main {
 
 }
 ```
-![Alt text](image-28.png)
+![Alt text](./assets/image-28.png)
 
 
 ## Import with fully qualified name 🔲
 
-![Alt text](image-29.png)
+![Alt text](./assets/image-29.png)
 when there is a conflict between two classes we can use fully qualified name
 
 ```java
@@ -1104,11 +1104,11 @@ access modifiers are only for
 
 
 this is giving an error because we can't have a access modifier for a local variable
-![Alt text](image-30.png)
+![Alt text](./assets/image-30.png)
 
 folder structure
 
-![Alt text](image-31.png)
+![Alt text](./assets/image-31.png)
 
 ```java
 package com.chamara;
@@ -1142,7 +1142,7 @@ public class EmailValidator {
 
 output
 
-![Alt text](image-32.png)
+![Alt text](./assets/image-32.png)
 
 ## Private ✅
 
@@ -1162,14 +1162,14 @@ public class Main {
 ```
 now we can't access this variable from another class
 
-![Alt text](image-33.png)
+![Alt text](./assets/image-33.png)
 
-![Alt text](image-34.png)
+![Alt text](./assets/image-34.png)
 
 ## Default ✅
-![Alt text](image-35.png)
+![Alt text](./assets/image-35.png)
 in a different package we can't access this variable
-![Alt text](image-36.png)
+![Alt text](./assets/image-36.png)
 
 ```java
 package com.chamara;
@@ -1213,20 +1213,20 @@ public class EmailValidator {
 
 ## Recap ✅
 
-![Alt text](image-37.png)
-## When To Use Each Access Modifier 🔲
+![Alt text](./assets/image-37.png)
+## When To Use Each Access Modifier ✅
 
 ```java
 
 ```
-## Static Keyword 🔲
+## Static Keyword ✅
 
 static means it belongs to the class not to the object/instance
 we can't use non static variables inside a static context
-![Alt text](image-38.png)
+![Alt text](./assets/image-38.png)
 you can fix it by 
 
-![Alt text](image-39.png)
+![Alt text](./assets/image-39.png)
 
 
 ```java
@@ -1318,12 +1318,12 @@ public class Main {
 }
 ```
 ## Naming Convention ✅
-![Alt text](image-40.png)
+![Alt text](./assets/image-40.png)
 
 ## Exercise ✅
-![Alt text](image-41.png)
-![Alt text](image-42.png)
-![Alt text](image-43.png)
+![Alt text](./assets/image-41.png)
+![Alt text](./assets/image-42.png)
+![Alt text](./assets/image-43.png)
 
 ## Exercise Solution ✅
 
@@ -1378,9 +1378,9 @@ public class Main {
 
 ## Program Arguments ✅
 
-![Alt text](image-44.png)
+![Alt text](./assets/image-44.png)
 
-![Alt text](image-45.png)
+![Alt text](./assets/image-45.png)
 
 ## Type Inference with Var ✅
 
@@ -1409,7 +1409,7 @@ public class Main {
 //    }
 }
 ```
-![Alt text](image-46.png)
+![Alt text](./assets/image-46.png)
 ## Break Keyword and Loops ✅
 this works with for, while, do while, switch
 ```java
@@ -1490,11 +1490,11 @@ Chamara
 ```
 
 ## Final Keyword ✅
-![Alt text](image-47.png)
-![Alt text](image-48.png)
+![Alt text](./assets/image-47.png)
+![Alt text](./assets/image-48.png)
 
 we can do this
-![Alt text](image-49.png)
+![Alt text](./assets/image-49.png)
 
 
 ```java
@@ -1627,7 +1627,7 @@ Chamara
 ```
 
 ## Wrapper Classes ✅
-![Alt text](image-50.png)
+![Alt text](./assets/image-50.png)
 ```java
 package com.chamara;
 
@@ -1650,7 +1650,7 @@ documentation https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/
 ```java
 
 ```
-![Alt text](image-51.png)
+![Alt text](./assets/image-51.png)
 ```java
 package com.chamara;
 
@@ -1707,7 +1707,7 @@ documentation https://www.textbook.amigoscode.com/docs/java/strings#how-strings-
 
 When a Java program is run, the Java Virtual Machine (JVM) loads the program into memory and creates an instance of the java.lang.String class to represent each string literal used in the program. Strings are immutable, which means that once they are created, they cannot be changed. When a string is concatenated with another string, a new string object is created that represents the concatenated strings. The java.lang.StringBuilder class can be used to modify strings more efficiently. Strings are stored in a contiguous area of memory, which means that they can be accessed quickly. However, this also means that strings take up more memory than other data types.
 
-![Alt text](image-52.png)
+![Alt text](./assets/image-52.png)
 
 ## Strings are Immutable ✅
 Strings in java are immutable because they are constant. The value of a string cannot be changed once it is created. strings are also thread-safe, meaning that they can be safely used in concurrent programming without the risk of data corruption.
@@ -1716,10 +1716,10 @@ Immutability also makes strings more secure, because they cannot be modified by 
 
 Finally, strings are more efficient when they are immutable, because the java virtual machine can optimize them better.
 
-![Alt text](image-53.png)
+![Alt text](./assets/image-53.png)
 
 ## String Literal vs String Object ✅
-![Alt text](image-54.png)
+![Alt text](./assets/image-54.png)
 ```java
 package com.chamara;
 
@@ -1736,7 +1736,7 @@ public class Main {
 }
 ```
 ## Comparing Strings with == ✅
-![Alt text](image-55.png)
+![Alt text](./assets/image-55.png)
 == compares the reference not the value
 
 ```java
@@ -1786,7 +1786,7 @@ public class Main {
 // true
 ```
 ## Useful String static Methods ✅
-![Alt text](image-56.png)
+![Alt text](./assets/image-56.png)
 ```java
 String name = String.join("-", "Chamara", "Kasun", "Nimal", "Kamal");
 // Chamara-Kasun-Nimal-Kamal
@@ -2113,7 +2113,7 @@ public class Main {
 ```
 if you pass a string to nextInt it will give an error
 
-![Alt text](image-57.png)
+![Alt text](./assets/image-57.png)
 
 ```shell
 Hello What is your name?
@@ -2126,7 +2126,7 @@ you are an adult
 
 ## Outro ✅
 
-![Alt text](image-58.png)
+![Alt text](./assets/image-58.png)
 
 ## What is an exception ✅
 
@@ -2140,12 +2140,12 @@ public class Main {
 }
 ```
 
-![Alt text](image-59.png)
+![Alt text](./assets/image-59.png)
 
 ```java
  Integer number =  Integer.parseInt("a123");
 ```
-![Alt text](image-60.png)
+![Alt text](./assets/image-60.png)
 ## Try Catch ✅
 
 ```java
@@ -2229,7 +2229,7 @@ public class Main {
 ```
 ## The Exception Class ✅
 
-![Alt text](image-61.png)
+![Alt text](./assets/image-61.png)
 
 ```java
 public class Main {
@@ -2303,7 +2303,7 @@ Finally always runs
 we can use finally to close resources like database connections(clean up)
 ## Exception Hierarchy ✅
 
-![Alt text](image-62.png)
+![Alt text](./assets/image-62.png)
 
 Throwable is the parent class of all exceptions and errors
 Throwable documentation https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Throwable.html
@@ -2323,7 +2323,7 @@ public class Main {
     }
 }
 ```
-![Alt text](image-63.png)
+![Alt text](./assets/image-63.png)
 
 RuntimeException is the superclass of those exceptions that can be thrown during the normal operation of the Java Virtual Machine.
 RuntimeException and its subclasses are unchecked exceptions. Unchecked exceptions do not need to be declared in a method or constructor's throws clause if they can be thrown by the execution of the method or constructor and propagate outside the method or constructor boundary.
@@ -2332,7 +2332,7 @@ RunTimeException documentation https://docs.oracle.com/en/java/javase/21/docs/ap
 
 ## Checked Exceptions ✅
 
-![Alt text](image-65.png)
+![Alt text](./assets/image-65.png)
 
 ```java
 import java.io.File;
@@ -2355,7 +2355,7 @@ public class Main {
 // The file has been created.
 ```
 
-![Alt text](image-64.png)
+![Alt text](./assets/image-64.png)
 
 ## Throw and Throws ✅
 
@@ -2374,7 +2374,7 @@ public class Main {
     }
 }
 ```
-![Alt text](image-66.png)
+![Alt text](./assets/image-66.png)
 
 ## Throwing Exceptions ✅
 
@@ -2409,13 +2409,13 @@ public class Main {
 }
 ```
 
-![Alt text](image-67.png)
+![Alt text](./assets/image-67.png)
 
 ## When To Use Checked VS Unchecked Exceptions ✅
 
 documentation https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html
 
-![Alt text](image-68.png)
+![Alt text](./assets/image-68.png)
 
 
 ## Creating Custom Exceptions ✅
@@ -2546,11 +2546,11 @@ public class Main {
 
 outputs
 
-![Alt text](image-71.png)
+![Alt text](./assets/image-71.png)
 
-![Alt text](image-69.png)
+![Alt text](./assets/image-69.png)
 
-![Alt text](image-70.png)
+![Alt text](./assets/image-70.png)
 
 ## Reading from Files ✅
 
@@ -2572,7 +2572,7 @@ outputs
     }
 ```
 
-![Alt text](image-72.png)
+![Alt text](./assets/image-72.png)
 
 ## Try with Resources ✅
 
@@ -2621,7 +2621,7 @@ public class Main {
 }
 
 ```
-![Alt text](image-73.png)
+![Alt text](./assets/image-73.png)
 
 ## Your first class ✅
 
@@ -2645,7 +2645,7 @@ public class Main {
 
 ```
 
-![Alt text](image-74.png)
+![Alt text](./assets/image-74.png)
 
 ## Setters ✅
 
@@ -2680,7 +2680,7 @@ public class Main {
 
 ```
 
-![Alt text](image-75.png)
+![Alt text](./assets/image-75.png)
 
 ## Getters ✅
 
@@ -2721,7 +2721,7 @@ public class Main {
 
 ```
 
-![Alt text](image-76.png)
+![Alt text](./assets/image-76.png)
 
 ## Constructors ✅
 
@@ -2768,7 +2768,7 @@ public class Main {
 }
 ```
 
-![Alt text](image-77.png)
+![Alt text](./assets/image-77.png)
 
 ## Default Constructors ✅
 
@@ -2816,7 +2816,7 @@ class Cat {
 
 ```
 
-![Alt text](image-78.png)
+![Alt text](./assets/image-78.png)
 
 ## Multiple Constructors ✅
 
@@ -2881,7 +2881,7 @@ public class Main {
 }
 
 ```
-![Alt text](image-79.png)
+![Alt text](./assets/image-79.png)
 ## ToString ✅
 
 ```java
@@ -2945,7 +2945,7 @@ public class Main {
 
 ```
 
-![Alt text](image-80.png)
+![Alt text](./assets/image-80.png)
 
 ## The Inside Constructors ✅
 
@@ -3032,7 +3032,7 @@ public class Main {
 }
 
 ```
-![Alt text](image-81.png)
+![Alt text](./assets/image-81.png)
 
 ## The This Keyword ✅
 
@@ -3043,13 +3043,13 @@ this() is called constructor chaining
 
 ## Everything in Java is an Object ✅
 
-![Alt text](image-82.png)
+![Alt text](./assets/image-82.png)
 
-![Alt text](image-83.png)
+![Alt text](./assets/image-83.png)
 
 here we are overriding the toString method of the Object class
 
-![Alt text](image-84.png)
+![Alt text](./assets/image-84.png)
 
 ## @Override ✅
 
@@ -3067,13 +3067,13 @@ this is not required but it is good practice to use it.
 ```
 ## Comparing Objects with == ✅
 
-![Alt text](image-85.png)
+![Alt text](./assets/image-85.png)
 
-![Alt text](image-86.png)
+![Alt text](./assets/image-86.png)
 
-![Alt text](image-88.png)
+![Alt text](./assets/image-88.png)
 
-![Alt text](image-87.png)
+![Alt text](./assets/image-87.png)
 
 ```java
 public class Main {
@@ -3095,7 +3095,7 @@ public class Main {
 
 ```
 
-![Alt text](image-89.png)
+![Alt text](./assets/image-89.png)
 
 ## Comparing Obects with .equals ✅
 
@@ -3125,65 +3125,137 @@ public class Main {
 
 ```
 
-![Alt text](image-90.png)
+![Alt text](./assets/image-90.png)
 
 
-## Generating Equals method 🔲
+## Generating Equals method ✅
+
+```java
+import java.util.Objects;
+
+class Cat {
+
+    private String name;
+    private int age;
+
+    private String color;
+
+    public Cat(String name, int age, String color) {
+        this(name, age);
+        this.color = color;
+    }
+
+    public Cat(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public Cat(String name) {
+        this.name = name;
+        this.age = 0;
+    }
+
+    public Cat() {
+
+    }
+
+    void meow() {
+        System.out.println(this.name + " :Meow!");
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", color='" + color + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cat cat = (Cat) o;
+        return age == cat.age && Objects.equals(name, cat.name) && Objects.equals(color, cat.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, color);
+    }
+}
+
+```
+![Alt text](image.png)
+
+## Equals Explained ✅
 
 ```java
 
 ```
-## Equals Explained 🔲
+## Generating Code ✅
 
 ```java
 
 ```
-## Generating Code 🔲
+## Person and Cats Example ✅
 
 ```java
 
 ```
-## Person and Cats Example 🔲
+## POJOS ✅
 
 ```java
 
 ```
-## POJOS 🔲
+## Java Bean ✅
 
 ```java
 
 ```
-## Java Bean 🔲
+## Exercise ✅
 
 ```java
 
 ```
-## Exercise 🔲
+## Exercise Solution ✅
 
 ```java
 
 ```
-## Exercise Solution 🔲
+## Static Keyword ✅
 
 ```java
 
 ```
-## Static Keyword 🔲
+## When to use Static ✅
 
 ```java
 
 ```
-## When to use Static 🔲
+## Static Initlaization Block ✅
 
 ```java
 
 ```
-## Static Initlaization Block 🔲
-
-```java
-
-```
-## Instance Block Initializer 🔲
+## Instance Block Initializer ✅
 
 ```java
 
