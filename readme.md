@@ -3067,6 +3067,14 @@ this is not required but it is good practice to use it.
 ```
 ## Comparing Objects with == ✅
 
+![Alt text](image-85.png)
+
+![Alt text](image-86.png)
+
+![Alt text](image-88.png)
+
+![Alt text](image-87.png)
+
 ```java
 
 ```
