@@ -3053,8 +3053,17 @@ here we are overriding the toString method of the Object class
 
 ## @Override ✅
 
+@Override is used to tell the compiler that we are overriding a method from the parent class
+this is not required but it is good practice to use it.
 ```java
-
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", color='" + color + '\'' +
+                '}';
+    }
 ```
 ## Comparing Objects with == ✅
 
