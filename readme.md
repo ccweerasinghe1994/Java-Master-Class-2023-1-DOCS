@@ -3076,13 +3076,58 @@ this is not required but it is good practice to use it.
 ![Alt text](image-87.png)
 
 ```java
+public class Main {
+    public static void main(String[] args) {
+        Cat cat2 = new Cat("Barsik", 5, "black");
+        System.out.println(cat2);
+
+        System.out.println("--------------------");
+
+        Cat cat = new Cat("Barsik", 5, "black");
+        System.out.println(cat);
+
+        System.out.println("--------------------");
+        System.out.println(cat == cat2);
+
+
+    }
+}
 
 ```
+
+![Alt text](image-89.png)
+
 ## Comparing Obects with .equals ✅
 
 ```java
+    @Override
+    public boolean equals(Object obj) {
+        return true;
+    }
+```
+```java
+public class Main {
+    public static void main(String[] args) {
+        Cat cat2 = new Cat("Barsik", 5, "black");
+        System.out.println(cat2);
+
+        System.out.println("--------------------");
+
+        Cat cat = new Cat("Barsik", 5, "black");
+        System.out.println(cat);
+
+        System.out.println("--------------------");
+        System.out.println(cat.equals(cat2));
+
+
+    }
+}
 
 ```
+
+![Alt text](image-90.png)
+
+
 ## Generating Equals method 🔲
 
 ```java
