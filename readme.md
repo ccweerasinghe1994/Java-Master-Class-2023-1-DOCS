@@ -3208,8 +3208,28 @@ class Cat {
 ## Equals Explained ✅
 
 ```java
-
+@Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cat cat = (Cat) o;
+        return age == cat.age && Objects.equals(name, cat.name) && Objects.equals(color, cat.color);
+    }
 ```
+
+The provided code is a Java method that overrides the equals method from the Object class. This method is used to determine if two objects are considered equal.
+
+The method takes an Object as a parameter, which is the object that you want to compare with the current object.
+
+The first line of the method checks if the current object (this) is the same as the object passed as a parameter (o). If they are the same object, the method returns true, indicating that they are equal.
+
+The second line checks if the passed object is null or if it is not an instance of the same class as the current object. If either of these conditions is true, the method returns false, indicating that the two objects are not equal.
+
+If the passed object is not null and is an instance of the same class, it is cast to a Cat object. This is safe because we've already checked that the classes of the two objects are the same.
+
+Finally, the method checks if the age, name, and color properties of the two Cat objects are equal. It uses the Objects.equals method to compare the name and color properties, which handles null values gracefully. If all these properties are equal, the method returns true; otherwise, it returns false.
+
+This equals method is a fundamental part of Java's object contract. It's often overridden to provide meaningful equality checks between instances of custom classes.
 ## Generating Code ✅
 
 ```java
