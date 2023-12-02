@@ -3461,9 +3461,49 @@ only focus on business logic
 
 ## Java Bean ✅
 
+JavaBeans are classes that encapsulate many objects into a single object (the bean). It is a java class that should follow following conventions:
+
+1. It should have only default constructor.
+2. It should be Serializable.
+3. It should provide methods to set and get the values of the properties, known as getter and 
+4. setter methods.
+5. properties should be accessed using getter and setter methods.
+6. It may have constructors to initialize the properties.
+7. It should define a public default constructor.
+8. 
 ```java
+public class JavaBeanExample implements Serializable {
+    private String name;
+    private int age;
+
+    public JavaBeanExample(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+// this is a must
+    public JavaBeanExample() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
 
 ```
+
+
 ## Exercise ✅
 
 ```java
