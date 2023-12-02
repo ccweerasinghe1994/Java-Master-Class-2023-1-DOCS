@@ -3794,6 +3794,13 @@ public class Person {
 }
 
 ```
+
+![Alt text](image-3.png)
+
+## When to use Static ✅
+
+Does it make sense to initialize a variable every time an object is created? If the answer is no, then it should be static. For example, if you have a class that represents a car, it makes sense to have a static variable that represents the number of cars that have been created. This variable should be static because it is not tied to any specific car object. It is a property of the class itself.
+
 ## Static Initlaization Block ✅
 
 ```java
