@@ -3907,8 +3907,48 @@ public class Person {
 ## Instance Block Initializer ✅
 
 ```java
+import java.util.Arrays;
+import java.util.Objects;
 
+public class Person {
+    private String firstName;
+    private String lastName;
+    private Gender gender;
+
+    private Cat[] cats;
+
+    public static int count;
+
+    static {
+        System.out.println("start: static initializer block");
+        count = 0;
+        System.out.println("end: static initializer block");
+    }
+
+    {
+        System.out.println("start: instance initializer block");
+        count++;
+        System.out.println("end: instance initializer block");
+    }
+
+    public Person(String firstName, String lastName, Gender gender, Cat[] cats) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.cats = cats;
+    }
+
+    public Person(String firstName, String lastName, Gender gender) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+    }
+
+    public Person() {
+    }
+}
 ```
+![Alt text](image-5.png)
 ## Static Import  🔲
 
 ```java
