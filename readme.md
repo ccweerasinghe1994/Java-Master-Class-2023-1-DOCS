@@ -3678,13 +3678,120 @@ public class Address {
 ![Alt text](image-2.png)
 
 ## Static Keyword ✅
+Static keyword is used to create class members that belong to the class itself and not to the object instance. Static members are initialized only once, at the start of the execution. These members are not tied to any specific object instance. Static methods can be invoked by using the class name, without the need for creating an instance of the class. Static methods are often used to implement utility functions.
+
 
 ```java
+public class Main {
+    public static void main(String[] args) {
+        Cat cat2 = new Cat("Barsik", 5, "black");
+        Cat cat = new Cat("Barsik", 5, "black");
+
+        Person person = new Person();
+        System.out.println(person);
+        System.out.println("-----------------");
+        Cat[] cats = {cat, cat2};
+        Person person1 = new Person("chamara", "weerasinghe", Gender.MALE, cats);
+        System.out.println(person1);
+        System.out.println("-----------------");
+        Person person2 = new Person("kasun", "udayantha", Gender.MALE, cats);
+        System.out.println(person2);
+
+    }
+}
 
 ```
-## When to use Static ✅
 
 ```java
+import java.util.Arrays;
+import java.util.Objects;
+
+public class Person {
+    private String firstName;
+    private String lastName;
+    private Gender gender;
+
+    private Cat[] cats;
+
+    public static int count = 0;
+
+    public Person(String firstName, String lastName, Gender gender, Cat[] cats) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.cats = cats;
+        count++;
+    }
+
+    public Person(String firstName, String lastName, Gender gender) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        count++;
+    }
+
+    public Person() {
+        count++;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public Cat[] getCats() {
+        return cats;
+    }
+
+    public void setCats(Cat[] cats) {
+        this.cats = cats;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return Objects.equals(firstName, person.firstName) && Objects.equals(lastName, person.lastName) && gender == person.gender && Arrays.equals(cats, person.cats);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(firstName, lastName, gender);
+        result = 31 * result + Arrays.hashCode(cats);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", gender=" + gender +
+                ", cats=" + Arrays.toString(cats) +
+                ", count=" + count +
+                '}';
+    }
+}
 
 ```
 ## Static Initlaization Block ✅
