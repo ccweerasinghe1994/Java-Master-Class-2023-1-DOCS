@@ -3236,7 +3236,191 @@ we can use intellij to generate code
 
 ## Person and Cats Example ✅
 
+![Alt text](image-1.png)
+
 ```java
+public class Main {
+    public static void main(String[] args) {
+        Cat cat2 = new Cat("Barsik", 5, "black");
+        Cat cat = new Cat("Barsik", 5, "black");
+
+        Person person = new Person();
+        System.out.println(person);
+
+        System.out.println("-----------------");
+        Cat[] cats = {cat, cat2};
+        Person person1 = new Person("chamara", "weerasinghe", Gender.MALE, cats);
+        System.out.println(person1);
+
+
+    }
+}
+
+```
+```java
+import java.util.Arrays;
+import java.util.Objects;
+
+public class Person {
+    private String firstName;
+    private String lastName;
+    private Gender gender;
+
+    private Cat[] cats;
+
+    public Person(String firstName, String lastName, Gender gender, Cat[] cats) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.cats = cats;
+    }
+
+    public Person(String firstName, String lastName, Gender gender) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+    }
+
+    public Person() {
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public Cat[] getCats() {
+        return cats;
+    }
+
+    public void setCats(Cat[] cats) {
+        this.cats = cats;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return Objects.equals(firstName, person.firstName) && Objects.equals(lastName, person.lastName) && gender == person.gender && Arrays.equals(cats, person.cats);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(firstName, lastName, gender);
+        result = 31 * result + Arrays.hashCode(cats);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", gender=" + gender +
+                ", cats=" + Arrays.toString(cats) +
+                '}';
+    }
+}
+
+```
+```java
+public enum Gender {
+    MALE,
+    FEMALE
+}
+
+```
+```java
+import java.util.Objects;
+
+class Cat {
+
+    private String name;
+    private int age;
+
+    private String color;
+
+    public Cat(String name, int age, String color) {
+        this(name, age);
+        this.color = color;
+    }
+
+    public Cat(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public Cat(String name) {
+        this.name = name;
+        this.age = 0;
+    }
+
+    public Cat() {
+
+    }
+
+    void meow() {
+        System.out.println(this.name + " :Meow!");
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", color='" + color + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cat cat = (Cat) o;
+        return age == cat.age && Objects.equals(name, cat.name) && Objects.equals(color, cat.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, color);
+    }
+}
 
 ```
 ## POJOS ✅
