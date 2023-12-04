@@ -140,17 +140,17 @@
   - [When to use Static ✅](#when-to-use-static-)
   - [Static Initlaization Block ✅](#static-initlaization-block-)
   - [Instance Block Initializer ✅](#instance-block-initializer-)
-  - [Static Import  🔲](#static-import--)
-  - [Intro 🔲](#intro-)
-  - [Packages 🔲](#packages--1)
-  - [Models 🔲](#models-)
-  - [Service Classes 🔲](#service-classes-)
-  - [Data Access Object 🔲](#data-access-object-)
-  - [Connecting DAO and Service 🔲](#connecting-dao-and-service-)
-  - [N Tier Architecture 🔲](#n-tier-architecture-)
-  - [Utitlity Classes 🔲](#utitlity-classes-)
-  - [Intro 🔲](#intro--1)
-  - [The first CLI project task 🔲](#the-first-cli-project-task-)
+  - [Static Import  ✅](#static-import--)
+  - [Intro ✅](#intro-)
+  - [Packages ✅](#packages--1)
+  - [Models ✅](#models-)
+  - [Service Classes ✅](#service-classes-)
+  - [Data Access Object ✅](#data-access-object-)
+  - [Connecting DAO and Service ✅](#connecting-dao-and-service-)
+  - [N Tier Architecture ✅](#n-tier-architecture-)
+  - [Utitlity Classes ✅](#utitlity-classes-)
+  - [Intro ✅](#intro--1)
+  - [The first CLI project task ✅](#the-first-cli-project-task-)
   - [Demo  🔲](#demo--)
   - [Upcoming Section Intro 🔲](#upcoming-section-intro-)
   - [Encapsulation 🔲](#encapsulation-)
@@ -3949,57 +3949,65 @@ public class Person {
 }
 ```
 ![Alt text](image-5.png)
-## Static Import  🔲
+## Static Import  ✅
+
+```java
+import static java.lang.Math.max;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(max(1, 2));
+
+    }
+}
+
+```
+## Intro ✅
 
 ```java
 
 ```
-## Intro 🔲
+## Packages ✅
 
 ```java
 
 ```
-## Packages 🔲
+## Models ✅
 
 ```java
 
 ```
-## Models 🔲
+## Service Classes ✅
 
 ```java
 
 ```
-## Service Classes 🔲
+## Data Access Object ✅
 
 ```java
 
 ```
-## Data Access Object 🔲
+## Connecting DAO and Service ✅
 
 ```java
 
 ```
-## Connecting DAO and Service 🔲
+## N Tier Architecture ✅
 
 ```java
 
 ```
-## N Tier Architecture 🔲
+## Utitlity Classes ✅
 
 ```java
 
 ```
-## Utitlity Classes 🔲
+## Intro ✅
 
 ```java
 
 ```
-## Intro 🔲
-
-```java
-
-```
-## The first CLI project task 🔲
+## The first CLI project task ✅
 
 ```java
 
