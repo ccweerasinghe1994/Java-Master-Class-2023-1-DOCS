@@ -4265,14 +4265,23 @@ public class Car {
 
 ![Alt text](image-12.png)
 
-```java
-
-```
 ## Utitlity Classes ✅
 
+![Alt text](image-13.png)
+
 ```java
+package com.chamara.stringUtil;
+
+public class StringUtil {
+    public static boolean isBlank(String str) {
+        return str == null || str.trim().isEmpty();
+    }
+}
 
 ```
+
+java StringUtils documentation https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html
+
 ## Intro ✅
 
 ```java
