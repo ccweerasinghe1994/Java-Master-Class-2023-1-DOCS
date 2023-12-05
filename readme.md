@@ -4098,9 +4098,167 @@ public class CarDOA {
 ```
 ## Connecting DAO and Service ✅
 
+![Alt text](image-9.png)
+
 ```java
+package com.chamara;
+
+import com.chamara.car.Car;
+import com.chamara.car.CarService;
+
+import java.util.Arrays;
+
+import static java.lang.Math.max;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(max(1, 2));
+        carsExample();
+    }
+
+    public static void carsExample() {
+        Car car = new Car(12, "Corolla", "red", 1994);
+        Car car1 = new Car(13, "Corolla", "red", 1994);
+
+        CarService carService = new CarService();
+
+        carService.registerCar(car);
+        carService.registerCar(car1);
+        System.out.println(Arrays.toString(carService.getAllCar()));
+    }
+}
 
 ```
+```java
+package com.chamara.car;
+
+public class CarService {
+    private final CarDOA carDOA;
+
+    public CarService() {
+        this.carDOA = new CarDOA();
+    }
+
+    public void registerCar(Car car) {
+        if (!car.getName().isBlank()) {
+            carDOA.addCar(car);
+        }
+    }
+
+    public Car[] getAllCar() {
+        return carDOA.geAllCars();
+    }
+
+}
+
+```
+```java
+package com.chamara.car;
+
+public class CarDOA {
+    private static final Car cars[];
+    private static final int CAPACITY = 10;
+
+    static {
+        cars = new Car[CAPACITY];
+    }
+
+    public int addCar(Car car) {
+        for (int i = 0; i < CAPACITY; i++) {
+            if (cars[i] == null) {
+                cars[i] = car;
+                return 1;
+            }
+        }
+        return -1;
+    }
+
+    public Car[] geAllCars() {
+        return cars;
+    }
+
+}
+
+```
+```java
+package com.chamara.car;
+
+import java.util.Objects;
+
+public class Car {
+    private int id;
+    private String name;
+    private String color;
+    private int year;
+
+    public Car(int id, String name, String color, int year) {
+        this.id = id;
+        this.name = name;
+        this.color = color;
+        this.year = year;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Car car = (Car) o;
+        return id == car.id && year == car.year && Objects.equals(name, car.name) && Objects.equals(color, car.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, color, year);
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", year=" + year +
+                '}';
+    }
+}
+
+```
+![Alt text](image-10.png)
+
+
 ## N Tier Architecture ✅
 
 ```java
