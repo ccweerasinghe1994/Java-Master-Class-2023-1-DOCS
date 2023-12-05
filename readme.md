@@ -3970,7 +3970,77 @@ we use packages to organize our code and to avoid name conflicts.
 
 ## Models ✅
 
+Domain and Model contains the same meaning. It is the data that we are working with.
+those classes represent the data that we are working with.
+
 ```java
+package com.chamara.garage;
+
+import com.chamara.car.Car;
+
+import java.util.Arrays;
+import java.util.Objects;
+
+public class Garage {
+    private int id;
+    private int capacity;
+
+    private Car[] cars;
+
+    public Garage(int id, int capacity) {
+        this.id = id;
+        this.capacity = capacity;
+        this.cars = new Car[capacity];
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public Car[] getCars() {
+        return cars;
+    }
+
+    public void setCars(Car[] cars) {
+        this.cars = cars;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Garage garage = (Garage) o;
+        return id == garage.id && capacity == garage.capacity && Arrays.equals(cars, garage.cars);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(id, capacity);
+        result = 31 * result + Arrays.hashCode(cars);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Garage{" +
+                "id=" + id +
+                ", capacity=" + capacity +
+                ", cars=" + Arrays.toString(cars) +
+                '}';
+    }
+}
 
 ```
 ## Service Classes ✅
