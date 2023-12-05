@@ -4261,6 +4261,10 @@ public class Car {
 
 ## N Tier Architecture ✅
 
+![Alt text](image-11.png)
+
+![Alt text](image-12.png)
+
 ```java
 
 ```
