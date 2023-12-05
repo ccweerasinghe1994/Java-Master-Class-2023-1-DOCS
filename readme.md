@@ -4068,7 +4068,32 @@ public class PersonService {
 ```
 ## Data Access Object ✅
 
+we use DAO to access data from the database or any other data source.
+ 
+![Alt text](image-8.png)
+
 ```java
+package com.chamara.car;
+
+public class CarDOA {
+    private static final Car cars[];
+    private static final int CAPACITY = 10;
+
+    static {
+        cars = new Car[CAPACITY];
+    }
+
+    public static int addCar(Car car) {
+        for (int i = 0; i < CAPACITY; i++) {
+            if (cars[i] == null) {
+                cars[i] = car;
+                return 1;
+            }
+        }
+        return -1;
+    }
+
+}
 
 ```
 ## Connecting DAO and Service ✅
