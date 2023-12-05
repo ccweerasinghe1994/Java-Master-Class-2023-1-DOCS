@@ -4045,7 +4045,25 @@ public class Garage {
 ```
 ## Service Classes ✅
 
+![Alt text](image-7.png)
+
 ```java
+package com.chamara.person;
+
+public class PersonService {
+    public int addPerson(Person person) {
+
+        if (person.getFirstName() == null || person.getFirstName().isEmpty())
+            return -1;
+
+        if (person.getLastName() == null || person.getLastName().isEmpty())
+            return -1;
+
+//        and do more business logic validations here
+
+        return 1;
+    }
+}
 
 ```
 ## Data Access Object ✅
