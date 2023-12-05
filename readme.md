@@ -3964,9 +3964,10 @@ public class Main {
 
 ## Packages ✅
 
-```java
+![Alt text](image-6.png)
 
-```
+we use packages to organize our code and to avoid name conflicts.
+
 ## Models ✅
 
 ```java
