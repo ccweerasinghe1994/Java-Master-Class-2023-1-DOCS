@@ -148,8 +148,8 @@
   - [Connecting DAO and Service ✅](#connecting-dao-and-service-)
   - [N Tier Architecture ✅](#n-tier-architecture-)
   - [Utitlity Classes ✅](#utitlity-classes-)
-  - [The first CLI project task ✅](#the-first-cli-project-task-)
-  - [Demo  🔲](#demo--)
+  - [The first CLI project task 🔲](#the-first-cli-project-task-)
+  - [Demo  ✅](#demo--)
   - [Upcoming Section Intro 🔲](#upcoming-section-intro-)
   - [Encapsulation 🔲](#encapsulation-)
   - [Encapsulation in Action 🔲](#encapsulation-in-action-)
@@ -4282,16 +4282,37 @@ public class StringUtil {
 java StringUtils documentation https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html
 
 
-## The first CLI project task ✅
+## The first CLI project task 🔲
 
 ```java
 
 ```
-## Demo  🔲
+## Demo  ✅
 
-```java
+![Alt text](image-14.png)
 
-```
+![Alt text](image-15.png)
+
+![Alt text](image-16.png)
+
+![Alt text](image-17.png)
+
+![Alt text](image-18.png)
+
+![Alt text](image-19.png)
+
+![Alt text](image-20.png)
+
+![Alt text](image-21.png)
+
+![Alt text](image-22.png)
+
+![Alt text](image-23.png)
+
+![Alt text](image-24.png)
+
+![Alt text](image-25.png)
+
 ## Upcoming Section Intro 🔲
 
 ```java
