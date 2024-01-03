@@ -725,6 +725,7 @@ public class Main {
         String[] array8 = new String[3];
 //        Arrays.fill(array3, "Hello");
         System.out.println(Arrays.toString(array8));
+// [null, null, null, null, null]
     }
 }
 ```
