@@ -1033,7 +1033,7 @@ public class Main {
 ![Alt text](./assets/image-28.png)
 
 
-## Import with fully qualified name 🔲
+## Import with fully qualified name ✅
 
 ![Alt text](./assets/image-29.png)
 when there is a conflict between two classes we can use fully qualified name
