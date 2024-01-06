@@ -52,7 +52,7 @@
   - [Exploring Packages ✅](#exploring-packages-)
   - [Import keyword ✅](#import-keyword-)
   - [Optimizing imports ✅](#optimizing-imports-)
-  - [Import with fully qualified name 🔲](#import-with-fully-qualified-name-)
+  - [Import with fully qualified name ✅](#import-with-fully-qualified-name-)
   - [No Import for java lang  ✅](#no-import-for-java-lang--)
   - [Access Modifiers Intro ✅](#access-modifiers-intro-)
   - [Public Access Modifier ✅](#public-access-modifier-)
@@ -1167,7 +1167,9 @@ now we can't access this variable from another class
 
 ## Default ✅
 ![Alt text](./assets/image-35.png)
+
 in a different package we can't access this variable
+
 ![Alt text](./assets/image-36.png)
 
 ```java
@@ -1222,7 +1224,9 @@ public class EmailValidator {
 
 static means it belongs to the class not to the object/instance
 we can't use non static variables inside a static context
+
 ![Alt text](./assets/image-38.png)
+
 you can fix it by 
 
 ![Alt text](./assets/image-39.png)
@@ -1484,9 +1488,28 @@ public class Main {
 ```
 
 output
+
+
 ```shell
 Chamara
 ```
+
+when we are using return keyword it will stop the execution of the method
+
+so it will not print the last line
+
+```java
+System.out.println("End of the loop");
+```
+
+but if we use break keyword it will print the last line
+
+```shell
+Chamara
+End of the loop
+```
+
+
 
 ## Final Keyword ✅
 ![Alt text](./assets/image-47.png)
