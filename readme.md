@@ -1512,7 +1512,45 @@ End of the loop
 
 
 ## Final Keyword ✅
+
+final keyword is used to make a variable constant
+
+when we use final keyword with a class we can't extend that class
+
+when we use final keyword with a method we can't override that method
+
+when to use final keyword in java
+
+- when we want to make a variable constant
+
+Once a final variable has been assigned, it always contains the same value. If a final variable holds a reference to an object, then the state of the object can be changed by operations on the object, but the variable will always refer to the same object. This applies to both instance variables and local variables.
+
+```java
+final int MAX_SIZE = 100;
+```
+
+- when we want to prevent inheritance
+
+If you mark a class as final, it can't be subclassed. This is often done for security reasons, to prevent the class's behavior from being changed through subclassing, or for efficiency reasons, to allow the compiler to optimize method calls.
+
+```java
+public final class MyFinalClass {
+    // class body
+}
+```
+- when we want to prevent method overriding
+  
+You can declare a method as final. You cannot override a final method in a subclass. This is often done for security reasons with methods in the Java API.
+
+```java
+public final void showDetails() {
+    // method body
+}
+```
+
 ![Alt text](./assets/image-47.png)
+
+
 ![Alt text](./assets/image-48.png)
 
 we can do this
