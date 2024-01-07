@@ -1705,6 +1705,62 @@ public class Main {
     }
 }
 ```
+
+Wrapper classes in Java are used for converting primitive data types into objects, and this process is called autoboxing. The reverse process is called unboxing. Here are some scenarios where you might use wrapper classes:
+
+- Collections: 
+
+Java collections can't handle primitive types, so you need to use wrapper classes when you want to add primitive types to collections.
+
+```java
+List<Integer> list = new ArrayList<>();
+list.add(1); // Autoboxing from int to Integer
+```
+
+- Nullability
+
+Primitive types can't be null in Java, but sometimes you may need to represent a missing value. In such cases, you can use wrapper classes, which can be set to null.
+
+![Alt text](image-26.png)
+
+```java
+Integer a = null;
+```
+- Class Methods
+  
+Wrapper classes have a number of useful methods for converting, comparing and performing other operations on the primitive data type they represent. For example, you can use the Integer.parseInt() method to convert a string to an integer.
+
+```java
+String numberStr = "123";
+int number = Integer.parseInt(numberStr);
+```
+
+- Generics
+
+Java's generics do not work with primitive types. So, if you are creating a generic class, method, or interface, and you want it to work with integers, you would need to use the Integer class rather than the int primitive type.
+
+
+```java
+public class MyGenericClass<T> {
+    private T t;
+
+    public void setValue(T t) {
+        this.t = t;
+    }
+
+    public T getValue() {
+        return t;
+    }
+}
+
+MyGenericClass<Integer> intClass = new MyGenericClass<>();
+intClass.setValue(10);
+```
+
+*Remember that while wrapper classes are very useful, they do have a higher memory footprint than primitive types, so use them judiciously.*
+
+
+
 ## Working With Strings ✅
 documentation https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html
 ```java
@@ -2480,8 +2536,8 @@ documentation https://docs.oracle.com/javase/tutorial/essential/exceptions/runti
 
 ## Creating Custom Exceptions ✅
 ```java
-public class MyUncheckedException extends Exception{
-    public MyUncheckedException(String message) {
+public class MyCheckedException extends Exception{
+    public MyCheckedException(String message) {
         super(message);
     }
 }
