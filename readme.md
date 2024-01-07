@@ -151,7 +151,7 @@
   - [The first CLI project task 🔲](#the-first-cli-project-task-)
   - [Demo  ✅](#demo--)
   - [Upcoming Section Intro ✅](#upcoming-section-intro-)
-  - [Encapsulation 🔲](#encapsulation-)
+  - [Encapsulation ✅](#encapsulation-)
   - [Encapsulation in Action 🔲](#encapsulation-in-action-)
   - [The Problem With Non Private Fields 🔲](#the-problem-with-non-private-fields-)
   - [Data Hiding 🔲](#data-hiding-)
@@ -4442,11 +4442,10 @@ main concepts of OOP are:
 - Polymorphism
 - Abstraction
 
-## Encapsulation 🔲
+## Encapsulation ✅
 
-```java
+![Alt text](image-27.png)
 
-```
 ## Encapsulation in Action 🔲
 
 ```java
