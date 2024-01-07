@@ -150,7 +150,7 @@
   - [Utitlity Classes ✅](#utitlity-classes-)
   - [The first CLI project task 🔲](#the-first-cli-project-task-)
   - [Demo  ✅](#demo--)
-  - [Upcoming Section Intro 🔲](#upcoming-section-intro-)
+  - [Upcoming Section Intro ✅](#upcoming-section-intro-)
   - [Encapsulation 🔲](#encapsulation-)
   - [Encapsulation in Action 🔲](#encapsulation-in-action-)
   - [The Problem With Non Private Fields 🔲](#the-problem-with-non-private-fields-)
@@ -4431,11 +4431,17 @@ java StringUtils documentation https://commons.apache.org/proper/commons-lang/ap
 
 ![Alt text](image-25.png)
 
-## Upcoming Section Intro 🔲
+## Upcoming Section Intro ✅
 
-```java
+OOP is a programming paradigm that focuses on objects and data rather than actions and logic. This is a very important concept in Java.
 
-```
+main concepts of OOP are:
+
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Abstraction
+
 ## Encapsulation 🔲
 
 ```java
