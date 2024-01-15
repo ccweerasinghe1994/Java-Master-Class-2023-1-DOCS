@@ -4521,8 +4521,79 @@ this is a problem.
 ## Data Hiding 🔲
 
 ```java
+import java.math.BigDecimal;
+import static java.math.BigDecimal.ZERO;
 
+public class BankAccount {
+    private String name;
+    private BigDecimal balance;
+    private boolean hasOverdraft;
+
+    public BankAccount() {
+    }
+
+    public BankAccount(String name, BigDecimal balance, boolean hasOverdraft) {
+        this.name = name;
+        this.balance = balance;
+        this.hasOverdraft = hasOverdraft;
+    }
+
+    public BigDecimal withdraw(BigDecimal amount){
+        if (balance.subtract(amount).compareTo(ZERO)>=0){
+            this.balance = this.balance.subtract(amount);
+            return amount;
+        }
+        return ZERO;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public BigDecimal getBalance() {
+        return balance;
+    }
+
+    public void setBalance(BigDecimal balance) {
+        this.balance = balance;
+    }
+
+    public boolean isHasOverdraft() {
+        return hasOverdraft;
+    }
+
+    public void setHasOverdraft(boolean hasOverdraft) {
+        this.hasOverdraft = hasOverdraft;
+    }
+}
+ 
 ```
+
+```java
+import java.math.BigDecimal;
+
+public class Main {
+    public static void main(String[] args) {
+    BankAccount account = new BankAccount("Mr. John Doe", new BigDecimal("100.00"), true);
+    BigDecimal withdraw =  account.withdraw(new BigDecimal("50.00"));
+        System.out.println(withdraw);
+        System.out.println(account.getBalance());
+//        now we can control the balance
+        account.setBalance(new BigDecimal("100.00"));
+        System.out.println(account.getBalance());
+    }
+}
+```
+```shell
+50.00
+50.00
+100.00
+```
+
 ## String Class Encapsulation Example  🔲
 
 ```java
