@@ -4853,14 +4853,85 @@ I am a programmer
 ```
 ## Single and Multi Level Inheritance 🔲
 
-```java
+![Alt text](image-30.png)
 
-```
 ## Abstract Keyword on Classes 🔲
 
 ```java
+import java.util.Objects;
+
+public class Animal {
+    private String name;
+
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    public void makeSound() {
+        System.out.println("Unknown animal sound!");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Animal animal = (Animal) o;
+        return Objects.equals(name, animal.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+}
+
 
 ```
+```java
+public class Dog extends Animal{
+    public Dog(String name) {
+        super(name);
+    }
+}
+
+```
+```java
+public class Cat extends Animal{
+    public Cat(String name) {
+        super(name);
+    }
+}
+
+```
+```java
+public class Main {
+
+    public static void main(String[] args) {
+        Animal cat = new Cat("Misty");
+        Animal dog = new Dog("Rex");
+        Dog dog2 = new Dog("Rex");
+        Cat cat2 = new Cat("Misty");
+    }
+}
+```
+
+when a class become abstract we can't create an instance of that class.
+
 ## Abstract Methods 🔲
 
 ```java
