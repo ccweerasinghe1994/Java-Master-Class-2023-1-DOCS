@@ -4932,11 +4932,65 @@ public class Main {
 
 when a class become abstract we can't create an instance of that class.
 
-## Abstract Methods 🔲
+## Abstract Methods ✅
 
 ```java
+abstract public class Animal {
+    private String name;
+
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    abstract public void makeSound();
+```
+```java
+public class Cat extends Animal{
+    public Cat(String name) {
+        super(name);
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Meow");
+    }
+}
 
 ```
+```java
+public class Dog extends Animal{
+    public Dog(String name) {
+        super(name);
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Woof");
+    }
+}
+
+```
+```java
+public class Main {
+
+    public static void main(String[] args) {
+        Animal cat = new Cat("Misty");
+        Animal dog = new Dog("Rex");
+        cat.makeSound();
+        dog.makeSound();
+    }
+}
+```
+
+```shell
+Meow
+Woof
+```
+- to create a abstract method we need to use the abstract keyword in the method signature.
+
+- abstract methods can only be used in abstract classes.
+
+
 ## A Quick Word Before we move on 🔲
 
 ```java
