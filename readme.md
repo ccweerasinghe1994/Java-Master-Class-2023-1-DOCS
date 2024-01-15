@@ -4851,11 +4851,11 @@ now when we call the hi method it will call the overriden method in the programm
 Hi my name is John
 I am a programmer
 ```
-## Single and Multi Level Inheritance 🔲
+## Single and Multi Level Inheritance ✅
 
 ![Alt text](image-30.png)
 
-## Abstract Keyword on Classes 🔲
+## Abstract Keyword on Classes ✅
 
 ```java
 import java.util.Objects;
