@@ -4822,10 +4822,34 @@ now we have access to the name and address in the programmer class.
     }
 ```
 
-## Override 🔲
+## Override ✅
 
 ```java
 
+    @Override
+    public void hi() {
+        String msg = """
+                Hi my name is %s
+                I am a programmer
+                """.formatted(this.name);
+        System.out.println(msg);
+    }
+```
+```java
+public class Main {
+    public static void main(String[] args) {
+        String[] languages = {"Java", "C++", "Python"};
+        Programmer programmer = new Programmer("John", "123 Main St", "Senior", 30, languages);
+        programmer.hi();
+    }
+}
+
+```
+now when we call the hi method it will call the overriden method in the programmer class.
+
+```shell
+Hi my name is John
+I am a programmer
 ```
 ## Single and Multi Level Inheritance 🔲
 
