@@ -4799,11 +4799,29 @@ sub class
         this.programmingLanguages = programmingLanguages;
     }
 ```
-## Protected Access Modifier 🔲
+## Protected Access Modifier ✅
+
+let's make the name and address protected in the employee class.
 
 ```java
+public class Employee {
+    protected String name;
+    protected String address;
 
+    protected String experience;
+
+    protected int age;
 ```
+now we have access to the name and address in the programmer class.
+
+```java
+    public void writingCode() {
+        super.hi();
+
+        System.out.println(this.name + "Writing code...");
+    }
+```
+
 ## Override 🔲
 
 ```java
