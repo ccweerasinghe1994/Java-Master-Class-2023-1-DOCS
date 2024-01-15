@@ -4446,16 +4446,78 @@ main concepts of OOP are:
 
 ![Alt text](image-27.png)
 
-## Encapsulation in Action 🔲
+## Encapsulation in Action ✅
+
+![Alt text](image-28.png)
 
 ```java
+import java.math.BigDecimal;
+import static java.math.BigDecimal.ZERO;
 
+public class BankAccount {
+    String name;
+    BigDecimal balance;
+    boolean hasOverdraft;
+
+    public BigDecimal withdraw(BigDecimal amount){
+        if (balance.subtract(amount).compareTo(ZERO)>=0){
+            this.balance = this.balance.subtract(amount);
+            return amount;
+        }
+        return ZERO;
+    }
+}
+ 
 ```
-## The Problem With Non Private Fields 🔲
 
 ```java
+public class Square {
+    int length;
+
+    int area(){
+        return length * length;
+    }
+}
 
 ```
+
+Encapsulation in Object-Oriented Programming (OOP) is a concept that binds together the data and functions that manipulate the data, and keeps both safe from outside interference and misuse. Data encapsulation is a mechanism of bundling the data, and the functions that use them and data abstraction is a mechanism of exposing only the interfaces and hiding the implementation details from the user.
+
+Encapsulation can be achieved by:
+
+- Declaring all the variables in the class as private.
+
+- Writing public methods in the class to set and get the values of variables.
+
+This way, we can hide the data fields of the class, making them inaccessible from outside the class. This is also known as data hiding. The public methods are the only way to access and modify the private fields from outside the class. This ensures that the data cannot be directly manipulated, providing control over the data access.
+
+## The Problem With Non Private Fields ✅
+
+```java
+import java.math.BigDecimal;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+    BankAccount account = new BankAccount("Mr. John Doe", new BigDecimal("100.00"), true);
+    BigDecimal withdraw =  account.withdraw(new BigDecimal("50.00"));
+        System.out.println(withdraw);
+        System.out.println(account.balance);
+
+        account.balance = new BigDecimal("100.00");
+        System.out.println(account.balance);
+    }
+}
+```
+```shell
+50.00
+50.00
+100.00
+```
+now you can see even if we took money from the account the balance can be changed from using the balance variable.
+this is a problem.
+
 ## Data Hiding 🔲
 
 ```java
