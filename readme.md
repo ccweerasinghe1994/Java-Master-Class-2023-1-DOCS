@@ -4733,11 +4733,48 @@ public class Manager extends Employee{
 
 ```
 
-## Create an instance of Programmer 🔲
+## Create an instance of Programmer ✅
+
+The `hashCode` method in Java is used in conjunction with the `equals` method to create a unique identifier for objects. This is particularly useful when objects are used in collections, such as `HashSet`, `HashMap`, and `HashTable`.
+
+When an object is stored in these collections, the `hashCode` method is called to generate a hash value, which is then used to determine where the object should be stored internally. When you want to retrieve the object, the hash value is used to find it quickly.
+
+In your `Employee` class, the `hashCode` method is overridden to return a hash value that is based on the `name`, `address`, `experience`, and `age` properties of the `Employee` object. This means that two `Employee` objects with the same `name`, `address`, `experience`, and `age` will have the same hash value.
+
+It's important to note that if you override the `equals` method in a class, you should also override the `hashCode` method, and vice versa. This is to ensure that two objects that are considered equal (according to the `equals` method) also have the same hash value.
 
 ```java
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        String[] languages = {"Java", "C++", "Python"};
+        Programmer programmer = new Programmer("John", "123 Main St", "Senior", 30, languages);
+
+        System.out.println(programmer.getName());
+        System.out.println(programmer.getAddress());
+        System.out.println(programmer.getExperience());
+        System.out.println(programmer.getAge());
+        System.out.println(Arrays.toString(programmer.getProgrammingLanguages()));
+        programmer.writingCode();
+        System.out.println(  programmer.toString());
+        System.out.println(programmer.hashCode());
+    }
+}
 
 ```
+
+```shell
+John
+123 Main St
+Senior
+30
+Writing code...
+```
+
+here by using inhertance we were able to reduce the code duplication.
+
+
 ## Super Keyword 🔲
 
 ```java
