@@ -4775,10 +4775,29 @@ Writing code...
 here by using inhertance we were able to reduce the code duplication.
 
 
-## Super Keyword 🔲
+## Super Keyword ✅
 
+- we can use super keyword to call the parent class constructor.
+- we can use super keyword to call the parent class method.
+
+super class
 ```java
-
+    public void hi(){
+        System.out.println("Hi"+ this.name);
+    }
+```
+sub class
+```java
+    public void writingCode() {
+        super.hi();
+        System.out.println("Writing code...");
+    }
+```
+```java
+    public Programmer(String name, String address, String experience, int age, String[] programmingLanguages) {
+        super(name, address, experience, age);
+        this.programmingLanguages = programmingLanguages;
+    }
 ```
 ## Protected Access Modifier 🔲
 
