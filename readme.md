@@ -4518,7 +4518,7 @@ public class Main {
 now you can see even if we took money from the account the balance can be changed from using the balance variable.
 this is a problem.
 
-## Data Hiding 🔲
+## Data Hiding ✅
 
 ```java
 import java.math.BigDecimal;
@@ -4594,11 +4594,37 @@ public class Main {
 100.00
 ```
 
-## String Class Encapsulation Example  🔲
+## String Class Encapsulation Example  ✅
 
 ```java
+public final class String
+    implements java.io.Serializable, Comparable<String>, CharSequence,
+               Constable, ConstantDesc {
 
+    /**
+     * The value is used for character storage.
+     *
+     * @implNote This field is trusted by the VM, and is a subject to
+     * constant folding if String instance is constant. Overwriting this
+     * field after construction will cause problems.
+     *
+     * Additionally, it is marked with {@link Stable} to trust the contents
+     * of the array. No other facility in JDK provides this functionality (yet).
+     * {@link Stable} is safe here, because value is never null.
+     */
+    @Stable
+    private final byte[] value;
 ```
+here we can see string is storing the value in a byte array and it is marked as final and stable.
+
+```java
+@Override
+    public boolean isEmpty() {
+        return value.length == 0;
+    }
+```
+here isEmpty method will stay the same. we can change the internal logic of the string class without affecting the users of the string class.
+this is encapsulation.
 ## What is Inheritance 🔲
 
 ```java
