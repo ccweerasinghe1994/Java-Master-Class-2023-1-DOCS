@@ -4629,11 +4629,110 @@ this is encapsulation.
 
 ![Alt text](image-29.png)
 
-## Implementing Inheritance 🔲
+## Implementing Inheritance ✅
 
 ```java
+import java.util.Objects;
+
+public class Employee {
+    private String name;
+    private String address;
+
+    private String experience;
+
+    private int age;
+
+    public Employee(String name, String address, String experience, int age) {
+        this.name = name;
+        this.address = address;
+        this.experience = experience;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getExperience() {
+        return experience;
+    }
+
+    public void setExperience(String experience) {
+        this.experience = experience;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return age == employee.age && Objects.equals(name, employee.name) && Objects.equals(address, employee.address) && Objects.equals(experience, employee.experience);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, address, experience, age);
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", experience='" + experience + '\'' +
+                ", age=" + age +
+                '}';
+    }
+}
 
 ```
+```java
+public class Programmer extends Employee{
+    private String[] programmingLanguages;
+    public Programmer(String name, String address, String experience, int age) {
+        super(name, address, experience, age);
+    }
+
+    public void writingCode() {
+        System.out.println("Writing code...");
+    }
+}
+
+```
+```java
+public class Manager extends Employee{
+    private int teamSize;
+    public Manager(String name, String address, String experience, int age) {
+        super(name, address, experience, age);
+    }
+
+    public void manage(){
+        System.out.println("Managing...");
+    }
+}
+
+```
+
 ## Create an instance of Programmer 🔲
 
 ```java
