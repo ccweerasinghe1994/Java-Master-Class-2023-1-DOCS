@@ -4625,11 +4625,10 @@ here we can see string is storing the value in a byte array and it is marked as 
 ```
 here isEmpty method will stay the same. we can change the internal logic of the string class without affecting the users of the string class.
 this is encapsulation.
-## What is Inheritance 🔲
+## What is Inheritance ✅
 
-```java
+![Alt text](image-29.png)
 
-```
 ## Implementing Inheritance 🔲
 
 ```java
