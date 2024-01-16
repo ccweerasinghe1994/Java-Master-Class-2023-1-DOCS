@@ -5278,9 +5278,99 @@ Polymorphism is the ability of an object to take on many forms. The most common 
 
 Any Java object that can pass more than one IS-A test is considered to be polymorphic. In Java, all Java objects are polymorphic since any object will pass the IS-A test for their own type and for the class Object.
 
-## Car Bicycle Electric Scooter Example 🔲
+## Car Bicycle Electric Scooter Example ✅
 
 ```java
+public class Car {
+    private int currentSpeed;
+
+    public Car() {
+    }
+
+    public Car(int currentSpeed) {
+        this.currentSpeed = currentSpeed;
+    }
+
+    public void move(int speed) {
+        this.currentSpeed = speed;
+    }
+
+    public void applyBrake(int speed) {
+        this.currentSpeed -= speed;
+    }
+
+
+}
+
+```
+```java
+public class Bicycle {
+    private int currentSpeed;
+
+    public Bicycle() {
+    }
+
+    public Bicycle(int currentSpeed) {
+        this.currentSpeed = currentSpeed;
+    }
+
+    public void move(int speed) {
+        this.currentSpeed = speed;
+    }
+
+    public void applyBrake(int speed) {
+        this.currentSpeed -= speed;
+    }
+
+
+}
+
+```
+```java
+public class ElectricScooter {
+    private int currentSpeed;
+
+    public ElectricScooter() {
+    }
+
+    public ElectricScooter(int currentSpeed) {
+        this.currentSpeed = currentSpeed;
+    }
+
+    public void move(int speed) {
+        this.currentSpeed = speed;
+    }
+
+    public void applyBrake(int speed) {
+        this.currentSpeed -= speed;
+    }
+
+
+}
+
+```
+```java
+public class Person {
+    private String name;
+    private Car car;
+    private Bicycle bicycle;
+    private ElectricScooter electricScooter;
+
+    public Person(String name, Car car, Bicycle bicycle, ElectricScooter electricScooter) {
+        this.name = name;
+        this.car = car;
+        this.bicycle = bicycle;
+        this.electricScooter = electricScooter;
+    }
+
+    public Person(String name) {
+        this.name = name;
+    }
+
+    public Person() {
+    }
+    
+}
 
 ```
 ## Create Your First Interface 🔲
