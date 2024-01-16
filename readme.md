@@ -5485,11 +5485,66 @@ Bicycle is moving
 ElectricScooter is moving
 ```
 
-## Default Methods 🔲
+## Default Methods ✅
 
 ```java
+public interface Vehicle {
+
+    double PURCHASE_RATE = 0.8;
+
+    void move(int speed);
+
+    void applyBrake(int speed);
+
+    int getCurrentSpeed();
+
+    default double milesToKm() {
+        return getCurrentSpeed() * 1.60934;
+    }
+}
 
 ```
+
+you don't have to implement the default method in the sub classes.
+but you can override the default method in the sub classes.
+
+you can also use static methods in interfaces.
+
+```java
+public interface Vehicle {
+
+    double PURCHASE_RATE = 0.8;
+
+    void move(int speed);
+
+    void applyBrake(int speed);
+
+    int getCurrentSpeed();
+
+    default double milesToKm() {
+        return getCurrentSpeed() * 1.60934;
+    }
+
+    static double kmToMiles(double km) {
+        return km / 1.60934;
+    }
+}
+
+```
+```java
+    @Override
+    public void move(int speed) {
+        System.out.println("Car is moving");
+        System.out.println(Vehicle.PURCHASE_RATE);
+        System.out.println(Vehicle.kmToMiles(10));
+        this.currentSpeed = speed;
+    }
+```
+
+```shell
+```
+
+
 ## CLI Project Exercise  🔲
 
 ```java
