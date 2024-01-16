@@ -5397,11 +5397,39 @@ public interface Vehicle {
 }
 
 ```
-## Implementing Interfaces 🔲
+## Implementing Interfaces ✅
 
 ```java
+public class Car implements Vehicle {
+    private int currentSpeed;
+
+    public Car() {
+    }
+
+    public Car(int currentSpeed) {
+        this.currentSpeed = currentSpeed;
+    }
+
+    @Override
+    public void move(int speed) {
+        this.currentSpeed = speed;
+    }
+
+    @Override
+    public void applyBrake(int speed) {
+        this.currentSpeed -= speed;
+    }
+
+    @Override
+    public int getCurrentSpeed() {
+        return currentSpeed;
+    }
+}
 
 ```
+
+we can do the same for the bicycle and electric scooter classes.
+
 ## Putting it all together 🔲
 
 ```java
