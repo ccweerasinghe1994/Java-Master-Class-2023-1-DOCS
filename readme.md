@@ -5240,11 +5240,44 @@ This is a regular expression (regex) pattern used to match email addresses. Here
 
 So, this pattern will match any string that is structured like an email address.
 
-## What is Polymorphism 🔲
+## What is Polymorphism ✅
 
 ```java
+public class Main {
 
+    public static void main(String[] args) {
+        ExtractorReport numberExtractor = new NumberExtractor();
+        ExtractorReport emailExtractorReport = new EmailExtractorReport();
+
+        ExtractorReport[] extractorReports = {
+                numberExtractor,
+                emailExtractorReport
+        };
+
+        try {
+            for (ExtractorReport extractorReport : extractorReports) {
+                extractorReport.prepareAndSendReport("src/data.txt");
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println(1 + 1);
+        System.out.println("1" + "1");
+    }
+}
 ```
+
+here we can see + sign is doing two different things. this is polymorphism.
+
+ExtractorReport is the super class and NumberExtractor and EmailExtractorReport are the sub classes.so when we creating sub class objects and assigning them to the super class reference variable we are able to achieve polymorphism.
+
+What is Polymorphism in OOP ?
+
+Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+
+Any Java object that can pass more than one IS-A test is considered to be polymorphic. In Java, all Java objects are polymorphic since any object will pass the IS-A test for their own type and for the class Object.
+
 ## Car Bicycle Electric Scooter Example 🔲
 
 ```java
