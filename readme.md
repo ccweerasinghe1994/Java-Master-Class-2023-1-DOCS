@@ -5541,9 +5541,6 @@ public interface Vehicle {
     }
 ```
 
-```shell
-```
-
 
 ## CLI Project Exercise  🔲
 
