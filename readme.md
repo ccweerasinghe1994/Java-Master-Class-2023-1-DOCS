@@ -4990,17 +4990,256 @@ Woof
 
 - abstract methods can only be used in abstract classes.
 
+## Abstract Classes Example  ✅
 
-## A Quick Word Before we move on 🔲
+![Alt text](image-31.png)
+
+![Alt text](image-32.png)
+
+The `Pattern` class in Java is part of the `java.util.regex` package. It's used to define a regular expression, which is a sequence of characters that forms a search pattern. This search pattern can be used to match, locate, and manage text.
+
+In the selected code, `Pattern.compile("^[0-9]*$")` is creating a pattern that matches any string that only contains digits (0-9). Here's a breakdown of the regular expression:
+
+- `^` asserts the start of a line.
+- `[0-9]` is a character class that matches any digit from 0 to 9.
+- `*` is a quantifier that means "zero or more" of the preceding element. So, `[0-9]*` matches any number of digits, including none at all.
+- `$` asserts the end of a line.
+
+So, this pattern will match any string that is entirely composed of digits, or is empty.
+
+Here we have a number extractor class that will extract the numbers from a file.
 
 ```java
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class NumberExtractor {
+    public String parse(String path) throws FileNotFoundException {
+//        numbers only
+        Pattern pattern = Pattern.compile("^[0-9]*$");
+        StringBuilder out = new StringBuilder();
+        File file = new File(path);
+        Scanner scanner = new Scanner(file);
+//        we need to skip first line header
+        if (scanner.hasNextLine()) {
+           scanner.nextLine();
+        }else {
+            return "Empty file";
+        }
+        while (scanner.hasNextLine()) {
+            String nextLine = scanner.nextLine();
+            Matcher matcher = pattern.matcher(nextLine);
+            boolean matches = matcher.matches();
+            if (matches) {
+                out.append(nextLine).append("\n");
+            }
+
+        }
+
+        return out.toString().isBlank() ? "Empty file" : out.toString();
+    }
+
+    public void prepareAndSendReport(String path) throws FileNotFoundException {
+        System.out.println("Start parsing file .... ");
+        String report = parse(path);
+        System.out.println(report);
+        System.out.println("Sent Report .... ");
+
+    }
+
+}
 
 ```
-## Abstract Classes Example  🔲
+```shell
+Start parsing file .... 
+
+940767199431
+940767199432
+940767199433
+
+Sent Report .... 
+```
+
+
+let's say we want to extract emails from a file.
+
+we can do something like this.
+
+![Alt text](image-33.png)
+
+but this is not a good solution.
+
+According to `SOLID` principles, a `class should open to extension but closed to modification`.
+
+![Alt text](image-34.png)
+
+let's make the super class abstract. and create a abstract method called `getPattern` and move the pattern to the sub classes.
+
+by doing so we are able to extend the functionality of the super class without modifying the super class.
+
+this is the sample file that we are going to use.
+
+```text
+# this file contains all kind of data
+
+chamara
+gagani
+sachin
+joshua
+Kevin
+abc@gmail.com
+EgS123@gmail.com
+940767199431
+940767199432
+940767199433
+```
 
 ```java
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+abstract public class ExtractorReport {
+    public abstract Pattern getPattern();
+
+    public abstract String getReportName();
+
+    public abstract String clean(String input);
+
+    public String parse(String path) throws FileNotFoundException {
+//        numbers only
+
+        StringBuilder out = new StringBuilder();
+        File file = new File(path);
+        Scanner scanner = new Scanner(file);
+//        we need to skip first line header
+        if (scanner.hasNextLine()) {
+            scanner.nextLine();
+        } else {
+            return "Empty file";
+        }
+        while (scanner.hasNextLine()) {
+            String nextLine = scanner.nextLine();
+            Matcher matcher = getPattern().matcher(nextLine);
+            boolean matches = matcher.matches();
+            if (matches) {
+                out.append(clean(nextLine)).append("\n");
+            }
+
+        }
+
+        return out.toString().isBlank() ? "Empty file" : out.toString();
+    }
+
+    public void prepareAndSendReport(String path) throws FileNotFoundException {
+        System.out.println("Start report " + getReportName() + " .... ");
+        String report = parse(path);
+        System.out.println(report);
+        System.out.println("Sent Report " + getReportName() + " .... ");
+    }
+
+}
 
 ```
+```java
+import java.util.regex.Pattern;
+
+public class NumberExtractor extends ExtractorReport {
+
+    private static final Pattern PATTERN = Pattern.compile("^[0-9]*$");
+
+    @Override
+    public Pattern getPattern() {
+        return PATTERN;
+    }
+
+    @Override
+    public String getReportName() {
+        return "Phone numbers";
+    }
+
+    @Override
+    public String clean(String input) {
+        return input;
+    }
+
+
+}
+
+```
+```java
+import java.util.regex.Pattern;
+
+public class EmailExtractorReport extends ExtractorReport {
+    //    let's generate a Pattern for email
+    private static final Pattern PATTERN = Pattern.compile("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$");
+
+    @Override
+    public Pattern getPattern() {
+        return PATTERN;
+    }
+
+    @Override
+    public String getReportName() {
+        return "Emails";
+    }
+
+    @Override
+    public String clean(String input) {
+        return input.toLowerCase();
+    }
+
+
+}
+
+```
+```java
+public class Main {
+
+    public static void main(String[] args) {
+        NumberExtractor numberExtractor = new NumberExtractor();
+        EmailExtractorReport emailExtractorReport = new EmailExtractorReport();
+        try {
+            emailExtractorReport.prepareAndSendReport("src/data.txt");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
+```
+
+```shell
+Start report Emails .... 
+abc@gmail.com
+egs123@gmail.com
+
+Sent Report Emails .... 
+```
+
+
+email regex pattern explanation
+```java
+private static final Pattern PATTERN = Pattern.compile("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$");
+
+```
+
+This is a regular expression (regex) pattern used to match email addresses. Here's a breakdown of the pattern:
+
+- `^` : This asserts the start of a line.
+- `[a-zA-Z0-9_.+-]+` : This matches one or more (`+`) of the enclosed characters. It includes lowercase letters (`a-z`), uppercase letters (`A-Z`), digits (`0-9`), underscore (`_`), dot (`.`), plus (`+`), and hyphen (`-`). This part is used to match the local part of an email address (before the `@` symbol).
+- `@` : This matches the `@` symbol.
+- `[a-zA-Z0-9-]+` : This matches one or more (`+`) of the enclosed characters. It includes lowercase letters (`a-z`), uppercase letters (`A-Z`), digits (`0-9`), and hyphen (`-`). This part is used to match the domain name of an email address (after the `@` symbol and before the dot).
+- `\\.` : This matches the dot (`.`) symbol. The dot is escaped with two backslashes because it is a special character in regex.
+- `[a-zA-Z0-9-.]+` : This matches one or more (`+`) of the enclosed characters. It includes lowercase letters (`a-z`), uppercase letters (`A-Z`), digits (`0-9`), dot (`.`), and hyphen (`-`). This part is used to match the top-level domain of an email address (after the dot).
+- `$` : This asserts the end of a line.
+
+So, this pattern will match any string that is structured like an email address.
+
 ## What is Polymorphism 🔲
 
 ```java
