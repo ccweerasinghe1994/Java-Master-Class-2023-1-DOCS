@@ -5430,10 +5430,30 @@ public class Car implements Vehicle {
 
 we can do the same for the bicycle and electric scooter classes.
 
-## Putting it all together 🔲
+## Putting it all together ✅
 
 ```java
+public class Main {
+    public static void main(String[] args) {
+        Car car = new Car();
+        Bicycle bicycle = new Bicycle();
+        ElectricScooter electricScooter = new ElectricScooter();
 
+        Vehicle[] vehicles = {car, bicycle, electricScooter};
+
+        Person person = new Person("John", vehicles);
+
+        for (Vehicle vehicle : person.getVehicles()) {
+            vehicle.move(10);
+        }
+    }
+}
+```
+
+```shell
+Car is moving
+Bicycle is moving
+ElectricScooter is moving
 ```
 ## Constants 🔲
 
