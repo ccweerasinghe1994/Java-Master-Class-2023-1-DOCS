@@ -5299,7 +5299,9 @@ public class Car {
         this.currentSpeed -= speed;
     }
 
-
+    public int getCurrentSpeed() {
+        return currentSpeed;
+    }
 }
 
 ```
@@ -5322,7 +5324,9 @@ public class Bicycle {
         this.currentSpeed -= speed;
     }
 
-
+    public int getCurrentSpeed() {
+        return currentSpeed;
+    }
 }
 
 ```
@@ -5345,7 +5349,9 @@ public class ElectricScooter {
         this.currentSpeed -= speed;
     }
 
-
+    public int getCurrentSpeed() {
+        return currentSpeed;
+    }    
 }
 
 ```
@@ -5373,9 +5379,22 @@ public class Person {
 }
 
 ```
-## Create Your First Interface 🔲
+## Create Your First Interface ✅
+
+An Interface is a reference type in Java. It is similar to class. It is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface.
+
+Along with abstract methods, an interface may also contain constants, default methods, static methods, and nested types. Method bodies exist only for default methods and static methods.
+
+Writing an interface is similar to writing a class. But a class describes the attributes and behaviors of an object. And an interface contains behaviors that a class implements.
 
 ```java
+public interface Vehicle {
+    void move(int speed);
+
+    void applyBrake(int speed);
+
+    int getCurrentSpeed();
+}
 
 ```
 ## Implementing Interfaces 🔲
