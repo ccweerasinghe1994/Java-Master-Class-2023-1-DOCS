@@ -5455,11 +5455,36 @@ Car is moving
 Bicycle is moving
 ElectricScooter is moving
 ```
-## Constants 🔲
+## Constants ✅
 
 ```java
+public interface Vehicle {
+    double PURCHASE_RATE = 0.8;
+
+    void move(int speed);
+
+    void applyBrake(int speed);
+
+    int getCurrentSpeed();
+}
 
 ```
+```java
+    @Override
+    public void move(int speed) {
+        System.out.println("Car is moving");
+        System.out.println(Vehicle.PURCHASE_RATE);
+        this.currentSpeed = speed;
+    }
+```
+
+```shell
+Car is moving
+0.8
+Bicycle is moving
+ElectricScooter is moving
+```
+
 ## Default Methods 🔲
 
 ```java
