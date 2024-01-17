@@ -5609,12 +5609,19 @@ public class Main {
 }
 ```
 
-## Singletons and @Inject_@Autowire 🔲
+## Singletons and @Inject_@Autowire ✅
 
-```java
+![Alt text](image-39.png)
 
-```
+![Alt text](image-40.png)
+
+singolton is a design pattern that restricts the instantiation of a class to one "single" instance.
+
+![Alt text](image-41.png)
+
 ## CLI Project Exercise  🔲
+
+in progress 🔃
 
 ```java
 
