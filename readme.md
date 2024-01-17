@@ -6103,47 +6103,63 @@ public class Main {
 }
 ```
 
-## Null Pointer Exception 🔲
+## Null Pointer Exception ✅
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        String name = null;
+        System.out.println(name.toUpperCase());
+
+        Cat cat = new Cat("Barsik");
+        System.out.println(cat.toString());
+        cat = null;
+        System.out.println(cat.getName());
+    }
+}
+```
+
+```shell
+Cat@5f184fc6
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "Cat.getName()" because "cat" is null
+	at Main.main(Main.java:9)
+```
+## The Wrong Way Of Dealing with Null ✅
 
 ```java
 
 ```
-## The Wrong Way Of Dealing with Null 🔲
+## Optionals  ✅
 
 ```java
 
 ```
-## Optionals  🔲
+## Intro ✅
 
 ```java
 
 ```
-## Intro 🔲
+## Overview ✅
 
 ```java
 
 ```
-## Overview 🔲
+## Arrays ✅
 
 ```java
 
 ```
-## Arrays 🔲
+## Working With Arrays ✅
 
 ```java
 
 ```
-## Working With Arrays 🔲
+## 2D Arrays ✅
 
 ```java
 
 ```
-## 2D Arrays 🔲
-
-```java
-
-```
-## Working with 2D Arrays 🔲
+## Working with 2D Arrays ✅
 
 ```java
 
