@@ -5793,10 +5793,112 @@ public class AreaCalculator {
 
 ```
 
-## Open Close 🔲
+## Open Close ✅
+
+Open Closed Principle is the second principle of SOLID. It states that software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification. In other words, you should be able to extend a class's behavior, without modifying it.
+
+Let's take a look at an example of a class that violates the Open Closed Principle.
 
 ```java
+import java.util.List;
 
+public class AreaCalculator {
+    public int sum(List<Object> shapes){
+        int sum = 0;
+        for (Object shape : shapes) {
+            if (shape instanceof Cirlce circle) {
+                sum += (int) (circle.getRadius() * circle.getRadius() * Math.PI);
+            } else if (shape instanceof Square square) {
+                sum += square.getLength() * square.getLength();
+            }
+        }
+        return sum;
+    }
+}
+
+```
+
+here we have a class that calculates the sum of the areas of the shapes.
+
+let's say we want to add a new shape called rectangle.
+
+then we have to modify the AreaCalculator class.
+
+that means we have violated the open close principle.
+
+```java
+public interface Shape {
+    double getArea();
+}
+```
+```java
+public class Cirlce implements Shape{
+    @Override
+    public double getArea() {
+        return  (getRadius() * getRadius() * Math.PI);
+    }
+
+    private final int radius;
+
+    public Cirlce(int radius) {
+        this.radius = radius;
+    }
+
+    public int getRadius() {
+        return radius;
+    }
+}
+
+```
+```java
+public class Square implements Shape{
+    private final int length;
+
+    public Square(int length) {
+        this.length = length;
+    }
+
+    public int getLength() {
+        return length;
+    }
+
+    @Override
+    public double getArea() {
+        return getLength() * getLength();
+    }
+}
+
+```
+```java
+import java.util.List;
+
+public class AreaCalculator {
+    public double sum(List<Shape> shapes){
+        double sum = 0;
+        for (Shape shape : shapes) {
+            sum+= shape.getArea();
+        }
+        return sum;
+    }
+}
+
+```
+```java
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        AreaCalculator areaCalculator = new AreaCalculator();
+        ShapesPrinter shapesPrinter = new ShapesPrinter();
+        Cirlce circle = new Cirlce(5);
+        Square square = new Square(5);
+        Cube cube = new Cube(5);
+        List<Shape> shapes = List.of(circle, square,cube);
+        double sum = areaCalculator.sum(shapes);
+        System.out.println(shapesPrinter.json(sum));
+        System.out.println(shapesPrinter.csv(sum));
+    }
+}
 ```
 ## Liskov 🔲
 
