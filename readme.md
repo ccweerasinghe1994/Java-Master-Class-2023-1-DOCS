@@ -5626,16 +5626,173 @@ in progress 🔃
 ```java
 
 ```
-## SOLID Principles 🔲
+## SOLID Principles ✅
+
+SOLID is an acronym for the first five object-oriented design (OOD) principles by Robert C. Martin, popularly known as Uncle Bob.
+
+SOLID stands for:
+
+- S - Single-responsiblity Principle
+- O - Open-closed Principle
+- L - Liskov Substitution Principle
+- I - Interface Segregation Principle
+- D - Dependency Inversion Principle
+
+
+
+## Single Responsibitiy ✅
+Single-responsiblity Principle is the first principle of SOLID. It states that every class should have a single responsibility, and that responsibility should be entirely encapsulated by the class. All its services should be narrowly aligned with that responsibility.
+
+There can be many reasons to change a class. The more reasons there are, the more responsibilities it has. The more responsibilities a class has, the more likely it will be affected by a change. And the more often a class is affected by a change, the more likely it is to introduce bugs into the system and the higher the cost of maintenance.
+
+Let's take a look at an example of a class that violates the Single-responsiblity Principle.
+
+```java
+public class Cirlce {
+    private final int radius;
+
+    public Cirlce(int radius) {
+        this.radius = radius;
+    }
+
+    public int getRadius() {
+        return radius;
+    }
+}
+
+```
+```java
+public class Square {
+    private final int length;
+
+    public Square(int length) {
+        this.length = length;
+    }
+
+    public int getLength() {
+        return length;
+    }
+}
+
+```
+```java
+import java.util.List;
+
+public class AreaCalculator {
+    public int sum(List<Object> shapes){
+        int sum = 0;
+        for (Object shape : shapes) {
+            if (shape instanceof Cirlce circle) {
+                sum += (int) (circle.getRadius() * circle.getRadius() * Math.PI);
+            } else if (shape instanceof Square square) {
+                sum += square.getLength() * square.getLength();
+            }
+        }
+        return sum;
+    }
+}
+
+```
+```java
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        AreaCalculator areaCalculator = new AreaCalculator();
+        Cirlce circle = new Cirlce(5);
+        Square square = new Square(5);
+        List<Object> shapes = List.of(circle, square);
+        int sum = areaCalculator.sum(shapes);
+        System.out.println("Sum of the areas of provided shapes is: " + sum + ".");
+    }
+}
+```
+```shell
+Sum of the areas of provided shapes is: 103.
+```
+
+let's say we want to add a way to print a json response of the shapes.
+
+let's change the AreaCalculator class.
+
+```java
+import java.util.List;
+
+public class AreaCalculator {
+    public int sum(List<Object> shapes){
+        int sum = 0;
+        for (Object shape : shapes) {
+            if (shape instanceof Cirlce circle) {
+                sum += (int) (circle.getRadius() * circle.getRadius() * Math.PI);
+            } else if (shape instanceof Square square) {
+                sum += square.getLength() * square.getLength();
+            }
+        }
+        return sum;
+    }
+
+    public String json(List<Object> shapes){
+        return "{sum: %s}".formatted(sum(shapes));
+    }
+}
+```
+now we have two responsibilities in the AreaCalculator class.
+
+so we have violated the single responsibility principle.
+
+let's fix this.
 
 ```java
 
+public class ShapesPrinter {
+    public String json(int sum){
+        return "{sum: %s}".formatted(sum);
+    }
+    public String csv(int sum){
+        return "sum,%s".formatted(sum);
+    }
+}
+
 ```
-## Single Responsibitiy 🔲
 
 ```java
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        AreaCalculator areaCalculator = new AreaCalculator();
+        ShapesPrinter shapesPrinter = new ShapesPrinter();
+        Cirlce circle = new Cirlce(5);
+        Square square = new Square(5);
+        List<Object> shapes = List.of(circle, square);
+        int sum = areaCalculator.sum(shapes);
+        System.out.println(shapesPrinter.json(sum));
+        System.out.println(shapesPrinter.csv(sum));
+    }
+}
+```
+
+now the area calculator class has only one responsibility.
+
+```java
+import java.util.List;
+
+public class AreaCalculator {
+    public int sum(List<Object> shapes){
+        int sum = 0;
+        for (Object shape : shapes) {
+            if (shape instanceof Cirlce circle) {
+                sum += (int) (circle.getRadius() * circle.getRadius() * Math.PI);
+            } else if (shape instanceof Square square) {
+                sum += square.getLength() * square.getLength();
+            }
+        }
+        return sum;
+    }
+}
 
 ```
+
 ## Open Close 🔲
 
 ```java
