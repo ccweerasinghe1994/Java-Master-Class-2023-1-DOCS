@@ -5544,14 +5544,15 @@ public interface Vehicle {
 
 ## CLI Project Exercise  🔲
 
-```java
-
-```
-## Don't Do This 🔲
+in progress 🔃
 
 ```java
 
 ```
+## Don't Do This ✅
+
+![Alt text](image-35.png)
+
 ## Dependecy Injection 🔲
 
 ```java
