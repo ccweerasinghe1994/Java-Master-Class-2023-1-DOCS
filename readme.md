@@ -5941,9 +5941,44 @@ Exception in thread "main" java.lang.UnsupportedOperationException: No shape
 
 ## Interface Segragation ✅
 
+Interface Segregation Principle is the fourth principle of SOLID. It states that clients should not be forced to implement unnecessary methods which they will not use.
+
+Let's take a look at an example of a class that violates the Interface Segregation Principle.
+
+
 ```java
+public interface ThreeDimensionalShape {
+    double volume();
+}
+```
+
+```java
+public class Cube implements Shape, ThreeDimensionalShape {
+    private final int length;
+
+    public Cube(int length) {
+        this.length = length;
+    }
+
+    public int getLength() {
+        return length;
+    }
+
+    @Override
+    public double getArea() {
+        return  (getLength() * getLength() * Math.PI);
+    }
+
+    @Override
+    public double volume() {
+        return getLength() * getLength() * getLength();
+    }
+}
 
 ```
+
+here we created a new interface called ThreeDimensionalShape.by doing so we have segregated the Shape interface.by doing so we have followed the interface segregation principle.other classes that implements the Shape interface don't have to implement the volume method.
+
 ## Dependecy Inversion  ✅
 
 ```java
