@@ -5900,17 +5900,51 @@ public class Main {
     }
 }
 ```
-## Liskov 🔲
+## Liskov ✅
+
+Listov Substitution Principle is the third principle of SOLID. It states that if S is a subtype of T, then objects of type T may be replaced with objects of type S, without breaking the program.
+
+```java
+public class NoShape implements Shape{
+    @Override
+    public double getArea() {
+        throw new UnsupportedOperationException("No shape");
+    }
+}
+
+```
+
+```java
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        AreaCalculator areaCalculator = new AreaCalculator();
+        ShapesPrinter shapesPrinter = new ShapesPrinter();
+        Cirlce circle = new Cirlce(5);
+        Square square = new Square(5);
+        Shape noShape = new NoShape();
+        Cube cube = new Cube(5);
+        List<Shape> shapes = List.of(circle, square,cube, noShape);
+        double sum = areaCalculator.sum(shapes);
+        System.out.println(shapesPrinter.json(sum));
+        System.out.println(shapesPrinter.csv(sum));
+    }
+}
+```
+```shell
+Exception in thread "main" java.lang.UnsupportedOperationException: No shape
+	at NoShape.getArea(NoShape.java:4)
+	at AreaCalculator.sum(AreaCalculator.java:7)
+	at Main.main(Main.java:12)
+```
+
+## Interface Segragation ✅
 
 ```java
 
 ```
-## Interface Segragation 🔲
-
-```java
-
-```
-## Dependecy Inversion  🔲
+## Dependecy Inversion  ✅
 
 ```java
 
