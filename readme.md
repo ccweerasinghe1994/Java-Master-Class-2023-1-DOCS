@@ -5553,16 +5553,62 @@ in progress 🔃
 
 ![Alt text](image-35.png)
 
-## Dependecy Injection 🔲
+## Dependecy Injection ✅
+without dependency injection
+
+![Alt text](image-37.png)
+
+with dependency injection
+
+![Alt text](image-36.png)
+
+## Dependency Injection In Action ✅
+
+![Alt text](image-38.png)
+
+
 
 ```java
+public class CarService {
+    private CarDAO carDAO;
+    private EmailService emailService;
+
+    private MOTService motService;
+
+    public CarService(CarDAO carDAO, EmailService emailService, MOTService motService) {
+        this.carDAO = carDAO;
+        this.emailService = emailService;
+        this.motService = motService;
+    }
+
+
+}
 
 ```
-## Dependency Injection In Action 🔲
-
 ```java
+public class MOTService {
+    private EmailService emailService;
+
+    public MOTService(EmailService emailService) {
+        this.emailService = emailService;
+    }
+}
 
 ```
+```java
+public class Main {
+    public static void main(String[] args) {
+//        dependency
+        CarDAO carDAO = new CarDAO();
+        EmailService emailService = new EmailService();
+        MOTService motService = new MOTService(emailService);
+//        injection
+        CarService carService = new CarService(carDAO, emailService, motService);
+
+    }
+}
+```
+
 ## Singletons and @Inject_@Autowire 🔲
 
 ```java
