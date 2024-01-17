@@ -6127,7 +6127,57 @@ Exception in thread "main" java.lang.NullPointerException: Cannot invoke "Cat.ge
 ## The Wrong Way Of Dealing with Null ✅
 
 ```java
+public class Main {
+    public static void main(String[] args) {
+        String name = null;
+        printUppercase(name);
 
+    }
+
+    public static void printUppercase(String s) {
+        if (s == null) {
+            System.out.println("String is null");
+            return;
+        }
+        System.out.println(s.toUpperCase());
+    }
+}
+```
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        String name = null;
+        printUppercase(name);
+
+    }
+
+    public static void printUppercase(String s) {
+        try {
+            System.out.println(s.toUpperCase());
+        } catch (NullPointerException e) {
+            System.out.println("String was null");
+        }
+    }
+}
+```
+
+
+```java
+import java.util.Objects;
+
+public class Main {
+    public static void main(String[] args) {
+        String name = null;
+        printUppercase(name);
+
+    }
+
+    public static void printUppercase(String s) {
+        Objects.requireNonNull(s, "String must not be null");
+        System.out.println(s.toUpperCase());
+    }
+}
 ```
 ## Optionals  ✅
 
