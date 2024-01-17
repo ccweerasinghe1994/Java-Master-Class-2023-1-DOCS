@@ -5981,9 +5981,128 @@ here we created a new interface called ThreeDimensionalShape.by doing so we have
 
 ## Dependecy Inversion  ✅
 
+Components should depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions.
+
 ```java
+import java.util.List;
+
+public class ShapesPrinter {
+    private AreaCalculator areaCalculator = new AreaCalculator();
+
+    public String json(List<Shape> shapes){
+        return "{sum: %s}".formatted(areaCalculator.sum(shapes));
+    }
+    public String csv(List<Shape> shapes){
+        return "sum,%s".formatted(areaCalculator.sum(shapes));
+    }
+}
 
 ```
+
+here we have a dependency on the AreaCalculator class.
+which is tightly coupled.
+
+```java
+import java.util.List;
+
+public class ShapesPrinter {
+    // here we are using the abstraction
+    private IAreaCalculator areaCalculator;
+
+    public ShapesPrinter(IAreaCalculator areaCalculator) {
+        this.areaCalculator = areaCalculator;
+    }
+    public String json(List<Shape> shapes){
+        return "{sum: %s}".formatted(areaCalculator.sum(shapes));
+    }
+    public String csv(List<Shape> shapes){
+        return "sum,%s".formatted(areaCalculator.sum(shapes));
+    }
+}
+
+```
+
+```java
+import java.util.List;
+
+public interface IAreaCalculator {
+    double sum(List<Shape> shapes);
+}
+
+```
+
+```java
+import java.util.List;
+
+public class AreaCalculator implements IAreaCalculator {
+    @Override
+    public double sum(List<Shape> shapes){
+        double sum = 0;
+        for (Shape shape : shapes) {
+            sum+= shape.getArea();
+        }
+        return sum;
+    }
+}
+
+```
+```java
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        IAreaCalculator areaCalculator = new AreaCalculator();
+        ShapesPrinter shapesPrinter = new ShapesPrinter(areaCalculator);
+        Cirlce circle = new Cirlce(5);
+        Square square = new Square(5);
+//        Shape noShape = new NoShape();
+        Cube cube = new Cube(5);
+        List<Shape> shapes = List.of(circle, square,cube);
+        double sum = areaCalculator.sum(shapes);
+        System.out.println(shapesPrinter.json(shapes));
+        System.out.println(shapesPrinter.csv(shapes));
+    }
+}
+```
+
+let's say we create a new class that implements the IAreaCalculator interface.
+
+```java
+import java.util.List;
+
+public class AreaCalculatorV2 implements IAreaCalculator {
+    @Override
+    public double sum(List<Shape> shapes){
+        double sum = 0;
+        for (Shape shape : shapes) {
+            sum+= shape.getArea();
+        }
+        return sum;
+    }
+}
+```
+
+we can substitute the AreaCalculator class with the AreaCalculatorV2 class.
+
+```java
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        IAreaCalculator areaCalculator = new AreaCalculatorV2();
+        ShapesPrinter shapesPrinter = new ShapesPrinter(areaCalculator);
+        Cirlce circle = new Cirlce(5);
+        Square square = new Square(5);
+//        Shape noShape = new NoShape();
+        Cube cube = new Cube(5);
+        List<Shape> shapes = List.of(circle, square,cube);
+        double sum = areaCalculator.sum(shapes);
+        System.out.println(shapesPrinter.json(shapes));
+        System.out.println(shapesPrinter.csv(shapes));
+    }
+}
+```
+
 ## Null Pointer Exception 🔲
 
 ```java
