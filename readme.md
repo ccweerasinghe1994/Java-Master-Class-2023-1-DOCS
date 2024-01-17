@@ -6285,85 +6285,230 @@ public class TheArrays {
 ```
 ## 2D Arrays ✅
 
-```java
+![Alt text](image-45.png)
 
-```
+
 ## Working with 2D Arrays ✅
 
 ```java
+import java.util.Arrays;
+
+public class WorkingWith2DArrays {
+    public static void main(String[] args) {
+        char[][] board = new char[3][3];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                board[i][j] = '-';
+            }
+        }
+        board[0][0] = 'O';
+        board[0][1] = 'O';
+        board[0][2] = 'O';
+//        System.out.println(Arrays.deepToString(board));
+//        Arrays.stream(board).forEach(System.out::println);
+
+        char[][] board2 = {
+                {'0', '-', '-'},
+                {'0', '-', '-'},
+                {'0', '-', '-'}
+        };
+        Arrays.stream(board2).forEach(System.out::println);
+    }
+}
 
 ```
-## Lists 🔲
+## Lists ✅
+
+![Alt text](image-46.png)
+
+
+## Working With Lists and ArrayList ✅
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class WorkingWithLists {
+    public static void main(String[] args) {
+        List<String> colors = new ArrayList<>();
+        colors.add("Red");
+        colors.add("Green");
+        System.out.println(colors);
+//        list is ordered
+        System.out.println();
+        System.out.println();
+        System.out.println(colors.getFirst());
+        System.out.println(colors.get(0));
+        System.out.println(colors.contains("Red"));
+
+//        loop through the list
+        System.out.println();
+        System.out.println();
+        System.out.println("for loop");
+        for (String color : colors) {
+            System.out.println(color);
+        }
+//        forEach
+        System.out.println();
+        System.out.println();
+        System.out.println("forEach");
+        colors.forEach(System.out::println);
+
+        List<String> unModifiableList = List.of("Red", "Green");
+//        this will throw an exception
+        //        unModifiableList.add("Blue");
+    }
+}
+
+```
+## Stack ✅
+
+![Alt text](image-47.png)
+
+## Working With Stacks ✅
+
+```java
+import java.util.Stack;
+
+public class WorkingWithStacks {
+    public static void main(String[] args) {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+//        stack methods
+        System.out.println(stack);
+        System.out.println(stack.peek());
+        System.out.println(stack.pop());
+        System.out.println(stack.search(10));
+
+//        stack is a LIFO data structure
+        System.out.println(stack.empty());
+    }
+}
+
+```
+```shell
+[10, 20, 30]
+30
+30
+2
+false
+```
+
+## Queue ✅
+
+![Alt text](image-48.png)
+
+## Working With Queues ✅
+
+```java
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class WorkingWithQues {
+    public static void main(String[] args) {
+        Queue<Person> supermarket = new LinkedList<>();
+        supermarket.add(new Person("John", 20));
+        supermarket.add(new Person("Mary", 30));
+        supermarket.add(new Person("Mike", 40));
+
+        System.out.println(supermarket.size());
+        System.out.println(supermarket.peek());
+        System.out.println(supermarket.poll());
+        System.out.println(supermarket.size());
+        System.out.println(supermarket.peek());
+
+    }
+
+    static record Person(String name, int age) {
+    }
+}
+
+```
+
+```shell
+3
+Person[name=John, age=20]
+Person[name=John, age=20]
+2
+Person[name=Mary, age=30]
+```
+## Linked List ✅
+
+![Alt text](image-49.png)
+
+adding a new node to the linked list
+
+![Alt text](image-50.png)
+
+## Working with LinkedList ✅
+
+```java
+import java.util.LinkedList;
+import java.util.ListIterator;
+import java.util.Queue;
+
+public class WorkingWithQues {
+
+    public static void main(String[] args) {
+        LinkedList<Person> linkedList = new LinkedList<>();
+
+//        add
+        linkedList.add(new Person("John", 20));
+        linkedList.add(new Person("Mary", 30));
+        linkedList.add(new Person("Mike", 40));
+
+//        looping
+        //        while (PersonIterator.hasNext()) {
+//            System.out.println(PersonIterator.next());
+//        }
+        for (Person person : linkedList) {
+            System.out.println(person);
+        }
+        System.out.println();
+// reverse looping
+        ListIterator<Person> personListIterator = linkedList.listIterator(3);
+        while (personListIterator.hasPrevious()) {
+            System.out.println(personListIterator.previous());
+        }
+    }
+
+    static record Person(String name, int age) {
+    }
+}
+
+```
+## Sets ✅
+
+![Alt text](image-51.png)
+
+## Working with Sets ✅
 
 ```java
 
 ```
-## Working With Lists and ArrayList 🔲
+## Map Interface Hierarchy ✅
 
 ```java
 
 ```
-## Stack 🔲
+## Maps ✅
 
 ```java
 
 ```
-## Working With Stacks 🔲
+## Working With Maps ✅
 
 ```java
 
 ```
-## Queue 🔲
+## HashCode ✅
 
 ```java
 
 ```
-## Working With Queues 🔲
-
-```java
-
-```
-## Linked List 🔲
-
-```java
-
-```
-## Working with LinkedList 🔲
-
-```java
-
-```
-## Sets 🔲
-
-```java
-
-```
-## Working with Sets 🔲
-
-```java
-
-```
-## Map Interface Hierarchy 🔲
-
-```java
-
-```
-## Maps 🔲
-
-```java
-
-```
-## Working With Maps 🔲
-
-```java
-
-```
-## HashCode 🔲
-
-```java
-
-```
-## Working HashCode and HashFunction 🔲
+## Working HashCode and HashFunction ✅
 
 ```java
 
@@ -6377,7 +6522,7 @@ public class TheArrays {
 
 ```java
 
-```
+``` 
 ## CLI Project Exercise  🔲
 
 ```java
