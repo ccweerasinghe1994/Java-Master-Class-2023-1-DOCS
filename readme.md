@@ -6235,9 +6235,11 @@ TEST
 
 ## Arrays ✅
 
-```java
+![Alt text](image-44.png)
 
-```
+find O(n) 
+
+
 ## Working With Arrays ✅
 
 ```java
