@@ -6543,19 +6543,60 @@ Ball{color='green'}
 
 ## Map Interface Hierarchy ✅
 
-```java
+![Alt text](image-52.png)
 
-```
 ## Maps ✅
 
-```java
+![Alt text](image-53.png)
 
-```
+
 ## Working With Maps ✅
 
 ```java
+import java.util.HashMap;
+import java.util.Map;
+
+public class WorkingWithMaps {
+    public static void main(String[] args) {
+        Map<Integer, Person> map = new HashMap<>();
+        map.put(1, new Person("John", 20));
+        map.put(2, new Person("Mary", 30));
+        map.put(3, new Person("Mike", 40));
+
+        System.out.println(map.get(2));
+        System.out.println(map.entrySet());
+        System.out.println(map.size());
+        System.out.println(map.containsKey(12));
+        System.out.println(map.keySet());
+
+        map.forEach((key, value) -> System.out.println(key + " " + value));
+
+        map.remove(2);
+
+        System.out.println(map);
+
+        System.out.println(map.values());
+    }
+
+    static record Person(String name, int age) {
+    }
+}
 
 ```
+
+```shell
+Person[name=Mary, age=30]
+[1=Person[name=John, age=20], 2=Person[name=Mary, age=30], 3=Person[name=Mike, age=40]]
+3
+false
+[1, 2, 3]
+1 Person[name=John, age=20]
+2 Person[name=Mary, age=30]
+3 Person[name=Mike, age=40]
+{1=Person[name=John, age=20], 3=Person[name=Mike, age=40]}
+[Person[name=John, age=20], Person[name=Mike, age=40]]
+```
+
 ## HashCode ✅
 
 ```java
