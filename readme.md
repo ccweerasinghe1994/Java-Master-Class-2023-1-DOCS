@@ -6599,9 +6599,8 @@ false
 
 ## HashCode ✅
 
-```java
+![Alt text](image-54.png)
 
-```
 ## Working HashCode and HashFunction ✅
 
 ```java
